@@ -12,5 +12,19 @@ else:
 ## 5=='5' Verdadero
 ## 5==='5' Falso
 
+a = 5
+b = '5'
+
+# Comparación de valor
+print(a == int(b))  # Verdadero, si b se convierte a entero
+
+# Comparación de tipo
+print(type(a) == type(b))  # Falso, porque `a` es int y `b` es str
+
+# Comparación estricta (tipo y valor)
+print(a == b and type(a) == type(b))  # Falso
+
+
+
 if(a==b):
     print(f'Los numeros {a} y {b} son iguales')    

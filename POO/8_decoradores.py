@@ -1,18 +1,38 @@
-def decorador(funcion):
-    def funcion_modificada():
-        print("Antes de llamar a la función")
-        funcion()
-        print("Después de llamar a la función")
-    return funcion_modificada
+# Decorador para contar las veces que se llama a un método
+def contar_llamadas(func):
+    def wrapper(self, *args, **kwargs):
+        self._contador_llamadas += 1  # Incrementamos el contador de la instancia
+        print(f"El método {func.__name__} ha sido llamado {self._contador_llamadas} veces")
+        return func(self, *args, **kwargs)
+    return wrapper
 
-# def saludo():
-#     print("Hola Dalto como andas")
+class Coche:
+    def __init__(self, marca, modelo):
+        self.marca = marca
+        self.modelo = modelo
+        self._contador_llamadas = 0  # Inicializamos el contador de llamadas por instancia
+    
+    @contar_llamadas  # Aplicamos el decorador al método
+    def arrancar(self):
+        print(f"El {self.marca} {self.modelo} está arrancando...")
 
-# saludo_modificado = decorador(saludo)
-# saludo_modificado()
+    @contar_llamadas  # Aplicamos el decorador a otro método
+    def frenar(self):
+        print(f"El {self.marca} {self.modelo} está frenando...")
 
-@decorador
-def saludo():
-    print("Hola Dalto como andas")
+# Creamos un objeto de la clase Coche
+mi_coche = Coche("Ford", "Mustang")
 
-saludo()
+# Llamamos a los métodos decorados
+mi_coche.arrancar()  # Primera vez
+mi_coche.arrancar()  # Segunda vez
+mi_coche.frenar()    # Primera vez
+mi_coche.frenar()    # Segunda vez
+mi_coche.frenar()    # Tercera vez
+
+# Creamos otro objeto de la clase Coche
+mi_coche2 = Coche("Chevrolet", "Camaro")
+
+# Llamamos a los métodos del nuevo objeto
+mi_coche2.arrancar()  # Primera vez
+mi_coche2.frenar()    # Primera vez

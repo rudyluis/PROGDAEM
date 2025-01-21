@@ -34,7 +34,7 @@ v3 = np.linspace(0,10,num=10,endpoint=False)
 print("v3={}".format(v3))
 
 #%%
-v4 = np.linspace(0,10,num=11,endpoint=True)
+v4 = np.linspace(0,10,num=11,endpoint=False)
 print("v4={}".format(v4))
 
 

@@ -9,6 +9,11 @@ print("Multiplicación:", a * b)
 print("División:", a / b)
 
 # Producto escalar
+"""
+(también llamado "dot product" en inglés) es una operación matemática entre dos 
+vectores que produce un único valor escalar. Es ampliamente utilizado en álgebra lineal, 
+análisis de datos, gráficos 3D y muchas áreas de la ciencia y la ingeniería.
+"""
 producto_escalar = np.dot(a, b)
 print("\nProducto escalar:", producto_escalar)
 

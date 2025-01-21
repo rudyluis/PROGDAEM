@@ -1,3 +1,4 @@
+#%%
 import pandas as pd
 
 def estadistica_notas(notas):
@@ -19,7 +20,6 @@ notas = {'Juan':9, 'María':6.5, 'Pedro':4, 'Carmen': 8.5, 'Luis': 5}
 print(estadistica_notas(notas))
 # %%
 
-
 import pandas as pd
 
 def aprobados(notas):
@@ -34,7 +34,11 @@ print(aprobados(notas))
 
 import pandas as pd
 
-datos = {'Mes':['Enero', 'Febrero', 'Marzo', 'Abril'], 'Ventas':[30500, 35600, 28300, 33900], 'Gastos':[22000, 23400, 18100, 20700]}
+datos = {
+    'Mes':['Enero', 'Febrero', 'Marzo', 'Abril'], 
+'Ventas':[30500, 35600, 28300, 33900], 
+'Gastos':[22000, 23400, 18100, 20700]
+}
 contabilidad = pd.DataFrame(datos)
 print(contabilidad)
 # %%

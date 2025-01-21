@@ -13,4 +13,4 @@ print("\nSuma de la diagonal:", suma_diagonal)
 
 # Normalizar los valores de la matriz (valores entre 0 y 1)
 matriz_normalizada = (matriz - np.min(matriz)) / (np.max(matriz) - np.min(matriz))
-print("\nMatriz normalizada:\n", matriz_normalizada)
+print("Matriz normalizada:", matriz_normalizada)

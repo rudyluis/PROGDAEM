@@ -1,13 +1,15 @@
 # VIDEO - Crear clases
 
-# -Para crear una clase se utiliza "class"
-# -Para crear una clase se utiliza la nomenclatura "CamelCase"
-# -Realizar una instancia no es más que crear un objeto
-
+# Para crear una clase en Python, se utiliza la palabra clave "class"
+# En este caso, estamos creando una clase llamada "Usuario"
 class Usuario():
-    pass
+    pass  # La palabra clave "pass" se utiliza para indicar que la clase está vacía por ahora
 
-codi = Usuario()
-facilito = Usuario()
+# Aquí estamos creando dos instancias de la clase "Usuario"
+# La instanciación de una clase se hace al asignar el nombre de la clase a una variable
+codi = Usuario()  # Crea un objeto de la clase Usuario llamado "codi"
+facilito = Usuario()  # Crea otro objeto de la clase Usuario llamado "facilito"
 
-print(type(facilito))
+# Imprimir el tipo del objeto "facilito"
+# type() devuelve el tipo de la variable. En este caso, debe mostrar que "facilito" es una instancia de la clase "Usuario"
+print(type(facilito))  # Salida esperada: <class '__main__.Usuario'>

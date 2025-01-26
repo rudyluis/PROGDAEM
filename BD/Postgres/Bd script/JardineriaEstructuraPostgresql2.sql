@@ -40,7 +40,7 @@ CREATE TABLE gamaProducto (
 );
 
 CREATE TABLE cliente (
-  IDCliente serial NOT NULL ,
+  IDCliente serial NOT NULL,
   codigoCliente INTEGER NOT NULL,
   nombreCliente VARCHAR(50) NOT NULL,
   nombreContacto VARCHAR(30) DEFAULT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE cliente (
 );
 
 CREATE TABLE pedido (
-  IDPedido serial NOT NULL ,
+  IDPedido serial NOT NULL,
   codigoPedido INTEGER NOT NULL,
   fechaPedido date NOT NULL,
   fechaEsperada date NOT NULL,
@@ -100,7 +100,7 @@ CREATE TABLE detallePedido (
 );
 
 CREATE TABLE pago (
-  IDPago INTEGER serial NOT NULL ,
+  IDPago serial NOT NULL,
   IDCliente INTEGER NOT NULL,
   formaPago VARCHAR(40) NOT NULL,
   nroTransaccion VARCHAR(50) NOT NULL,

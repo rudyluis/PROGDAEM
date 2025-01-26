@@ -10,8 +10,8 @@ para acceder a su valor asociado.
 #%%
 # Crear un diccionario con información personal
 persona = {
-    "nombre": "Rudy",  # 'nombre' es la clave, "Rudy" es el valor
-    "apellido": "Manzaneda",
+    "nombre": "Luis",  # 'nombre' es la clave, "Rudy" es el valor
+    "apellido": "Arteaga",
     "edad": 37,
     "ciudad": "Cochabamba",
     "ocupacion": "Ingeniero"  # Último par clave: valor
@@ -40,8 +40,8 @@ print("Las notas de Pedro son:", estudiantes["Pedro"])
 # Crear un diccionario anidado (diccionario dentro de otro)
 empleados = {
     "empleado_1": {  # Clave del primer empleado
-        "nombre": "Rudy",
-        "apellido": "Manzaneda",
+        "nombre": "Luis",
+        "apellido": "Dominguez",
         "edad": 37,
         "ciudad": "Cochabamba",
         "ocupacion": "Ingeniero"

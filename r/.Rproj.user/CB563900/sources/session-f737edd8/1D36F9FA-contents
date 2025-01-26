@@ -1,108 +1,102 @@
-# esto es un comentario, puedes escribir lo que quieras
-# para crear un comentario, usa: '#'
+# Esto es un comentario, puedes escribir lo que quieras explicando el código.
+# En R, los comentarios comienzan con '#'.
 
-# con la funcion print() se pueden imprimir los valores por pantalla, aunque
-# aquí, en RStudio, puedes ver su valor en la consola con solo escribir el
-# nombre de la variable
+# --------------------
+# FUNCIONES BÁSICAS DE SALIDA
+# --------------------
 
+# La función `print()` muestra valores en la consola.
+# En RStudio, puedes ver el valor de una variable escribiendo solo su nombre.
+print("Hola, mundo") # Ejemplo: imprimir un mensaje.
 
-
+# --------------------
 # VARIABLES
-# para crear variables se usa '=' o '<-' (el segundo se usa m?s en R)
-# 
-# las variables en R son "case-sensitive", es decir, que "num" y "Num"
-# son dos variables distintas
+# --------------------
+# Para asignar valores a variables, usamos '=' o '<-'.  
+# El operador '<-' es el más común en R.
 
+# R es *case-sensitive*: "num" y "Num" son variables diferentes.
+num <- 42    # Asignación con '<-'.
+Num <- 88    # Distinta a "num".
 
-
+# --------------------
 # TIPOS DE DATOS
-# numéricos (con comas)
+# --------------------
+
+# NUMÉRICOS (pueden tener decimales).
 var1 <- 3.14
 
-# integers (numericos pero sin comas) -> poner un 'L' al final para indicar
-# que es integer
-var <- 88L
+# ENTEROS (sin decimales). Usa 'L' para especificar un entero.
+var2 <- 88L
 
-# texto (strings) -> tienen que ir entre comillas dobles (") o simples (')
-var3 <- "hola"
-var4 <- 'hola'
-# si se quieren representar unas comillas: \" y usar cat() para imprimir
-print("Esto imprime \"las barras\" y las comillas")
-cat("Esto no imprime \"las barras\", solo las comillas")
+# TEXTO (strings). Usa comillas simples o dobles.
+var3 <- "Hola" # Comillas dobles.
+var4 <- 'Hola' # Comillas simples.
 
-# booleanos -> o verdadero (TRUE), o falso (FALSE)
-verdadero <- TRUE # tambies se puede usar solo 'T'
-verdaderoTambien <- T
+# Si necesitas incluir comillas dentro del texto, usa '\'.
+print("Esto incluye \"comillas\" dentro del texto.")
+cat("Sin barras: \"comillas\"\n") # `cat()` no imprime las barras.
+
+# BOOLEANOS (TRUE o FALSE, o simplemente T y F).
+verdadero <- TRUE
 falso <- FALSE
-falsoTambien <- F
 
+# --------------------
+# OPERACIONES ARITMÉTICAS
+# --------------------
 
-
-# MATEM?TICAS B?SICAS
-# variables de ejemplo:
 x <- 11
 y <- 4
 
-# OPERADORES ARITMETICOS
-# suma y resta
-print(x + y) # 11+4 = 15
-print(x - y) # 11-4 = 7
+# Suma y resta.
+print(x + y)  # 11 + 4 = 15
+print(x - y)  # 11 - 4 = 7
 
-# multiplicaci?n y división
-print(x * y) # 11*4 = 44
-print(x / y) # 11/4 = 2.75
+# Multiplicación y división.
+print(x * y)  # 11 * 4 = 44
+print(x / y)  # 11 / 4 = 2.75
 
-# potencias -> 2 formas de hacerlo
-print(x ^ y) # forma 1: 11^4 = 14641
-print(x ** y) # forma 2: 11**4 = 14641
+# Potencias (dos maneras de escribirlo).
+print(x ^ y)  # 11 elevado a 4: 14641.
+print(x ** y) # Equivalente: 14641.
 
-# m?dulo (resto de la división)
-print(x %% y) # 11%%4 = 3
+# Módulo (resto de la división).
+print(x %% y) # 11 %% 4 = 3 (resto).
 
-# divisi?n de integers (sin comas)
-print(x %/% y) # 11%/%4 = 2
+# División entera (resultado sin decimales).
+print(x %/% y) # 11 %/% 4 = 2.
 
-# funciones min() y max()
-print(min(x, y)) # imprime el pequeño de los dos: 4
-print(max(x, y)) # imprime el mayor de los dos: 11
+# Funciones `min()` y `max()`.
+print(min(x, y)) # El menor de los dos: 4.
+print(max(x, y)) # El mayor de los dos: 11.
 
-# ra?z cuadrada -> sqrt()
-print(sqrt(64)) # 8
+# Raíz cuadrada: `sqrt()`.
+print(sqrt(64)) # Raíz cuadrada de 64: 8.
 
-# repetir un valor X veces
-rep(98, 5) # repite "98" 5 veces: 98 98 98 98 98
-rep(c("si", "no"), 3) # repite "si" "no" 3 veces: "si" "no" "si" "no" "si" "no"
+# Repetir valores con `rep()`.
+print(rep(98, 5))             # Repite 98 cinco veces.
+print(rep(c("Sí", "No"), 3))  # Repite "Sí", "No" tres veces.
 
+# --------------------
+# OPERADORES RELACIONALES
+# --------------------
+# Devuelven TRUE o FALSE según la comparación.
 
+print(4 < 2)  # ¿4 es menor que 2? -> FALSE.
+print(3 >= 3) # ¿3 es mayor o igual a 3? -> TRUE.
 
-# RELATIONAL OPERATORS
-# > mayor que
-# < menor que
-# >= mayor o igual que
-# <= menor o igual que
-# == igual que
-# != diferente a
-print(4 < 2) # FALSE
-print (3 >= 3) # TRUE
+# --------------------
+# INTRODUCCIÓN DE DATOS
+# --------------------
 
+# Usando `scan()` para introducir varios valores separados por ENTER.
+input <- scan() # Para detener la entrada, pulsa ENTER con un espacio vacío.
+print(input)    # Muestra el vector con los valores introducidos.
 
-
-# INTRODUCIR DATOS MANUALMENTE / PEDIR DATOS AL USUARIO
-# introducir datos separados por ENTER: si se desea dejar de introducir datos,
-# se debe dejar el espacio sin escribir y pulsar ENTER de nuevo
-input <- scan()
-input
-# se habr? creado un vector con varios calores
-# si quieres acceder al primer elemento de input: input[1]
-# si quieres acceder al segundo elemento: input[2] (y asi sucesivamente)
-
-
-# otra forma de introducir datos manualmente es usar readline()
+# Usando `readline()` para introducir un valor único (como texto).
 input <- readline(prompt = "Introduce algo: ")
-input
-# en este caso solo se recoge un ?nico dato en formato "String", es decir, como
-# cadena de texto.
-# Si se ha introducido un valor num?rico y se desea trabajar con ?l, deberá
-# transformarse en un tipo de dato num?rico
-input <- as.numeric(input)
-input
+print(input)  # Muestra lo que el usuario introdujo como cadena de texto.
+
+# Si necesitas trabajar con el valor como número, conviértelo.
+input <- as.numeric(input)  # Convierte a tipo numérico.
+print(input)  # Muestra el valor convertido.

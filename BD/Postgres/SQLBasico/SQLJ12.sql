@@ -1,6 +1,6 @@
 --1. Calcula la fecha del primer y último pago realizado por cada uno de los clientes. 
 El listado deberá mostrar el nombre y los apellidos de cada cliente.
-
+--ESTE
 SELECT 
   c.nombreCliente, 
   c.nombreContacto, 
@@ -16,7 +16,7 @@ GROUP BY c.IDCliente;
 ----2. Devuelve un listado de los 20 productos más vendidos y el número total de unidades q
 ue se han vendido de cada uno. 
 El listado deberá estar ordenado por el número total de unidades vendidas.
-
+--ESTE
 SELECT 
   pr.nombre, 
   SUM(dp.cantidad) AS totalUnidadesVendidas
@@ -37,8 +37,9 @@ SELECT
 FROM detallePedido dp;
 
 
----4. Lista las ventas totales de los productos que hayan facturado más de 3000 dólares. Se mostrará el nombre, unidades vendidas, total facturado y total facturado con impuestos (13% IVA).
-
+---4. Lista las ventas totales de los productos que hayan facturado más de 3000 dólares. 
+--Se mostrará el nombre, unidades vendidas, total facturado y total facturado con impuestos (13% IVA).
+--ESTAS SI
 SELECT 
   pr.nombre, 
   SUM(dp.cantidad) AS unidadesVendidas, 
@@ -52,11 +53,13 @@ HAVING SUM(dp.cantidad * dp.precioUnidad) > 3000;
 
 --SUBCONSULTAS
 --5.	Devuelve el nombre del cliente con mayor límite de crédito.
+------ESTA SI
 SELECT nombreCliente
 FROM cliente
 WHERE limite_credito = (SELECT MAX(limite_credito) FROM cliente);
 
 --6.	Devuelve el nombre del producto del que se han vendido más unidades. (Tenga en cuenta que tendrá que calcular cuál es el número total de unidades que se han vendido de cada producto a partir de los datos de la tabla detalle_pedido)
+--PUEDE SER
 SELECT pr.nombre
 FROM producto pr
 JOIN detallePedido dp ON pr.IDProducto = dp.IDProducto
@@ -81,7 +84,7 @@ WHERE limite_credito = ALL (SELECT MAX(limite_credito) FROM cliente);
 
 --Subconsultas con IN y NOT IN
 --9.	Devuelve el nombre, apellido1 y cargo de los empleados que no representen a ningún cliente.
-
+--ESTA SI
 SELECT nombre, apellido1, puesto
 FROM empleado
 WHERE IDEmpleado NOT IN (SELECT IDcodigoEmpleadoVentas FROM cliente);
@@ -95,7 +98,7 @@ WHERE IDProducto NOT IN (SELECT DISTINCT IDProducto FROM detallePedido);
 
 
 --11.	Devuelve el nombre, apellidos, puesto y teléfono de la oficina de aquellos empleados que no sean representante de ventas de ningún cliente.
-
+--ESTA SI
 SELECT e.nombre, e.apellido1, e.puesto, e.extension, o.ciudad
 FROM empleado e
 JOIN oficina o ON e.IDOficina = o.IDOficina
@@ -128,7 +131,7 @@ WHERE NOT EXISTS (SELECT 1 FROM detallePedido dp WHERE pr.IDProducto = dp.IDProd
 --Consultas de LEFT JOIN
 --15.	Devuelve un listado con los nombres de los clientes y el total pagado por cada uno de ellos. Tenga en cuenta que pueden existir clientes que no han realizado ningún pago.
 
-
+--ESTA SI
 SELECT c.nombreCliente, COALESCE(SUM(p.total), 0) AS totalPagado
 FROM cliente c
 LEFT JOIN pago p ON c.IDCliente = p.IDCliente
@@ -144,7 +147,7 @@ WHERE e.IDEmpleado NOT IN (SELECT IDcodigoEmpleadoVentas FROM cliente);
 
 
 --17.	Devuelve un listado indicando todas las ciudades donde hay oficinas y el número de empleados que tiene.
-
+--ESTA SI
 SELECT o.ciudad, COUNT(e.IDEmpleado) AS numeroEmpleados
 FROM oficina o
 LEFT JOIN empleado e ON o.IDOficina = e.IDOficina

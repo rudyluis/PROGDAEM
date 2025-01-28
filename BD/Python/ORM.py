@@ -1,3 +1,5 @@
+##pip install psycopg2
+##pip instal sqlalchemy
 from sqlalchemy import Column, Integer, String, ForeignKey, Date, Numeric, Text, Sequence
 
 from sqlalchemy.orm import relationship, declarative_base

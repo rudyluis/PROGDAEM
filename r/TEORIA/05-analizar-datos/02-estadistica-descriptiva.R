@@ -1,120 +1,93 @@
-# C¡LCULOS ESTADÕSTICOS
+# C√ÅLCULOS ESTAD√çSTICOS
 
-# COMANDOS B¡SICOS
-datos <- c(74,56,72,40,82,76,72,87,81,50,65,62) # crear vector
+# COMANDOS B√ÅSICOS
+datos <- c(74,56,72,40,82,76,72,87,81,50,65,62) # Crear un vector con los datos
 
-# ordenar valores del vector
+# Ordenar los valores del vector de menor a mayor
 sort(datos) # 40 50 56 62 65 72 72 74 76 81 82 87
 
-# posiciones que tendrÌan los datos si estuvieran ordenados de menor a mayor
+# Mostrar las posiciones que tendr√≠an los datos si estuvieran ordenados de menor a mayor
 order(datos) # 4 10  2 12 11  3  7  1  6  9  5  8
 
-# sumatorio de todos los datos
+# Sumar todos los datos del vector
 sum(datos) # 817
 
-# acumular la suma
+# Acumulando la suma de los valores (cumsum)
 cumsum(datos) # 74 130 202 242 324 400 472 559 640 690 755 817
 
-# longitud del vector
+# Longitud del vector (n√∫mero de elementos)
 length(datos) # 12
 
-# menor y mayor
+# Obtener el valor m√≠nimo y m√°ximo del conjunto de datos
 min(datos) # 40
 max(datos) # 87
 
-
-
 # MEDIDAS DE TENDENCIA CENTRAL
-# media y mediana
+# Calcular la media (promedio) y la mediana de los datos
 mean(datos) # 68.08333
 median(datos) # 72
 
-# moda
-# forma 1
-table(datos)
-# imprime:
-# 40 50 56 62 65 72 74 76 81 82 87 
-#  1  1  1  1  1  2  1  1  1  1  1 
-# se ve que el valor 72 es la moda
-# forma 2
-freqAbs <- data.frame(table(datos))
-freqAbs # el valor con mayor valor en Freq es la moda
-modaPos <- which(freqAbs$Freq == max(freqAbs$Freq))
-modaPos # posiciÛn 6
-moda <- freqAbs$datos[6] # 72
-# forma 3
-install.packages("modeest")
+# Moda (frecuencia de los valores m√°s comunes)
+# Forma 1: Usar la funci√≥n table() para contar las ocurrencias
+table(datos) # Muestra la frecuencia de cada valor
+
+# Forma 2: Usar data.frame para encontrar el valor m√°s frecuente
+freqAbs <- data.frame(table(datos)) # Convertir a data frame
+freqAbs # Ver las frecuencias
+modaPos <- which(freqAbs$Freq == max(freqAbs$Freq)) # Encontrar la posici√≥n de la moda
+modaPos # Ver la posici√≥n de la moda
+moda <- freqAbs$datos[6] # Extraer el valor de la moda
+moda # 72
+
+# Forma 3: Usar la librer√≠a modeest para calcular la moda
+install.packages("modeest") # Instalar el paquete
+library(modeest) # Cargar el paquete
 mfv(datos) # 72
 
+# MEDIDAS DE POSICI√ìN
+# Cuartiles: Dividir los datos en 4 partes iguales
+quantile(datos) # 0% 25% 50% (mediana) 75% 100%
 
+# Deciles: Dividir los datos en 10 partes iguales (percentiles)
+quantile(datos, prob = seq(0, 1, length = 11)) # Muestra los 10 deciles
 
-# MEDIDAS DE POSICI”N
-# cuartiles -> dividir datos en 4 partes iguales
-quantile(datos) # obtenemos cuartiles Q1, Q2 y Q3 (percentiles 25%, 50% y 75%)
-# imprime:
-#    0%   25%   50%   75%  100% 
-# 40.00 60.50 72.00 77.25 87.00 
+# Percentiles: Dividir los datos en 100 partes iguales
+quantile(datos, prob = seq(0, 1, length = 101)) # Muestra los 100 percentiles
 
-# deciles -> dividir datos en 10 partes iguales (en %)
-quantile(datos, prob = seq(0, 1, length = 11))
-# imprime:
-#   0%  10%  20%  30%  40%  50%  60%  70%  80%  90% 100% 
-# 40.0 50.6 57.2 62.9 67.8 72.0 73.2 75.4 80.0 81.9 87.0
+# Para calcular un percentil espec√≠fico (ejemplo para el 20%)
+quantile(datos, prob = 0.2) # Decil 2 (20%) -> 57.2
 
-# percentiles -> dividir datos en 100 partes iguales (en %)
-quantile(datos, prob = seq(0, 1, length = 101))
+# Para calcular otro percentil espec√≠fico (ejemplo para el 65%)
+quantile(datos, prob = 0.65) # Percentil 65 -> 74.3
 
-# para calcular deciles o percentiles concretos
-quantile(datos, prob = 0.2) # decil 2
-# imprime:
-#  20%
-# 57.2
-quantile(datos, prob = 0.65) # percentil 65
-# imprime:
-#  65%
-# 74.3
-
-
-
-# MEDIDAS DE DISPERSI”N
-# crear rangos
-# forma 1
-rangoDatos <- max(datos) - min(datos)
+# MEDIDAS DE DISPERSI√ìN
+# Rango de los datos (m√°ximo - m√≠nimo)
+rangoDatos <- max(datos) - min(datos) # Calcular el rango
 rangoDatos # 47
-# forma 2
-range(datos) # da el mÌnimo y m·ximo -> 40 87
-rangoDatos2 <- range(datos) # lo guardamos en una variable
-print(rangoDatos2[2] - rangoDatos2[1]) # 47
 
-# cuasivarianza
+# Alternativa: Usar la funci√≥n range() para obtener el valor m√≠nimo y m√°ximo
+range(datos) # Da el m√≠nimo y el m√°ximo
+rangoDatos2 <- range(datos) # Guardar los valores en una variable
+print(rangoDatos2[2] - rangoDatos2[1]) # Mostrar el rango
+
+# Calcular la varianza (cuasivarianza por defecto) de los datos
 var(datos) # 195.9015
 
-# cuasidesviaciÛn tÌpica
+# Calcular la desviaci√≥n t√≠pica (cuasidesviaci√≥n por defecto) de los datos
 sd(datos) # 13.99648
 
+# ASIMETR√çA Y CURTOSIS
+# Instalar y cargar el paquete 'e1071' para calcular la asimetr√≠a y curtosis
+install.packages("e1071") # Instalar el paquete
+library(e1071) # Cargar la librer√≠a
 
+# Calcular la asimetr√≠a de los datos
+# Si es >0, la distribuci√≥n es asim√©trica a la derecha; si es <0, a la izquierda.
+skewness(datos) # -0.5360495 -> Asimetr√≠a negativa (a la izquierda)
 
-# ASIMETRÕA Y CURTOSIS
-# instalar el paquete e1071 usando el comando (abajo) o la ventana inferior derecha
-# comando: install.packages(e1071)
-
-# activar la librerÌa
-library(e1071)
-
-# ASIMETRÕA
-# >0 : a la derecha o positiva
-# <0 : a la izquierda o negativa
-# =0 : simÈtrica o normal
-datos <- c(74,56,72,40,82,76,72,87,81,50,65,62) # creamos un vector de datos
-skewness(datos) # -0.5360495 -> negativa
-
-# CURTOSIS
-# >0 : leptoc˙rtica
-# <0 : platic˙rtica
-# =0 : normal
-kurtosis(datos) # -0.935555 -> platic˙rtica
-
-
+# Calcular la curtosis de los datos
+# Si es >0, la distribuci√≥n es leptoc√∫rtica; si es <0, platic√∫rtica.
+kurtosis(datos) # -0.935555 -> Curtosis platic√∫rtica
 
 # EJEMPLOS SENCILLOS
 
@@ -122,85 +95,62 @@ kurtosis(datos) # -0.935555 -> platic˙rtica
 #   - media
 #   - mediana
 #   - cuasivarianza y varianza
-#   - cuasidesviaciÛn tÌpica y desviaciÛn tÌpica
+#   - cuasidesviaci√≥n t√≠pica y desviaci√≥n t√≠pica
 #   - cuartiles
 
-# introducciÛn de los datos
+# Definir el vector de datos
 datos1 <- c(1,1,1,2,3,3,1,2,2,1,3,1,1)
-n1 <- length(datos)
+n1 <- length(datos1) # N√∫mero de elementos en el conjunto de datos
 
-# obtener: mÌnimo, Q1, mediana (Q2), media, Q3 y m·ximo
-summary(datos1)
-# imprime:
-#  Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 1.000   1.000   1.000   1.692   2.000   3.000
-mean(datos1) # 1.692308 -> vemos que da lo mismo que en summary
-median(datos1) # 1 -> vemos que da lo mismo que en summary
+# Obtener resumen b√°sico: m?nimo, Q1, mediana (Q2), media, Q3 y m√°ximo
+summary(datos1) # Muestra el resumen estad√≠stico
+mean(datos1) # Media
+median(datos1) # Mediana
 
-# cuasivarianza = varianza con correcciÛn de Bessel *n/(n-1)
+# Calcular la cuasivarianza (con correcci√≥n de Bessel)
 cuasivarianza1 <- var(datos1)
 cuasivarianza1 # 0.7307692
 
-#varianza = cuasivarianza * (n-1)/n
+# Calcular la varianza ajustada (sin correcci√≥n de Bessel)
 varianza1 <- cuasivarianza1 * (n1 - 1) / n1
 varianza1 # 0.6745562
 
-# cuasidesviaciÛn tÌpica
+# Calcular la cuasidesviaci√≥n t√≠pica (con correcci√≥n de Bessel)
 cuasidesviacion1 <- sd(datos1)
 cuasidesviacion1 # 0.8548504
 
-# desviaciÛn tÌpica
+# Calcular la desviaci√≥n t√≠pica ajustada
 desviacion1 <- sqrt(varianza1)
 desviacion1 # 0.8213137
 
-
-
-# ENUNCIADO 2: dado el conjunto de datos2, calcular:
+# ENUNCIADO 2: Dado el conjunto de datos2, calcular:
 #   - media
 #   - mediana
 #   - Q1 y Q3
-#   - mÌnimo y m·ximo sin quitar valores atÌpicos
-#   - mÌnimo y m·ximo quitando valores atÌpicos
+#   - m√≠nimo y m√°ximo sin quitar valores at√≠picos
+#   - m√≠nimo y m√°ximo quitando valores at√≠picos
 
-# introducciÛn de los datos
+# Definir el conjunto de datos
 datos2 <- c(115,232,181,161,155,137,165,171,139,130,406)
 n2 <- length(datos2)
 
-# media, mediana, Q1, Q3, min y max (sin quitar atÌpicos)
-summary(datos2)
-# imprime:
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-#   115.0   138.0   161.0   181.1   176.0   406.0
+# Calcular resumen sin quitar valores at√≠picos
+summary(datos2) # Muestra el resumen estad√≠stico
 
-# detectar valores atÌpicos -> boxplot.stats()
-boxplot.stats(datos2)
-# boxplot es un tipo de diagrama, se explicar· en el tema 5
+# Detectar valores at√≠picos utilizando boxplot.stats()
+boxplot.stats(datos2) # Detecta valores at√≠picos
 
-# este diagrama nos ofrece mucha informaciÛn acerca del posicionamiento de los
-# datos introducidos.
+# Identificar el valor at√≠pico (406)
+# Extraer el valor at√≠pico usando 'boxplot.stats()'
+# Los valores at√≠picos est√°n en el componente '$out'
+# En este caso, el valor at√≠pico es el "406"
 
-# boxplot.stats() muestra los datos de forma numÈrica. Imprime lo siguiente:
-# $stats -> min(o valor inferior del bigote) Q1 Q2(mediana) Q3 max(o valor superior del bigote)
-# [1] 115 138 161 176 232
-#
-# $n -> n˙mero de observaciones de la muestra
-# [1] 11
-#
-# $conf -> extremos inferior y superior del intervalo de confianza
-# [1] 142.8973 179.1027
-#
-# $out -> VALORES ATÕPICOS = lo que estamos buscando ahora
-# [1] 406
+# Obtener la posici√≥n del valor at√≠pico en el conjunto de datos
+atypicalPos <- which(datos2 == 406) 
 
-# como hemos visto, el valor atÌpico en este caso es el "406"
-# obtenemos la posiciÛn del elemento con valor 406:
-atypicalPos <- which(datos2 == 406)
+# Eliminar el valor at√≠pico del conjunto de datos
+datos2sin <- datos2[-11] # Eliminar el valor en la posici√≥n 11 (406)
 
-# borramos el valor del vector de datos
-datos2sin <- datos2[-11]
+# Calcular el resumen sin los valores at√≠picos
+summary(datos2sin) # Muestra el resumen sin valores at√≠picos
 
-# obtenemos min y max sin tener en cuenta valores atÌpicos
-summary(datos2sin)
-# imprime:
-#    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-#   115.0   137.5   158.0   158.6   169.5   232.0 

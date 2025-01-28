@@ -1,91 +1,84 @@
 # VARIABLE ALEATORIA DISCRETA
 
 # DISTRIBUCIONES
-# Binomial            ->    binom
-# HipergeomÈtrica     ->    hyper
-# Poisson             ->    pois
-# Binomial negativa   ->    nbinom
-# 
-# 
-# 
+# Se mencionan las principales distribuciones de probabilidad discretas:
+# - Binomial            -> binom
+# - Hipergeom√©trica     -> hyper
+# - Poisson             -> pois
+# - Binomial negativa   -> nbinom
+
 # PREFIJOS
-# FunciÛn de probabilidad -> d: halla la probabilidad para un valor puntual de X
-# 
-# FunciÛn de distribuciÛn -> p: halla la probabilidad acumulada hasta un valor X
-# 
-# Generar valores aleatorios que siguen la distribuciÛn -> r
-# EJEMPLO: rbinom(10, 100, 200) generarÌa 10 valores aleatorios entre 100 y 200
-# 
-# FunciÛn cuantil -> q: halla la X (cuantil) para una probabilidad acumulada
+# Funci√≥n de probabilidad -> "d": Calcula la probabilidad para un valor puntual de X
+# Funci√≥n de distribuci√≥n -> "p": Calcula la probabilidad acumulada hasta un valor X
+# Generar valores aleatorios -> "r": Genera valores aleatorios que siguen la distribuci√≥n
+# Funci√≥n cuantil -> "q": Calcula la X (cuantil) para una probabilidad acumulada
 
+# EJEMPLO: Vamos a trabajar con una variable aleatoria que sigue una distribuci√≥n binomial.
+# Los par√°metros son n=10 (n√∫mero de ensayos) y p=0.3 (probabilidad de √©xito en cada ensayo).
 
-
-# EJEMPLO
-# Variable aleatoria que tiene una distribuciÛn binomial.
-# Par·metros n=10, p=0.3.
-# 
-# Calcula:
 # a) Probabilidad de que tome el valor 4 (x=4)
-# 
-# Tomar valor 4 = valor puntual -> prefijo "d"
-# DistribuciÛn binomial = binom
-# prefijo + distribuciÛn -> dbinom(x, n, p)
-# 
-# FORMA 1
+
+# Para obtener la probabilidad de que X sea igual a 4, utilizamos la funci√≥n de probabilidad "d"
+# Distribuci√≥n binomial -> prefijo "d" y la funci√≥n correspondiente es "binom"
+# dbinom(x, n, p) nos da la probabilidad de que X tome el valor 4
 x <- 4
 n <- 10
 p <- 0.3
-dbinom(x, n, p) # 0.2001209
-# FORMA 2
+dbinom(x, n, p) # Probabilidad de que X = 4 -> 0.2001209
+
+# Tambi√©n se puede escribir de forma compacta
 dbinom(4, 10, 0.3) # 0.2001209
 
-# b) Probabilidad ACUMULADA hasta llegar al valor de 4.
-# Probabilidad de que tome un valor igual o menor que 4. Esto es, P(X???4).
-# 
-# Tomar valor <= 4 -> probabilidad acumulada -> prefijo "p"
-# DistribuciÛn binomial (igual que antes) -> binom
-# prefijo + distribuciÛn -> pbinom(x, n, p)
-pbinom(x, n, p) # 0.8497317
+# b) Probabilidad acumulada hasta llegar al valor de 4.
+# Esto significa calcular P(X <= 4), la probabilidad de que X tome un valor igual o menor que 4.
 
+# Para calcular la probabilidad acumulada, utilizamos el prefijo "p" y la funci√≥n "binom" nuevamente
+# pbinom(x, n, p) nos da la probabilidad acumulada hasta el valor 4
+pbinom(x, n, p) # Probabilidad acumulada hasta X = 4 -> 0.8497317
 
 
 # CREAR SUCESOS ALEATORIOS
-# 
-# Para generar sucesos aleatorios -> sample(x, size, replace, prob)
-# 
-# x = vector con los valores posibles
-# size = se indica la cantidad de items a escoger
-# replace = TRUE o FALSE -> si se puede repetir un valor que haya salido
-# prob = (default: NULL) si existe alguna probabilidad que condicione la salida
 
-# EJEMPLO: Lanzamiento de un dado
-dado <- 1:6 # definiciÛn del dado
+# Para generar sucesos aleatorios que siguen una distribuci√≥n, usamos la funci√≥n "sample()".
+# Sample selecciona valores de un vector (x) de acuerdo con las condiciones que le indiquemos.
 
-sample(dado, 1) # lanzar el dado 1 vez -> 4
-sample(dado, 5, replace = TRUE) # lanzar el dado 5 veces -> 5 4 2 3 2
+# Ejemplo: Lanzamiento de un dado
 
-# si el dado estuviera "trucado" y hubiera m·s probabilidad de que salieran
-# unos lados que otros, primero, definimos las probabilidades de cada lado:
-probDado <- c(0.1, 0.1, 0.1, 0.1, 0.1, 0.5) # m·s probabilidad de sacar 6
+# Definimos el dado como un vector de n√∫meros del 1 al 6
+dado <- 1:6
 
-sample(dado, 5, replace = TRUE, prob = probDado) # 1 6 6 3 6
+# Simulamos un solo lanzamiento del dado. El valor obtenido es aleatorio.
+sample(dado, 1) # Lanzamiento de un dado -> puede salir 4, por ejemplo
+
+# Simulamos 5 lanzamientos del dado, permitiendo que se repitan los valores.
+sample(dado, 5, replace = TRUE) # Lanzar el dado 5 veces -> 5 4 2 3 2
+
+# Si el dado estuviera "trucado" y tuviera m√°s probabilidad de sacar ciertos valores,
+# podemos especificar las probabilidades de cada lado.
+
+# Definimos las probabilidades de cada cara del dado. La cara con el n√∫mero 6 tiene m√°s probabilidad.
+probDado <- c(0.1, 0.1, 0.1, 0.1, 0.1, 0.5) # M√°s probabilidad de sacar 6
+
+# Simulamos 5 lanzamientos del dado trucado. Los valores que salen siguen las probabilidades definidas.
+sample(dado, 5, replace = TRUE, prob = probDado) # Ejemplo: 1 6 6 3 6
 
 
+# REPRESENTACI√ìN DE LAS FUNCIONES DE PROBABILIDAD Y DISTRIBUCI√ìN
 
-# REPRESENTACI”N DE LAS FUNCIONES DE PROBABILIDAD Y DISTRIBUCI”N
-# 
-# Ejemplo: lanzar 5 dados y que salga 1 Û 2. Es decir, X: obtener 1 Û 2.
-# z = n˙mero de resultados posibles:
-#   - Que no salga ni 1 ni 2
-#   - Que salga un 1 o un 2
-#   - Que salga un 1 y un 2
-#   - Que salgan dos 1
-#   - Que salgan dos 2
+# Vamos a ilustrar la distribuci√≥n binomial para lanzar 5 dados, y queremos calcular la probabilidad
+# de obtener entre 0 y 5 veces el valor 1 o 2 (es decir, X: obtener 1 o 2).
+
+# Primero definimos el vector de resultados posibles para el n√∫mero de veces que salga 1 o 2 (de 0 a 5).
 z <- 0:5
 
-plot(z, dbinom(z, 5, 2/6), type = "h")
-# Es una distribuciÛn binomial.
-# Probabilidad de obtener 1 Û 2 = 1/6 + 1/6 = 2/6
-# type = "h" -> para representarlo como diagrama de barras
+# Generamos el gr√°fico de la funci√≥n de probabilidad para esta distribuci√≥n binomial.
+# Usamos dbinom para obtener las probabilidades y tipo "h" para dibujar barras (diagrama de barras).
+plot(z, dbinom(z, 5, 2/6), type = "h") 
+# Esto muestra la probabilidad de obtener 0, 1, 2, 3, 4, o 5 veces 1 o 2 en 5 lanzamientos.
 
+# Ahora vamos a mostrar la funci√≥n de distribuci√≥n acumulada (CDF).
+# Usamos pbinom para obtener las probabilidades acumuladas.
 plot(z, pbinom(z, 5, 2/6), type = "s")
+# El tipo "s" dibuja una l√≠nea escalonada para la funci√≥n acumulada, mostrando la probabilidad de
+# obtener hasta 0, 1, 2, 3, 4 o 5 veces el valor 1 o 2.
+

@@ -1,38 +1,35 @@
 # DIAGRAMA DE TALLOS Y HOJAS
 
-# es similar a un histograma, nos da las frecuencias de cada valor y decimal
+# Creamos un vector de datos, algunos con decimales
+datos <- c(1.1, 1, 1.2, 2, 3, 3, 1, 2, 2, 2.3, 1, 3, 1, 1)
 
-# creamos nuevos datos, algunos con decimales
-datos <- c(1.1,1,1.2,2,3,3,1,2,2,2.3,1,3,1,1)
+# Ver la longitud del vector de datos
+length(datos)  # El resultado ser√° 14, ya que hay 14 datos
 
-length(datos) # vemos que hay 14 datos
-
-# creamos el diagrama de tallos y hojas
+# Crear el diagrama de tallos y hojas
 stem(datos)
 
-# se imprime lo siguiente:
-# 
-# 1 | 0000012 -> que hay 5 datos con valor 1.0, uno con valor 1.1 y otro con 1.2
-# 2 | 0003 -> que hay tres datos que valen 2.0 y uno vale 2.3
-# 3 | 000 -> que hay tres datos con valor 3.0
-# 
-# si contamos la cantidad de n˙meros que hay situados a la derecha de las barras,
-# veremos que hay 14. Este tipo de diagrama muestra el n˙mero entero a la
-# izquierda y los decimales de dicho n˙mero a la derecha, repitiendo cada decimal
-# las veces que se repite en el vector de datos
+# El resultado impreso ser√°:
+# 1 | 0000012  -> Esto indica que hay 5 datos con valor 1.0, uno con 1.1 y otro con 1.2
+# 2 | 0003     -> Esto indica que hay 3 datos con valor 2.0 y uno con 2.3
+# 3 | 000     -> Esto indica que hay 3 datos con valor 3.0
 
+# En el diagrama:
+# - Los n√∫meros a la izquierda del '|' representan la parte entera del n√∫mero.
+# - Los n√∫meros a la derecha del '|' representan los decimales, con cada repetici√≥n indicando la frecuencia de un valor espec√≠fico.
+# En total, los n√∫meros a la derecha suman 14, lo que coincide con la longitud de los datos.
 
-
-# si creamos el siguiente vector y hacemos su diagrama de hojas
+# Ahora, creamos otro conjunto de datos con valores decimales
 datos2 <- c(2.11, 2.3, 1, 1.4, 3.78, 3.14)
+
+# Crear el diagrama de tallos y hojas para este nuevo conjunto de datos
 stem(datos2)
 
-# se imprime lo siguiente:
-#
-# 1 | 04
-# 2 | 13
-# 3 | 18
-# 
-# Se puede intuir que solo se imprime un decimal, y que cuando el n˙mero que se
-# desea representar tiene m·s de un decimal, Èste es redondeado, por lo que este
-# tipo de gr·fico no servirÌa para diferenciar n˙meros con decimales largos
+# El resultado ser√°:
+# 1 | 04    -> Esto indica que hay un dato con valor 1.0 y otro con 1.4
+# 2 | 13    -> Esto indica que hay un dato con valor 2.1 y otro con 2.3
+# 3 | 18    -> Esto indica que hay un dato con valor 3.1 y otro con 3.7
+
+# Observamos que el diagrama no muestra los valores decimales con m√°s de un decimal completo,
+# ya que los valores son redondeados y solo se imprime un decimal, lo que limita la precisi√≥n.
+

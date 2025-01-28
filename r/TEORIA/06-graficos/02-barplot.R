@@ -1,18 +1,22 @@
-# GR�FICOS DE BARRAS
+# GRÁFICOS DE BARRAS
 
-# crear un gr�fico de barras simple partiendo de una variable de datos
+# Crear un gráfico de barras simple partiendo de una variable de datos
+# En este caso, usamos la columna "hp" (horsepower) del dataset mtcars
 barplot(mtcars$hp)
 
-# podemos usar "names.arg" para establecer los nombres de las etiquetas para
-# las barras del gr�fico
+# Podemos usar "names.arg" para establecer los nombres de las etiquetas para
+# las barras del gráfico. Aquí estamos utilizando los nombres de las filas
+# de mtcars como etiquetas para cada barra.
 barplot(mtcars$hp, names.arg = rownames(mtcars))
-# rownames(mtcars) se usa para seleccionar los nombres de las filas
+# rownames(mtcars) obtiene los nombres de las filas de mtcars, que son los nombres de los modelos de autos
 
-# otro ejemplo
-data <- c(10,42,8,100)
-x <- c("A", "B", "C", "D")
-barplot(data, names.arg = x)
+# Otro ejemplo, usando un conjunto de datos personalizado:
+data <- c(10, 42, 8, 100)  # Datos para las barras
+x <- c("A", "B", "C", "D")  # Etiquetas para las barras
+barplot(data, names.arg = x)  # Crear gráfico de barras con las etiquetas personalizadas
 
-# para crear un gr�fico de barras horizontal -> par�metro: horiz = TRUE
-barplot(mtcars$hp, horiz = TRUE)
-barplot(data, names.arg = x, horiz = TRUE, col = "blue")
+# Para crear un gráfico de barras horizontal, usamos el parámetro: horiz = TRUE
+barplot(mtcars$hp, horiz = TRUE)  # Gráfico de barras horizontal usando la columna "hp"
+
+# Un ejemplo con colores y etiquetas personalizadas
+barplot(data, names.arg = x, horiz = TRUE, col = "blue")  # Barras horizontales de color azul

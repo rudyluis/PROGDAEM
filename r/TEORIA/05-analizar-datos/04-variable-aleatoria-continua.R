@@ -1,134 +1,82 @@
 # VARIABLE ALEATORIA CONTINUA
 
 # DISTRIBUCIONES
-# Uniforme        -> unif
-# Exponencial     -> exp
-# Normal          -> norm
-# 
-# 
-# 
+# Las distribuciones continuas comunes son:
+# - Uniforme        -> unif
+# - Exponencial     -> exp
+# - Normal          -> norm
+
 # PREFIJOS
-# Función de probabilidad -> d: halla la probabilidad para un valor puntual de X
-# 
-# Función de distribución -> p: halla la probabilidad acumulada hasta un valor X
-# 
-# Generar valores aleatorios que siguen la distribución -> r
-# 
-# Función cuantil -> q: halla la X (cuantil) para una probabilidad acumulada
+# FunciÃ³n de probabilidad -> "d": Calcula la probabilidad para un valor puntual de X
+# FunciÃ³n de distribuciÃ³n -> "p": Calcula la probabilidad acumulada hasta un valor X
+# Generar valores aleatorios -> "r": Genera valores aleatorios que siguen la distribuciÃ³n
+# FunciÃ³n cuantil -> "q": Calcula la X (cuantil) para una probabilidad acumulada
 
+# DISTRIBUCIÃ“N UNIFORME
+# La distribuciÃ³n uniforme tiene la misma probabilidad de que un valor X estÃ© en cualquier punto del intervalo [min, max].
+# FunciÃ³n de probabilidad: dunif(x, min=..., max=...) - devuelve la densidad de probabilidad en X.
+# FunciÃ³n de distribuciÃ³n acumulada: punif(x, min=..., max=..., lower.tail=TRUE) - devuelve la probabilidad acumulada hasta X.
+# Generar valores aleatorios: runif(n, min=..., max=...) - genera n valores aleatorios de la distribuciÃ³n uniforme.
+# FunciÃ³n cuantil: qunif(p, min=..., max=..., lower.tail=TRUE) - devuelve el cuantil X correspondiente a la probabilidad p.
 
+# EJEMPLO DE DISTRIBUCIÃ“N UNIFORME
+# ParÃ¡metros: min=10, max=40
+# a) Probabilidad de que X sea menor que 30
+punif(30, 10, 40) # 0.6666667: P(X < 30)
 
-# DISTRIBUCIÓN UNIFORME
-# Función de probabilidad: dunif(x, min=..., max=...)
-#   daría la probabilidad para ese valor de X
-# 
-# Función de distribución: punif(x, min=..., max=..., lower.tail=TRUE)
-#   *lower.tail=TRUE -> probabilidades acumuladas desde la izquierda (X <= x)
-#   *lower.tail=FALSE -> probabilidades acumuladas desde la derecha (X > x)
-#   
-# Generar valores aleatorios: runif(n, min=..., max=...)
-#   calcula una serie de números aleatorios de distribución uniforme
-#   *n = número de observaciones
-# 
-# Función cuantil: qunif(p, min=..., max=..., lower.tail=TRUE)
-#   ponemos la probabilidad acumulada (p) y devuelve el cuantil (X)
-#   *p = probabilidad acumulada
-# 
-# EN NINGUNO DE LOS CASOS es necesario escribir "min=" ó "max=", puede ponerse
-# únicamente el valor de ambos (ejemplo: "dunif(3, 1, 7)")
-# 
-# 
-# 
-# EJEMPLO
-# Variable aleatoria sigue distribución uniforme.
-# Parámetros: mean=10, sd=40.
-# 
-# Calcula:
-# a) P(X<30)
-punif(30, 10, 40) # 0.6666667
+# b) Probabilidad de que X sea mayor que 20
+1 - punif(20, 10, 40) # 0.6666667: P(X > 20), equivalente a punif(20, 10, 40, lower.tail = FALSE)
+punif(20, 10, 40, lower.tail = F) # 0.6666667: misma probabilidad
 
-# b) P(X>20)
-1-punif(20, 10, 40) # 0.6666667
-punif(20, 10, 40, lower.tail = F) # 0.6666667 -> son lo mismo
+# c) Valor de la funciÃ³n de probabilidad en X=30
+dunif(30, 10, 40) # 0.3333333: densidad de probabilidad en X=30
 
-# c) Valor que toma la función de probabilidad en x=30
-dunif(30, 10, 40) # 0.3333333
+# DISTRIBUCIÃ“N EXPONENCIAL
+# La distribuciÃ³n exponencial describe el tiempo entre eventos en un proceso de Poisson.
+# FunciÃ³n de probabilidad: dexp(x, 1/B) - devuelve la densidad de probabilidad en X, donde B es la tasa media de eventos.
+# FunciÃ³n de distribuciÃ³n acumulada: pexp(q, 1/B, lower.tail=TRUE) - devuelve la probabilidad acumulada hasta el cuantil q.
+# Generar valores aleatorios: qexp(p, 1/B) - genera valores aleatorios de la distribuciÃ³n exponencial.
+# FunciÃ³n cuantil: qexp(p, 1/B, lower.tail=TRUE) - devuelve el cuantil X correspondiente a la probabilidad p.
 
+# EJEMPLO DE DISTRIBUCIÃ“N EXPONENCIAL
+# ParÃ¡metro: B=10 (tasa de eventos)
+# a) Probabilidad de que X sea menor o igual a 8
+pexp(8, 1/10) # 0.550671: P(X <= 8)
 
+# b) Probabilidad de que X estÃ© entre 2 y 8
+pexp(8, 1/10) - pexp(2, 1/10) # 0.3694018: P(2 <= X <= 8)
 
-# DISTRIBUCIÓN EXPONENCIAL
-# Función de probabilidad con tasa 1/B: dexp(x, 1/B)
-# 
-# Función de distribución con tasa 1/B: pexp(q, 1/B, lower.tail=TRUE)
-#   *q = vector de cuantiles
-# 
-# Generar valores aleatorios: qexp(p, 1/B)
-#   *p = vector de probabilidades
-# 
-# Función cuantil: qexp(p, 1/B, lower.tail=TRUE)
-# 
-# 
-# 
-# EJEMPLO
-# Variable aleatoria que sigue distribución exponencial.
-# Parámetros: B=10
-# 
-# Calcula:
-# a) P(X<=8)
-pexp(8, 1/10) # 0.550671
+# DISTRIBUCIÃ“N NORMAL
+# La distribuciÃ³n normal describe muchas variables en la naturaleza que siguen un patrÃ³n simÃ©trico alrededor de una media.
+# FunciÃ³n de probabilidad: dnorm(x, mean, sd) - devuelve la densidad de probabilidad en X para una distribuciÃ³n normal.
+# FunciÃ³n de distribuciÃ³n acumulada: pnorm(q, mean, sd, lower.tail=TRUE) - devuelve la probabilidad acumulada hasta el cuantil q.
+# Generar valores aleatorios: rnorm(n, mean, sd) - genera n valores aleatorios de la distribuciÃ³n normal.
+# FunciÃ³n cuantil: qnorm(p, mean, sd, lower.tail=TRUE) - devuelve el cuantil X correspondiente a la probabilidad p.
 
-# b) P(2<=X<=8)
-pexp(8, 1/10) - pexp(2, 1/10) # 0.3694018
+# EJEMPLO DE DISTRIBUCIÃ“N NORMAL
+# ParÃ¡metros: media = 65.6, desviaciÃ³n estÃ¡ndar = 14.74
+# a) Probabilidad de que X sea menor que 60
+pnorm(60, 65.6, 14.74) # 0.3520029: P(X < 60)
 
+# b) Â¿QuÃ© valor de X deja el 12.1% a su derecha?
+qnorm(0.121, 65.6, 14.74, lower.tail = FALSE) # 82.84584: X que deja el 12.1% a la derecha
 
+# c) Probabilidad de que X sea mayor que 45
+pnorm(45, 65.6, 14.74, lower.tail = FALSE) # 0.918877: P(X > 45)
+1 - pnorm(45, 65.6, 14.74) # 0.918877: misma probabilidad
 
-# DISTRIBUCIÓN NORMAL
-# Función de probabilidad: dnorm(x, mean, sd)
-# 
-# Función de distribución: pnorm(q, mean, sd, lower.tail=TRUE)
-#   *q = vector de cuantiles
-# 
-# Generar valores aleatorios: rnorm(n, mean, sd)
-#   *n = número de observaciones. Si length(n) > 1, se toma length como n
-# 
-# Función cuantil: qnorm(p, mean, sd, lower.tail=TRUE)
-#   *p = vector de probabilidades
-#   
-# *lower.tail = TRUE -> P(X<=x)
-# *lower.tail = FALSE -> P(X>x) -> sería lo mismo que hacer: 1-pnorm(q,mean,sd)
-# 
-# 
-# 
-# EJEMPLO
-# Variable aleatoria sigue distribución normal.
-# Parámetros: media = 65.6 y s = 14.74
-# 
-# Calcula:
-# a) P(X<60)
-pnorm(60, 65.6, 14.74) # 0.3520029
+# GRAFICAR FUNCIONES DE PROBABILIDAD (DENSIDAD) Y DISTRIBUCIÃ“N
+# Para graficar funciones de probabilidad y distribuciÃ³n se utiliza la funciÃ³n curve().
+# Ejemplo de grÃ¡ficos para las distribuciones uniforme, exponencial y normal:
 
-# b) ¿Qué valor de x deja el 12.1% a su derecha?
-qnorm(0.121, 65.6, 14.74, lower.tail = FALSE) # 82.84584
+# GrÃ¡fico de la distribuciÃ³n uniforme
+curve(dunif(x, 100, 150), from = 0, to = 200) # Densidad de probabilidad
+curve(punif(x, 100, 150), from = 0, to = 200) # DistribuciÃ³n acumulada
 
-# c) P(X>45)
-pnorm(45, 65.6, 14.74, lower.tail = FALSE) # 0.918877
-1 - pnorm(45, 65.6, 14.74) # 0.918877 -> son lo mismo
+# GrÃ¡fico de la distribuciÃ³n exponencial
+curve(dexp(x, 1/10), from = 0, to = 10) # Densidad de probabilidad
+curve(pexp(x, 1/10), from = 0, to = 10) # DistribuciÃ³n acumulada
 
-
-
-# GRAFICAR FUNCIONES DE PROBABILIDAD (DENSIDAD) Y DISTRIBUCIÓN
-# usar -> curve()
-# 
-# dentro de curve() se usará la distribución o probabilidad que se desee
-# graficar haciendo uso de los prefijos
-
-# Gráficos de distribución uniforme:
-curve(dunif(x, 100, 150), from = 0, to = 200) # de probabilidad (densidad)
-curve(punif(x, 100, 150), from = 0, to = 200) # de distribución
-
-# Gráficos de distribución exponencial:
-curve(dexp(x, 1/10), from = 0, to = 10) # de probabilidad (densidad)
-curve(pexp(x, 1/10), from = 0, to = 10) # de distribución
-
-curve(dnorm(x, 65.6, 14.74), from = 0, to = 150) # de probabilidad (densidad)
-curve(pnorm(x, 65.6, 14.74), from = 0, to = 150) # de distribución
+# GrÃ¡fico de la distribuciÃ³n normal
+curve(dnorm(x, 65.6, 14.74), from = 0, to = 150) # Densidad de probabilidad
+curve(pnorm(x, 65.6, 14.74), from = 0, to = 150) # DistribuciÃ³n acumulada

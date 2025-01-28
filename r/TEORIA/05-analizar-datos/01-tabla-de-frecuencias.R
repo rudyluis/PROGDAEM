@@ -1,75 +1,136 @@
-# TABLA DE FRECUENCIAS
+# ======================================
+# TABLA DE FRECUENCIAS - PASO A PASO
+# ======================================
 
-# Se va a explicar c�mo crear una tabla de frecuencias paso a paso a la vez que
-# se realiza un ejemplo b�sico:
-# 
-# ENUNCIADO: Agrupar los datos en los siguientes 5 intervalos:
-#   [20,40), [40,60), [60,80), [80,100), [100,120)
-# y construir una tabla de frecuencias en las que figuren las columnas:
-#   - Clases
-#   - Frecuencia absoluta
-#   - Frecuencia relativa
-#   - Frecuencia absoluta acumulada
-#   - Frecuencia relativa acumulada
+# En este ejemplo, se construirán los intervalos y una tabla de frecuencias que incluye:
+# - Clases (intervalos)
+# - Frecuencia absoluta
+# - Frecuencia relativa
+# - Frecuencia absoluta acumulada
+# - Frecuencia relativa acumulada
 
-# introducci�n de los datos (se podr�an importar, pero en este caso se escriben)
-datos<-c(50,68,84,86,64,67,78,87,110,85,52,65,52,93,72,70,105,85,30,42,74,30,70,65,49)
-sort(datos) # ordenar los datos para tener mejor idea de su distribuci�n
-numDatos <- length(datos) # guardamos la cantidad de datos recogidos (25L)
+# ======================================
+# PASO 1: INGRESO DE DATOS
+# ======================================
 
-num_intervalos <- sqrt(numDatos) # 5 -> si no da un entero, se redondea al inferior
-amplitud_intervalo <- (max(datos)-min(datos)) / num_intervalos
-# la amplitud da 16 -> lo redondeamos a 20 porque lo pide el enunciado
+# Los datos se introducen manualmente, pero podrían importarse desde un archivo.
+datos <- c(50, 68, 84, 86, 64, 67, 78, 87, 110, 85, 52, 65, 52, 93, 72, 70, 105, 85, 30, 42, 74, 30, 70, 65, 49)
 
-# hacemos 5 intervalos de una amplitud de 20.
-# hacemos los l�mites de tal forma que se engloben todos los datos
-sort(datos)
-# el valor m�s peque�o es 30 y el m�s alto es 110
-#   l�mite posible -> 20 40 80 100 120 (porque engloba a todos los valores)
-limites <- c(20, 40, 80, 100, 120)
+# Ordenamos los datos para tener una idea de su distribución.
+# Esto ayuda a identificar el rango y los posibles límites de los intervalos.
+print(sort(datos))
 
-# creamos intervalos de los datos teniendo en cuenta los l�mites y que queremos
-# que queden abiertos por la derecha, es decir: [dato1, dato2)
+# Guardamos la cantidad total de datos en una variable.
+numDatos <- length(datos) # Total de datos = 25
+print(numDatos)
+
+# ======================================
+# PASO 2: DETERMINAR NÚMERO Y TAMAÑO DE INTERVALOS
+# ======================================
+
+# Calculamos el número de intervalos con la fórmula de Sturges (raíz cuadrada del número de datos).
+num_intervalos <- sqrt(numDatos)
+print(num_intervalos) # Resultado = 5 (se redondea al entero inferior).
+
+# Calculamos la amplitud teórica del intervalo.
+amplitud_intervalo <- (max(datos) - min(datos)) / num_intervalos
+print(amplitud_intervalo) # Resultado = 16
+
+# Redondeamos la amplitud a 20 (según las indicaciones del enunciado).
+# Esto facilita la agrupación de los datos en intervalos uniformes.
+
+# ======================================
+# PASO 3: DEFINIR LOS LÍMITES DE LOS INTERVALOS
+# ======================================
+
+# El valor mínimo es 30 y el máximo es 110.
+# Definimos los límites manualmente asegurándonos de incluir todos los valores.
+limites <- c(20, 40, 80, 100, 120) 
+print(limites)
+
+# Usamos `cut()` para clasificar los datos en intervalos.
+# Argumentos importantes:
+# - `datos`: El vector de datos.
+# - `limites`: Los límites definidos anteriormente.
+# - `right = FALSE`: Define que los intervalos serán abiertos por la derecha ([dato1, dato2)).
 intervalos <- cut(datos, limites, right = FALSE)
-intervalos
 
-# hacemos la tabla de frecuencia
+# Verificamos a qué intervalo pertenece cada dato.
+print(intervalos)
+
+# ======================================
+# PASO 4: CREAR LA TABLA DE FRECUENCIAS
+# ======================================
+
+# Usamos la función `table()` para contar la cantidad de datos en cada intervalo.
 tabla <- table(intervalos)
-tabla
-# imprime:
-# 
-# intervalos
-# [20,40)   [40,80)  [80,100) [100,120) 
-#       2        15         6         2 
+print(tabla)
 
-tablaVertical <- as.data.frame(tabla) # guardamos la tabla como un data frame
-tablaVertical
-# imprime:
-# 
-#   intervalos Freq
-# 1    [20,40)    2
-# 2    [40,80)   15
-# 3   [80,100)    6
-# 4  [100,120)    2
+# Convertimos la tabla a un formato de data frame para facilitar su manejo.
+tablaVertical <- as.data.frame(tabla)
+print(tablaVertical)
 
-# creamos variables con los datos de las columnas
-Clases <- tablaVertical$intervalos
-FrecAbsoluta <- tablaVertical$Freq
+# ======================================
+# PASO 5: CÁLCULO DE FRECUENCIAS
+# ======================================
 
-# creamos los valores que nos faltan:
-FrecRelativa <- FrecAbsoluta / 25
+# Extraemos las columnas de la tabla generada.
+Clases <- tablaVertical$intervalos # Intervalos o clases.
+FrecAbsoluta <- tablaVertical$Freq # Frecuencia absoluta de cada intervalo.
+
+# Calculamos la frecuencia relativa dividiendo la frecuencia absoluta entre el total de datos.
+FrecRelativa <- FrecAbsoluta / numDatos
+print(FrecRelativa)
+
+# Calculamos la frecuencia absoluta acumulada usando `cumsum()`.
 FrecAbsAcumulada <- cumsum(FrecAbsoluta)
+print(FrecAbsAcumulada)
+
+# Calculamos la frecuencia relativa acumulada también con `cumsum()`.
 FrecRelAcumulada <- cumsum(FrecRelativa)
+print(FrecRelAcumulada)
 
-# creamos la tabla de frecuencias
+# Creamos el data frame final con todas las columnas de la tabla de frecuencias.
 tablaFreq <- data.frame(Clases, FrecAbsoluta, FrecRelativa, FrecAbsAcumulada, FrecRelAcumulada)
-tablaFreq
+print(tablaFreq)
 
-# Exportar tabla de frecuencias en formato .txt y Excel
-setwd("C:/Users/larre/Documents/NAIA/programacion/repositorio-R/R-desde-cero/TEORIA/05-analizar-datos/")
-# exportar a .txt
-write.table(tablaFreq, file = "datos-exportados/01-tabla-de-frecuencias/tablaFreq1.txt", quote = FALSE, sep = "\t", dec = ".", row.names = FALSE, col.names = TRUE)
-# exportar a Excel
-library(readxl)
+# ======================================
+# PASO 6: EXPORTAR LA TABLA DE FRECUENCIAS
+# ======================================
+
+# Cambiamos el directorio de trabajo al lugar donde se guardarán los archivos exportados.
+# NOTA: Cambia esta ruta a la que corresponda en tu sistema.
+directorio_actual <- getwd()
+setwd(directorio_actual)
+
+# Exportar la tabla como archivo .txt usando `write.table()`.
+# Argumentos importantes:
+# - `file`: Ruta y nombre del archivo de salida.
+# - `quote`: FALSE para no incluir comillas alrededor de los datos.
+# - `sep`: Separador de columnas; "\t" indica tabulador.
+# - `dec`: Separador de decimales; "." en este caso.
+# - `row.names`: FALSE para no incluir números de fila.
+# - `col.names`: TRUE para incluir los nombres de las columnas.
+ruta_relativa <- file.path(getwd(), "/tablaFreq1.txt")
+write.table(tablaFreq, file = ruta_relativa, quote = FALSE, sep = "\t", dec = ".", row.names = FALSE, col.names = TRUE)
+
+# Exportar la tabla como archivo Excel usando el paquete `openxlsx`.
+# Si no está instalado, lo instalamos automáticamente.
+if (!requireNamespace("openxlsx", quietly = TRUE)) install.packages("openxlsx")
+
+# Cargamos la librería `openxlsx`.
 library(openxlsx)
-write.xlsx(tablaFreq, file = "datos-exportados/01-tabla-de-frecuencias/tablaFreq1.xlsx")
+
+# Usamos `write.xlsx()` para exportar el data frame a Excel.
+ruta_relativa <- file.path(getwd(), "/tablaFreq1.xlsx")
+write.xlsx(tablaFreq, file = ruta_relativa)
+
+# ======================================
+# CONCLUSIONES
+# ======================================
+
+# Este código muestra cómo:
+# 1. Definir intervalos y clasificar datos en ellos usando `cut()`.
+# 2. Crear una tabla de frecuencias con frecuencias absolutas, relativas y acumuladas.
+# 3. Exportar tablas de frecuencias en formatos .txt y Excel.
+

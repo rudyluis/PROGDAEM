@@ -1,5 +1,7 @@
 """
-El MRO (Method Resolution Order) es el orden de resolución de métodos que Python utiliza para determinar qué método o atributo debe ser llamado cuando se hace referencia a un método o atributo en una clase que tiene herencia (incluida la herencia múltiple).
+El MRO (Method Resolution Order) es el orden de resolución de métodos que Python utiliza 
+ara determinar qué método o atributo debe ser llamado cuando se hace referencia a un método o
+ atributo en una clase que tiene herencia (incluida la herencia múltiple).
 
 Conceptos principales:
 Definición:

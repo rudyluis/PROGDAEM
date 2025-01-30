@@ -1,55 +1,58 @@
-# Definición de la clase Gato
-class Gato():
-    # Método para devolver el sonido que hace un gato
+# Definición de la clase Coche
+class Coche():
+    # Método para devolver el sonido que hace un coche
     def sonido(self):
-        return "Miau"
+        return "Vroom"
 
-# Definición de la clase Perro
-class Perro():
-    # Método para devolver el sonido que hace un perro
+# Definición de la clase Moto
+class Moto():
+    # Método para devolver el sonido que hace una moto
     def sonido(self):
-        return "Guau"
+        return "Brrrm"
 
-# Función que acepta cualquier tipo de animal y llama a su método sonido
-def hacer_sonido(animal):
-    print(animal.sonido())  # Llama al método sonido del objeto animal (gato o perro)
+# Función que acepta cualquier tipo de vehículo y llama a su método sonido
+def hacer_sonido(vehiculo):
+    print(vehiculo.sonido())  # Llama al método sonido del objeto vehiculo (coche o moto)
 
-# Crear una instancia de Gato
-gato = Gato()
+# Crear una instancia de Coche
+coche = Coche()
 
-# Crear una instancia de Perro
-perro = Perro()
+# Crear una instancia de Moto
+moto = Moto()
 
-# Llamada a la función hacer_sonido, pasando el objeto perro
-hacer_sonido(perro)  # Imprime "Guau" porque perro.sonido() devuelve "Guau"
+# Llamada a la función hacer_sonido, pasando el objeto moto
+hacer_sonido(moto)  # Imprime "Brrrm" porque moto.sonido() devuelve "Brrrm"
 
-# Llamada al método sonido directamente desde el objeto perro
-print(perro.sonido())  # También imprime "Guau" porque el método sonido en Perro devuelve "Guau"
+# Llamada al método sonido directamente desde el objeto coche
+print(coche.sonido())  # Imprime "Vroom" porque el método sonido en Coche devuelve "Vroom"
+
 
 
 """
-Definición de las clases Gato y Perro:
+Definición de las Clases Coche y Moto
+En este código, se definen dos clases: Coche y Moto.
 
-Ambas clases tienen un método llamado sonido(). El método sonido de la clase Gato devuelve el string "Miau", mientras que el de la clase Perro devuelve "Guau".
-Función hacer_sonido():
+Ambas clases tienen un método llamado sonido(), pero con implementaciones distintas:
+Coche.sonido() devuelve "Vroom", representando el sonido de un coche.
+Moto.sonido() devuelve "Brrrm", representando el sonido de una moto.
+Función hacer_sonido()
+Esta función recibe un objeto vehiculo, que puede ser cualquier instancia de una clase que tenga el método sonido().
 
-La función hacer_sonido() recibe un parámetro animal que puede ser cualquier instancia de una clase que tenga el método sonido().
-Dentro de la función, se llama a animal.sonido(), lo que invoca el método sonido correspondiente a la clase del objeto que se pasa (ya sea un Gato o un Perro).
-Aquí es donde entra el polimorfismo: la función hacer_sonido puede aceptar instancias de diferentes clases (como Gato o Perro) y, según la clase del objeto, se ejecutará el método adecuado.
-Creación de instancias:
+Dentro de la función, se llama a vehiculo.sonido(), lo que ejecuta el método correspondiente según la clase del objeto pasado como argumento.
+Aquí es donde entra el polimorfismo: la función hacer_sonido() puede trabajar con diferentes clases (como Coche o Moto), siempre que estas implementen un método sonido().
+Creación de Instancias y Ejecución
+Se crean dos objetos: coche de la clase Coche y moto de la clase Moto.
+Cuando llamamos hacer_sonido(moto), el método sonido() de la clase Moto se ejecuta y devuelve "Brrrm".
+De manera similar, si ejecutamos print(coche.sonido()), imprimirá "Vroom".
+Polimorfismo en Acción
+El polimorfismo permite que una misma función (hacer_sonido()) pueda operar con objetos de distintas clases, siempre que implementen el método sonido().
 
-Se crean dos objetos: gato de la clase Gato y perro de la clase Perro.
-Llamada a hacer_sonido(perro):
+Aunque coche y moto pertenecen a clases diferentes, ambas clases tienen un método sonido(), por lo que la función puede trabajar con ambos sin necesidad de verificar su tipo.
+Python resuelve dinámicamente cuál método ejecutar según la clase del objeto recibido.
+Resumen
+✔ Polimorfismo: Permite que un mismo método (sonido()) tenga diferentes implementaciones según la clase del objeto.
+✔ Flexibilidad: La función hacer_sonido() puede aceptar distintos tipos de objetos sin modificar su código.
+✔ Reutilización: Se pueden agregar nuevas clases con un método sonido() sin necesidad de modificar hacer_sonido(), lo que hace el código más escalable.
 
-Cuando se llama a hacer_sonido(perro), el objeto perro es pasado como argumento a la función.
-La función invoca el método sonido() de la clase Perro, lo que produce el resultado "Guau".
-Llamada directa a perro.sonido():
-
-Cuando se hace print(perro.sonido()), también se ejecuta el método sonido de la clase Perro, que devuelve "Guau".
-Polimorfismo:
-El polimorfismo se refiere a la capacidad de una función o método de operar con objetos de diferentes tipos, siempre que estos objetos tengan el mismo nombre de método. En este caso, aunque gato y perro son objetos de clases diferentes, ambos tienen un método sonido(), por lo que puedes llamar a hacer_sonido(animal) sin importar si el objeto es un Gato o un Perro. Python manejará el llamado al método de acuerdo con el tipo real del objeto pasado (gracias a la resolución dinámica de métodos).
-
-Resumen:
-Polimorfismo en acción: se puede invocar el mismo método (sonido()) en objetos de diferentes clases, y el comportamiento del método depende de la clase del objeto que se pasa.
 
 """

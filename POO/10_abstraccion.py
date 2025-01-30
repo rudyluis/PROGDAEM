@@ -27,70 +27,107 @@ y proporciona herramientas para definir clases abstractas y métodos abstractos.
 Una clase abstracta es una clase que sirve como base para otras clases y que no se puede instanciar directamente.
 """
 
+
 from abc import ABC, abstractmethod
 
-# Clase base abstracta
-class Animal(ABC):
-    
-    # Método abstracto (sin implementación)
+# Clase base abstracta para los métodos de pago
+class MetodoPago(ABC):
+
     @abstractmethod
-    def hacer_sonido(self):
-        pass
-    
-    @abstractmethod
-    def moverse(self):
+    def procesar_pago(self, monto):
+        """Cada método de pago implementará su propia lógica de procesamiento."""
         pass
 
-# Clase derivada 1: Perro
-class Perro(Animal):
-    
-    def hacer_sonido(self):
-        print("Guau")
-    
-    def moverse(self):
-        print("El perro corre")
+    @abstractmethod
+    def verificar_saldo(self):
+        """Cada método de pago tendrá su propia forma de verificar saldo."""
+        pass
 
-# Clase derivada 2: Gato
-class Gato(Animal):
-    
-    def hacer_sonido(self):
-        print("Miau")
-    
-    def moverse(self):
-        print("El gato camina lentamente")
+# Clase derivada 1: Pago con Tarjeta de Crédito
+class TarjetaCredito(MetodoPago):
 
-# Crear instancias de las clases derivadas
-perro = Perro()
-gato = Gato()
+    def __init__(self, numero, saldo):
+        self.numero = numero
+        self.saldo = saldo
 
-# Llamar a los métodos implementados
-perro.hacer_sonido()  # Imprime: Guau
-perro.moverse()       # Imprime: El perro corre
+    def verificar_saldo(self):
+        print(f"💳 Verificando saldo disponible en la tarjeta {self.numero}...")
 
-gato.hacer_sonido()   # Imprime: Miau
-gato.moverse()        # Imprime: El gato camina lentamente
+    def procesar_pago(self, monto):
+        if self.saldo >= monto:
+            self.saldo -= monto
+            print(f"✅ Pago de ${monto} realizado con tarjeta {self.numero}. Nuevo saldo: ${self.saldo}")
+        else:
+            print("❌ Saldo insuficiente en la tarjeta.")
 
+# Clase derivada 2: Pago con PayPal
+class PayPal(MetodoPago):
+
+    def __init__(self, email, saldo):
+        self.email = email
+        self.saldo = saldo
+
+    def verificar_saldo(self):
+        print(f"📧 Verificando saldo de la cuenta PayPal: {self.email}...")
+
+    def procesar_pago(self, monto):
+        if self.saldo >= monto:
+            self.saldo -= monto
+            print(f"✅ Pago de ${monto} realizado con PayPal ({self.email}). Nuevo saldo: ${self.saldo}")
+        else:
+            print("❌ Fondos insuficientes en PayPal.")
+
+# Clase derivada 3: Pago con Criptomonedas
+class Criptomoneda(MetodoPago):
+
+    def __init__(self, wallet_id, saldo):
+        self.wallet_id = wallet_id
+        self.saldo = saldo
+
+    def verificar_saldo(self):
+        print(f"🪙 Verificando saldo en la billetera cripto {self.wallet_id}...")
+
+    def procesar_pago(self, monto):
+        if self.saldo >= monto:
+            self.saldo -= monto
+            print(f"✅ Pago de ${monto} realizado con criptomonedas ({self.wallet_id}). Nuevo saldo: ${self.saldo}")
+        else:
+            print("❌ Saldo insuficiente en la billetera de criptomonedas.")
+
+# Lista con diferentes métodos de pago
+metodos_pago = [
+    TarjetaCredito("1234-5678-9876-5432", 1000),
+    PayPal("usuario@email.com", 500),
+    Criptomoneda("0xABC123DEF456", 300)
+]
+
+# Procesar pagos con diferentes métodos (polimorfismo)
+for metodo in metodos_pago:
+    print("\n--- Nuevo Pago ---")
+    metodo.verificar_saldo()
+    metodo.procesar_pago(250)  # Intentar pagar $250 con cada método
 
 """
 
-Clase base abstracta Animal:
 
-Esta clase hereda de ABC (Abstract Base Class) que la convierte en una clase abstracta.
-Los métodos hacer_sonido y moverse son métodos abstractos, lo que significa que no tienen implementación en la clase Animal, pero deben ser implementados por cualquier clase que herede de Animal.
-Clases derivadas Perro y Gato:
-
-Ambas clases heredan de Animal y proporcionan implementaciones concretas para los métodos abstractos hacer_sonido y moverse.
-Si intentamos crear una instancia de la clase Animal o dejar de implementar cualquiera de los métodos abstractos en las clases derivadas, Python lanzará un error.
+Clase base abstracta MetodoPago:
+La clase MetodoPago es abstracta porque hereda de ABC (Abstract Base Class), 
+lo que significa que no puede ser instanciada directamente.
+Define dos métodos abstractos: verificar_saldo y procesar_pago, 
+los cuales no tienen implementación en la clase base, pero deben ser implementados por cualquier clase 
+que herede de MetodoPago.
+Clases derivadas: TarjetaCredito, PayPal, Criptomoneda:
+Las clases TarjetaCredito, PayPal y Criptomoneda heredan de MetodoPago y 
+proporcionan implementaciones concretas para los métodos abstractos verificar_saldo y procesar_pago.
+Polimorfismo en acción: A pesar de que cada clase tiene su propia implementación de estos métodos, 
+todas comparten la misma interfaz definida en la clase base (MetodoPago), lo que permite utilizarlas 
+de manera intercambiable en el código principal.
 Abstracción:
+La clase MetodoPago es un ejemplo de abstracción. Oculta los detalles de cómo cada tipo de pago
+ (tarjeta de crédito, PayPal, criptomonedas) maneja la verificación de saldo y el procesamiento de pagos, pero asegura que todos los métodos de pago tienen la misma estructura básica.
+Cada clase derivada implementa la lógica interna del método según el tipo de pago específico, pero los usuarios solo interactúan con los métodos públicos verificar_saldo y procesar_pago, sin necesidad de conocer los detalles de la implementaci
 
-Usamos la clase Animal para abstraer lo común entre todas las clases de animales (como el método hacer_sonido y moverse).
-Cada animal (perro, gato, etc.) puede tener su propia implementación de esos métodos, lo que es un ejemplo claro de la abstracción: estamos ocultando los detalles de cómo hacen el sonido y cómo se mueven, pero sabemos que todos los animales deben tener estas acciones.
-Beneficios de la abstracción:
-Oculta detalles de implementación: Los usuarios solo interactúan con los métodos públicos de la clase, sin necesidad de saber cómo están implementados internamente.
-Facilita la extensión: Puedes crear nuevas clases que hereden de la clase abstracta sin tener que modificar la clase base. Cada subclase puede proporcionar su propia implementación.
-Reutilización de código: Puedes definir métodos comunes en la clase base, lo que evita duplicación de código.
-Reglas en Python:
-No puedes instanciar una clase abstracta directamente.
-Todas las clases derivadas deben implementar todos los métodos abstractos de la clase base para ser instanciadas.
+
+
 
 """

@@ -14,6 +14,10 @@ class Celular:
     def cortar(self):
         print(f'Cortaste la llamada desde tu: {self.modelo}')  # Imprime un mensaje indicando que se cortó la llamada desde el modelo del celular
 
+    # El método __str__ devuelve una representación en forma de cadena del objeto
+    def __str__(self):
+        return f'Celular {self.marca} {self.modelo} con cámara de {self.camara}'
+
 # Creación de la primera instancia de la clase Celular
 celular1 = Celular("Samsung", "S23", "48MP")  # Se crea un objeto 'celular1' con la marca "Samsung", modelo "S23" y cámara de "48MP"
 
@@ -23,3 +27,7 @@ celular2 = Celular("Apple", "Iphone 15 Pro", "96MP")  # Se crea un objeto 'celul
 # Llamar al método 'llamar' del objeto 'celular2'
 celular2.llamar()  # Este código llama el método 'llamar' para el objeto 'celular2' (Apple Iphone 15 Pro)
 
+# Imprimir la representación en cadena del objeto celular2
+print(str(celular2))  # Ahora imprimirá correctamente la información del celular
+
+print(celular2.__dict__)

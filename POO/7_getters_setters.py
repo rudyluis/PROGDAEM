@@ -3,11 +3,12 @@ Los getters y setters son métodos que se utilizan para acceder y modificar los 
 permitiendo encapsular la manipulación de los datos. 
 En Python, estos métodos son comúnmente usados para asegurar que se pueda validar la entrada o proporcionar un acceso solo de lectura o escritura.
 """
+
 class Persona:
     def __init__(self, nombre, edad):
         self.__nombre = nombre  # Atributo privado
         self.__edad = edad      # Atributo privado
-
+    
     # Getter para obtener el nombre
     def get_nombre(self):
         return self.__nombre

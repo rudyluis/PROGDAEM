@@ -1,0 +1,121 @@
+---Que es join
+
+¿Qué es un JOIN en SQL y cuáles son sus tipos?
+Un JOIN en SQL es una operación que permite combinar filas de dos o más tablas
+ basadas en una condición común, generalmente a través de una clave primaria y una clave foránea.
+
+Tipos de JOIN en SQL
+1️⃣ INNER JOIN (Intersección)
+🔹 Devuelve solo las filas que tienen coincidencias en ambas tablas.
+
+2️⃣ LEFT JOIN (Unión izquierda)
+🔹 Devuelve todas las filas de la tabla de la izquierda (Clientes) y las 
+coincidencias de la derecha (Pedidos). Si no hay coincidencia, muestra NULL.
+
+
+¿Qué es un JOIN en SQL y cuáles son sus tipos?
+Un JOIN en SQL es una operación que permite combinar filas de dos o más tablas basadas 
+en una condición común, generalmente a través de una clave primaria y una clave foránea.
+
+🚀 Ejemplo básico de tablas para entender JOINs:
+
+sql
+Copiar
+Editar
+-- Tabla Clientes
+ID_Cliente | Nombre   | Ciudad
+---------------------------------
+1          | Juan     | Madrid
+2          | María    | Barcelona
+3          | Pedro    | Valencia
+
+-- Tabla Pedidos
+ID_Pedido | ID_Cliente | Producto
+---------------------------------
+101       | 1         | Laptop
+102       | 2         | Teléfono
+103       | 4         | Tablet
+Aquí, ID_Cliente es la clave primaria en la tabla Clientes y clave foránea en la tabla Pedidos.
+
+Tipos de JOIN en SQL
+1️⃣ INNER JOIN (Intersección)
+🔹 Devuelve solo las filas que tienen coincidencias en ambas tablas.
+📌 Ejemplo: Obtener clientes que han realizado pedidos.
+
+sql
+Copiar
+Editar
+SELECT Clientes.Nombre, Pedidos.Producto
+FROM Clientes
+INNER JOIN Pedidos ON Clientes.ID_Cliente = Pedidos.ID_Cliente;
+🔽 Resultado
+
+markdown
+Copiar
+Editar
+Nombre   | Producto
+---------------------
+Juan     | Laptop
+María    | Teléfono
+⚠️ Nota: No aparece Pedro porque no tiene pedidos, ni el pedido 103 porque su cliente no existe en la tabla Clientes.
+
+2️⃣ LEFT JOIN (Unión izquierda)
+🔹 Devuelve todas las filas de la tabla de la izquierda (Clientes) y las coincidencias de la derecha (Pedidos). Si no hay coincidencia, muestra NULL.
+
+📌 Ejemplo: Obtener todos los clientes, incluyendo los que no han hecho pedidos.
+
+sql
+Copiar
+Editar
+SELECT Clientes.Nombre, Pedidos.Producto
+FROM Clientes
+LEFT JOIN Pedidos ON Clientes.ID_Cliente = Pedidos.ID_Cliente;
+🔽 Resultado
+
+markdown
+Copiar
+Editar
+Nombre   | Producto
+---------------------
+Juan     | Laptop
+María    | Teléfono
+Pedro    | NULL
+✅ Pedro aparece, aunque no tenga pedidos.
+
+3️⃣ RIGHT JOIN (Unión derecha)
+🔹 Devuelve todas las filas de la tabla de la derecha (Pedidos) y las coincidencias de la izquierda (Clientes). Si no hay coincidencia, muestra NULL.
+
+4️⃣ FULL OUTER JOIN (Unión completa)
+🔹 Devuelve todas las filas de ambas tablas, combinando coincidencias y dejando NULL cuando no haya relación.
+
+5️⃣ CROSS JOIN (Producto cartesiano)
+🔹 Combina todas las filas de la primera tabla con todas las filas de la segunda tabla.
+
+
+📌 ¿Cuál usar?
+
+INNER JOIN: Cuando necesitas solo coincidencias.
+LEFT JOIN: Si quieres todos los registros de la primera tabla y sus coincidencias.
+RIGHT JOIN: Si quieres todos los registros de la segunda tabla y sus coincidencias.
+FULL OUTER JOIN: Si necesitas todos los registros de ambas tablas.
+CROSS JOIN: Para obtener todas las combinaciones posibles.
+
+----
+
+
+¿Qué es un ORM (Object-Relational Mapping)?
+Un ORM (Object-Relational Mapping) o Mapeo Objeto-Relacional es una técnica de programación 
+que permite interactuar con bases de datos relacionales utilizando objetos en lugar de 
+escribir directamente consultas SQL.
+
+Con un ORM, los datos de las tablas se representan como clases y objetos en Python, 
+lo que facilita la manipulación y consulta de la base de datos sin necesidad de usar 
+sentencias SQL manualmente.
+
+Ventajas del ORM
+Abstracción del SQL → No es necesario escribir consultas SQL manualmente.
+Portabilidad → Permite cambiar de base de datos fácilmente (MySQL, PostgreSQL, SQLite, etc.).
+Código más legible y mantenible → Se trabaja con clases y objetos en lugar de cadenas SQL.
+Mayor seguridad → Reduce riesgos de inyección SQL porque el ORM gestiona las consultas.
+Facilita la manipulación de datos → Se pueden realizar operaciones 
+CRUD (Create, Read, Update, Delete) con métodos Python en lugar de escribir SQL.

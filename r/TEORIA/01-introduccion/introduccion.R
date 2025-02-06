@@ -44,7 +44,7 @@ falso <- FALSE
 # --------------------
 # OPERACIONES ARITMÉTICAS
 # --------------------
-# <- alt +- para hacerlo rapido
+# <- alt +- para hacerlo rapido  (tecla de asigancion rapido)
 
 x <- 11
 y <- 4

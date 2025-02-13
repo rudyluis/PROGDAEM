@@ -7,7 +7,7 @@
 
 # La función `print()` muestra valores en la consola.
 # En RStudio, puedes ver el valor de una variable escribiendo solo su nombre.
-print("Hola, mundo") # Ejemplo: imprimir un mensaje.
+print("Hola, mundo") # *Ejemplo: imprimir un mensaje.
 
 # --------------------
 # VARIABLES
@@ -101,3 +101,4 @@ print(input)  # Muestra lo que el usuario introdujo como cadena de texto.
 # Si necesitas trabajar con el valor como número, conviértelo.
 input <- as.numeric(input)  # Convierte a tipo numérico.
 print(input)  # Muestra el valor convertido.
+

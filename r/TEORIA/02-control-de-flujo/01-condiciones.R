@@ -5,6 +5,7 @@
 # Definimos una variable x con valor 42
 x <- 42
 
+
 # Condición: si x es mayor o igual a 100, muestra un mensaje
 if (x >= 100) {
   print("x es mayor o igual que 100")

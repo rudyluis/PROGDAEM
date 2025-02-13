@@ -16,6 +16,7 @@ x <- mtcars$wt  # Asignar la columna de "weight" del dataset mtcars a x
 y <- mtcars$drat  # Asignar la columna de "rear axle ratio" del dataset mtcars a y
 plot(x, y, xlab = "weight", ylab = "rear axle ratio")  # Graficar weight vs rear axle ratio
 
+data(mtcars)
 # Crear gráficos con líneas en vez de puntos:
 # Usando "type = 'l'" para cambiar de puntos a líneas
 plot(1:10, type = "l")  # Gráfico de líneas con los valores 1 a 10
@@ -36,3 +37,4 @@ y2 <- c(10, 1)
 plot(x1, y1, type = "l")
 # Añadir la segunda línea de la "X"
 lines(x2, y2, type = "l")
+

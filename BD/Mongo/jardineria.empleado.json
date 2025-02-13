@@ -1,0 +1,1801 @@
+[{
+  "_id": {
+    "$oid": "664cff6481896b92b2951433"
+  },
+  "idempleado": 1,
+  "apellido1": "Magaña",
+  "apellido2": "Perez",
+  "codigoEmpleado": 1,
+  "email": "marcos@jardineria.es",
+  "extension": "3897",
+  "idempleadojefe": null,
+  "idoficina": 8,
+  "nombre": "Marcos",
+  "puesto": "Director General",
+  "oficina": {
+    "ciudad": "Talavera de la Reina",
+    "codigooficina": "TAL-ES",
+    "codigopostal": "45632",
+    "idoficina": 8,
+    "lineadireccion1": "Francisco Aguirre, 32",
+    "lineadireccion2": "5º piso (exterior)",
+    "pais": "España",
+    "region": "Castilla-LaMancha",
+    "telefono": "+34 925 867231"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951434"
+  },
+  "idempleado": 2,
+  "apellido1": "López",
+  "apellido2": "Martinez",
+  "codigoEmpleado": 2,
+  "email": "rlopez@jardineria.es",
+  "extension": "2899",
+  "idempleadojefe": 1,
+  "idoficina": 8,
+  "nombre": "Ruben",
+  "puesto": "Subdirector Marketing",
+  "oficina": {
+    "ciudad": "Talavera de la Reina",
+    "codigooficina": "TAL-ES",
+    "codigopostal": "45632",
+    "idoficina": 8,
+    "lineadireccion1": "Francisco Aguirre, 32",
+    "lineadireccion2": "5º piso (exterior)",
+    "pais": "España",
+    "region": "Castilla-LaMancha",
+    "telefono": "+34 925 867231"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951436"
+  },
+  "idempleado": 3,
+  "apellido1": "Soria",
+  "apellido2": "Carrasco",
+  "codigoEmpleado": 3,
+  "email": "asoria@jardineria.es",
+  "extension": "2837",
+  "idempleadojefe": 2,
+  "idoficina": 8,
+  "nombre": "Alberto",
+  "puesto": "Subdirector Ventas",
+  "oficina": {
+    "ciudad": "Talavera de la Reina",
+    "codigooficina": "TAL-ES",
+    "codigopostal": "45632",
+    "idoficina": 8,
+    "lineadireccion1": "Francisco Aguirre, 32",
+    "lineadireccion2": "5º piso (exterior)",
+    "pais": "España",
+    "region": "Castilla-LaMancha",
+    "telefono": "+34 925 867231"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951438"
+  },
+  "idempleado": 4,
+  "apellido1": "Solís",
+  "apellido2": "Jerez",
+  "codigoEmpleado": 4,
+  "email": "msolis@jardineria.es",
+  "extension": "2847",
+  "idempleadojefe": 2,
+  "idoficina": 8,
+  "nombre": "Maria",
+  "puesto": "Secretaria",
+  "oficina": {
+    "ciudad": "Talavera de la Reina",
+    "codigooficina": "TAL-ES",
+    "codigopostal": "45632",
+    "idoficina": 8,
+    "lineadireccion1": "Francisco Aguirre, 32",
+    "lineadireccion2": "5º piso (exterior)",
+    "pais": "España",
+    "region": "Castilla-LaMancha",
+    "telefono": "+34 925 867231"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295143a"
+  },
+  "idempleado": 5,
+  "apellido1": "Rosas",
+  "apellido2": "Marquez",
+  "codigoEmpleado": 5,
+  "email": "frosas@jardineria.es",
+  "extension": "2844",
+  "idempleadojefe": 3,
+  "idoficina": 8,
+  "nombre": "Felipe",
+  "puesto": "Representante Ventas",
+  "clientes": [
+    {
+      "idcliente": 15,
+      "codigocliente": 16,
+      "nombrecliente": "Flores Marivi",
+      "nombrecontacto": "Maria",
+      "apellidocontacto": "Rodriguez",
+      "telefono": "666555444",
+      "fax": "912458657",
+      "lineadireccion1": "C/Leganes24",
+      "lineadireccion2": null,
+      "ciudad": "Fuenlabrada",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28945",
+      "idcodigoempleadoventas": 5,
+      "limiteCredito": {
+        "$numberDecimal": "1500.00"
+      }
+    },
+    {
+      "idcliente": 16,
+      "codigocliente": 17,
+      "nombrecliente": "Flowers, S.A",
+      "nombrecontacto": "Beatriz",
+      "apellidocontacto": "Fernandez",
+      "telefono": "698754159",
+      "fax": "978453216",
+      "lineadireccion1": "C/Luis Salquillo4",
+      "lineadireccion2": null,
+      "ciudad": "Montornes del valles",
+      "region": "Barcelona",
+      "pais": "Spain",
+      "codigopostal": "24586",
+      "idcodigoempleadoventas": 5,
+      "limiteCredito": {
+        "$numberDecimal": "3500.00"
+      }
+    },
+    {
+      "idcliente": 24,
+      "codigocliente": 25,
+      "nombrecliente": "Fuenla City",
+      "nombrecontacto": "Tony",
+      "apellidocontacto": "Muñoz Mena",
+      "telefono": "675842139",
+      "fax": "915483754",
+      "lineadireccion1": "C/Callo 52",
+      "lineadireccion2": null,
+      "ciudad": "Fuenlabrada",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28574",
+      "idcodigoempleadoventas": 5,
+      "limiteCredito": {
+        "$numberDecimal": "4500.00"
+      }
+    },
+    {
+      "idcliente": 28,
+      "codigocliente": 29,
+      "nombrecliente": "Top Campo",
+      "nombrecontacto": "Joseluis",
+      "apellidocontacto": "Sanchez",
+      "telefono": "685746512",
+      "fax": "974315924",
+      "lineadireccion1": "C/Ibiza 32",
+      "lineadireccion2": null,
+      "ciudad": "Humanes",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28574",
+      "idcodigoempleadoventas": 5,
+      "limiteCredito": {
+        "$numberDecimal": "5500.00"
+      }
+    },
+    {
+      "idcliente": 29,
+      "codigocliente": 30,
+      "nombrecliente": "Jardineria Sara",
+      "nombrecontacto": "Sara",
+      "apellidocontacto": "Marquez",
+      "telefono": "675124537",
+      "fax": "912475843",
+      "lineadireccion1": "C/Lima 1",
+      "lineadireccion2": null,
+      "ciudad": "Fuenlabrada",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "27584",
+      "idcodigoempleadoventas": 5,
+      "limiteCredito": {
+        "$numberDecimal": "7500.00"
+      }
+    },
+    {
+      "idcliente": 52,
+      "codigocliente": 55,
+      "nombrecliente": "Pedro",
+      "nombrecontacto": "Pedrito",
+      "apellidocontacto": "Bolivar",
+      "telefono": "987456",
+      "fax": "54",
+      "lineadireccion1": "La Paz",
+      "lineadireccion2": "Lanza",
+      "ciudad": "Mexico",
+      "region": "Norte",
+      "pais": "Bolivia",
+      "codigopostal": "597",
+      "idcodigoempleadoventas": 5,
+      "limiteCredito": {
+        "$numberDecimal": "10000.00"
+      }
+    },
+    {
+      "idcliente": 53,
+      "codigocliente": 55,
+      "nombrecliente": "Pedro",
+      "nombrecontacto": "Pedrito",
+      "apellidocontacto": "Bolivar",
+      "telefono": "987456",
+      "fax": "54",
+      "lineadireccion1": "La Paz",
+      "lineadireccion2": "Lanza",
+      "ciudad": "Mexico",
+      "region": "Norte",
+      "pais": "Bolivia",
+      "codigopostal": "597",
+      "idcodigoempleadoventas": 5,
+      "limiteCredito": {
+        "$numberDecimal": "10000.00"
+      }
+    },
+    {
+      "idcliente": 55,
+      "codigocliente": 55,
+      "nombrecliente": "Pedro",
+      "nombrecontacto": "Pedrito",
+      "apellidocontacto": "Bolivar",
+      "telefono": "987456",
+      "fax": "54",
+      "lineadireccion1": "La Paz",
+      "lineadireccion2": "Lanza",
+      "ciudad": "Mexico",
+      "region": "Norte",
+      "pais": "Bolivia",
+      "codigopostal": "597",
+      "idcodigoempleadoventas": 5,
+      "limiteCredito": {
+        "$numberDecimal": "10000.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "Talavera de la Reina",
+    "codigooficina": "TAL-ES",
+    "codigopostal": "45632",
+    "idoficina": 8,
+    "lineadireccion1": "Francisco Aguirre, 32",
+    "lineadireccion2": "5º piso (exterior)",
+    "pais": "España",
+    "region": "Castilla-LaMancha",
+    "telefono": "+34 925 867231"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295143c"
+  },
+  "idempleado": 6,
+  "apellido1": "Ortiz",
+  "apellido2": "Serrano",
+  "codigoEmpleado": 6,
+  "email": "cortiz@jardineria.es",
+  "extension": "2845",
+  "idempleadojefe": 3,
+  "idoficina": 8,
+  "nombre": "Juan Carlos",
+  "puesto": "Representante Ventas",
+  "oficina": {
+    "ciudad": "Talavera de la Reina",
+    "codigooficina": "TAL-ES",
+    "codigopostal": "45632",
+    "idoficina": 8,
+    "lineadireccion1": "Francisco Aguirre, 32",
+    "lineadireccion2": "5º piso (exterior)",
+    "pais": "España",
+    "region": "Castilla-LaMancha",
+    "telefono": "+34 925 867231"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295143e"
+  },
+  "idempleado": 7,
+  "apellido1": "Soria",
+  "apellido2": "Jimenez",
+  "codigoEmpleado": 7,
+  "email": "csoria@jardineria.es",
+  "extension": "2444",
+  "idempleadojefe": 3,
+  "idoficina": 4,
+  "nombre": "Carlos",
+  "puesto": "Director Oficina",
+  "oficina": {
+    "ciudad": "Madrid",
+    "codigooficina": "MAD-ES",
+    "codigopostal": "28032",
+    "idoficina": 4,
+    "lineadireccion1": "Bulevar Indalecio Prieto, 32",
+    "lineadireccion2": "",
+    "pais": "España",
+    "region": "Madrid",
+    "telefono": "+34 91 7514487"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951440"
+  },
+  "idempleado": 8,
+  "apellido1": "López",
+  "apellido2": "Murcia",
+  "codigoEmpleado": 8,
+  "email": "mlopez@jardineria.es",
+  "extension": "2442",
+  "idempleadojefe": 7,
+  "idoficina": 4,
+  "nombre": "Mariano",
+  "puesto": "Representante Ventas",
+  "clientes": [
+    {
+      "idcliente": 5,
+      "codigocliente": 6,
+      "nombrecliente": "Lasas S.A.",
+      "nombrecontacto": "Antonio",
+      "apellidocontacto": "Lasas",
+      "telefono": "34916540145",
+      "fax": "34914851312",
+      "lineadireccion1": "C/Leganes 15",
+      "lineadireccion2": null,
+      "ciudad": "Fuenlabrada",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28945",
+      "idcodigoempleadoventas": 8,
+      "limiteCredito": {
+        "$numberDecimal": "154310.00"
+      }
+    },
+    {
+      "idcliente": 11,
+      "codigocliente": 12,
+      "nombrecliente": "Lasas S.A.",
+      "nombrecontacto": "Antonio",
+      "apellidocontacto": "Lasas",
+      "telefono": "34916540145",
+      "fax": "34914851312",
+      "lineadireccion1": "C/Leganes 15",
+      "lineadireccion2": null,
+      "ciudad": "Fuenlabrada",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28945",
+      "idcodigoempleadoventas": 8,
+      "limiteCredito": {
+        "$numberDecimal": "154310.00"
+      }
+    },
+    {
+      "idcliente": 12,
+      "codigocliente": 13,
+      "nombrecliente": "Camunas Jardines S.L.",
+      "nombrecontacto": "Pedro",
+      "apellidocontacto": "Camunas",
+      "telefono": "34914873241",
+      "fax": "34914871541",
+      "lineadireccion1": "C/Virgenes 45",
+      "lineadireccion2": "C/Princesas 2 1ºB",
+      "ciudad": "San Lorenzo del Escorial",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28145",
+      "idcodigoempleadoventas": 8,
+      "limiteCredito": {
+        "$numberDecimal": "16481.00"
+      }
+    },
+    {
+      "idcliente": 13,
+      "codigocliente": 14,
+      "nombrecliente": "Dardena S.A.",
+      "nombrecontacto": "Juan",
+      "apellidocontacto": "Rodriguez",
+      "telefono": "34912453217",
+      "fax": "34912484764",
+      "lineadireccion1": "C/Nueva York 74",
+      "lineadireccion2": null,
+      "ciudad": "Madrid",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28003",
+      "idcodigoempleadoventas": 8,
+      "limiteCredito": {
+        "$numberDecimal": "321000.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "Madrid",
+    "codigooficina": "MAD-ES",
+    "codigopostal": "28032",
+    "idoficina": 4,
+    "lineadireccion1": "Bulevar Indalecio Prieto, 32",
+    "lineadireccion2": "",
+    "pais": "España",
+    "region": "Madrid",
+    "telefono": "+34 91 7514487"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951442"
+  },
+  "idempleado": 9,
+  "apellido1": "Campoamor",
+  "apellido2": "Martín",
+  "codigoEmpleado": 9,
+  "email": "lcampoamor@jardineria.es",
+  "extension": "2442",
+  "idempleadojefe": 7,
+  "idoficina": 4,
+  "nombre": "Lucio",
+  "puesto": "Representante Ventas",
+  "clientes": [
+    {
+      "idcliente": 25,
+      "codigocliente": 26,
+      "nombrecliente": "Jardines y Mansiones Cactus SL",
+      "nombrecontacto": "Eva María",
+      "apellidocontacto": "Sánchez",
+      "telefono": "916877445",
+      "fax": "914477777",
+      "lineadireccion1": "Polígono Industrial Maspalomas, Nº52",
+      "lineadireccion2": "Móstoles",
+      "ciudad": "Madrid",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "29874",
+      "idcodigoempleadoventas": 9,
+      "limiteCredito": {
+        "$numberDecimal": "76000.00"
+      }
+    },
+    {
+      "idcliente": 26,
+      "codigocliente": 27,
+      "nombrecliente": "Jardinerías Matías SL",
+      "nombrecontacto": "Matías",
+      "apellidocontacto": "San Martín",
+      "telefono": "916544147",
+      "fax": "917897474",
+      "lineadireccion1": "C/Francisco Arce, Nº44",
+      "lineadireccion2": "Bustarviejo",
+      "ciudad": "Madrid",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "37845",
+      "idcodigoempleadoventas": 9,
+      "limiteCredito": {
+        "$numberDecimal": "100500.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "Madrid",
+    "codigooficina": "MAD-ES",
+    "codigopostal": "28032",
+    "idoficina": 4,
+    "lineadireccion1": "Bulevar Indalecio Prieto, 32",
+    "lineadireccion2": "",
+    "pais": "España",
+    "region": "Madrid",
+    "telefono": "+34 91 7514487"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951444"
+  },
+  "idempleado": 10,
+  "apellido1": "Rodriguez",
+  "apellido2": "Huertas",
+  "codigoEmpleado": 10,
+  "email": "hrodriguez@jardineria.es",
+  "extension": "2444",
+  "idempleadojefe": 7,
+  "idoficina": 4,
+  "nombre": "Hilario",
+  "puesto": "Representante Ventas",
+  "oficina": {
+    "ciudad": "Madrid",
+    "codigooficina": "MAD-ES",
+    "codigopostal": "28032",
+    "idoficina": 4,
+    "lineadireccion1": "Bulevar Indalecio Prieto, 32",
+    "lineadireccion2": "",
+    "pais": "España",
+    "region": "Madrid",
+    "telefono": "+34 91 7514487"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951446"
+  },
+  "idempleado": 11,
+  "apellido1": "Magaña",
+  "apellido2": "Perez",
+  "codigoEmpleado": 11,
+  "email": "manu@jardineria.es",
+  "extension": "2518",
+  "idempleadojefe": 3,
+  "idoficina": 1,
+  "nombre": "Emmanuel",
+  "puesto": "Director Oficina",
+  "clientes": [
+    {
+      "idcliente": 6,
+      "codigocliente": 7,
+      "nombrecliente": "Beragua",
+      "nombrecontacto": "Jose",
+      "apellidocontacto": "Bermejo",
+      "telefono": "654987321",
+      "fax": "916549872",
+      "lineadireccion1": "C/pintor segundo",
+      "lineadireccion2": "Getafe",
+      "ciudad": "Madrid",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28942",
+      "idcodigoempleadoventas": 11,
+      "limiteCredito": {
+        "$numberDecimal": "20000.00"
+      }
+    },
+    {
+      "idcliente": 7,
+      "codigocliente": 8,
+      "nombrecliente": "Club Golf Puerta del hierro",
+      "nombrecontacto": "Paco",
+      "apellidocontacto": "Lopez",
+      "telefono": "62456810",
+      "fax": "919535678",
+      "lineadireccion1": "C/sinesio delgado",
+      "lineadireccion2": "Madrid",
+      "ciudad": "Madrid",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28930",
+      "idcodigoempleadoventas": 11,
+      "limiteCredito": {
+        "$numberDecimal": "40000.00"
+      }
+    },
+    {
+      "idcliente": 8,
+      "codigocliente": 9,
+      "nombrecliente": "Naturagua",
+      "nombrecontacto": "Guillermo",
+      "apellidocontacto": "Rengifo",
+      "telefono": "689234750",
+      "fax": "916428956",
+      "lineadireccion1": "C/majadahonda",
+      "lineadireccion2": "Boadilla",
+      "ciudad": "Madrid",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28947",
+      "idcodigoempleadoventas": 11,
+      "limiteCredito": {
+        "$numberDecimal": "32000.00"
+      }
+    },
+    {
+      "idcliente": 9,
+      "codigocliente": 10,
+      "nombrecliente": "DaraDistribuciones",
+      "nombrecontacto": "David",
+      "apellidocontacto": "Serrano",
+      "telefono": "675598001",
+      "fax": "916421756",
+      "lineadireccion1": "C/azores",
+      "lineadireccion2": "Fuenlabrada",
+      "ciudad": "Madrid",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28946",
+      "idcodigoempleadoventas": 11,
+      "limiteCredito": {
+        "$numberDecimal": "50000.00"
+      }
+    },
+    {
+      "idcliente": 10,
+      "codigocliente": 11,
+      "nombrecliente": "Madrileña de riegos",
+      "nombrecontacto": "Jose",
+      "apellidocontacto": "Tacaño",
+      "telefono": "655983045",
+      "fax": "916689215",
+      "lineadireccion1": "C/Lagañas",
+      "lineadireccion2": "Fuenlabrada",
+      "ciudad": "Madrid",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28943",
+      "idcodigoempleadoventas": 11,
+      "limiteCredito": {
+        "$numberDecimal": "20000.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "Barcelona",
+    "codigooficina": "BCN-ES",
+    "codigopostal": "08019",
+    "idoficina": 1,
+    "lineadireccion1": "Avenida Diagonal, 38",
+    "lineadireccion2": "3A escalera Derecha",
+    "pais": "España",
+    "region": "Barcelona",
+    "telefono": "+34 93 3561182"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951448"
+  },
+  "idempleado": 12,
+  "apellido1": "Martinez",
+  "apellido2": "De la Osa",
+  "codigoEmpleado": 12,
+  "email": "jmmart@hotmail.es",
+  "extension": "2519",
+  "idempleadojefe": 11,
+  "idoficina": 1,
+  "nombre": "José Manuel",
+  "puesto": "Representante Ventas",
+  "clientes": [
+    {
+      "idcliente": 19,
+      "codigocliente": 20,
+      "nombrecliente": "Americh Golf Management SL",
+      "nombrecontacto": "Mario",
+      "apellidocontacto": "Suarez",
+      "telefono": "964493072",
+      "fax": "964493063",
+      "lineadireccion1": "C/Letardo",
+      "lineadireccion2": null,
+      "ciudad": "Barcelona",
+      "region": "Cataluña",
+      "pais": "Spain",
+      "codigopostal": "12320",
+      "idcodigoempleadoventas": 12,
+      "limiteCredito": {
+        "$numberDecimal": "20000.00"
+      }
+    },
+    {
+      "idcliente": 20,
+      "codigocliente": 21,
+      "nombrecliente": "Aloha",
+      "nombrecontacto": "Cristian",
+      "apellidocontacto": "Rodrigez",
+      "telefono": "916485852",
+      "fax": "914489898",
+      "lineadireccion1": "C/Roman 3",
+      "lineadireccion2": null,
+      "ciudad": "Canarias",
+      "region": "Canarias",
+      "pais": "Spain",
+      "codigopostal": "35488",
+      "idcodigoempleadoventas": 12,
+      "limiteCredito": {
+        "$numberDecimal": "50000.00"
+      }
+    },
+    {
+      "idcliente": 21,
+      "codigocliente": 22,
+      "nombrecliente": "El Prat",
+      "nombrecontacto": "Francisco",
+      "apellidocontacto": "Camacho",
+      "telefono": "916882323",
+      "fax": "916493211",
+      "lineadireccion1": "Avenida Tibidabo",
+      "lineadireccion2": null,
+      "ciudad": "Barcelona",
+      "region": "Cataluña",
+      "pais": "Spain",
+      "codigopostal": "12320",
+      "idcodigoempleadoventas": 12,
+      "limiteCredito": {
+        "$numberDecimal": "30000.00"
+      }
+    },
+    {
+      "idcliente": 22,
+      "codigocliente": 23,
+      "nombrecliente": "Sotogrande",
+      "nombrecontacto": "Maria",
+      "apellidocontacto": "Santillana",
+      "telefono": "915576622",
+      "fax": "914825645",
+      "lineadireccion1": "C/Paseo del Parque",
+      "lineadireccion2": null,
+      "ciudad": "Sotogrande",
+      "region": "Cadiz",
+      "pais": "Spain",
+      "codigopostal": "11310",
+      "idcodigoempleadoventas": 12,
+      "limiteCredito": {
+        "$numberDecimal": "60000.00"
+      }
+    },
+    {
+      "idcliente": 18,
+      "codigocliente": 19,
+      "nombrecliente": "Golf S.A.",
+      "nombrecontacto": "PedroBaila",
+      "apellidocontacto": "Martinez",
+      "telefono": "916458762",
+      "fax": "912354475",
+      "lineadireccion1": "C/Estancado",
+      "lineadireccion2": null,
+      "ciudad": "Santa cruz de Tenerife",
+      "region": "Islas Canarias",
+      "pais": "Argentina",
+      "codigopostal": "38297",
+      "idcodigoempleadoventas": 12,
+      "limiteCredito": {
+        "$numberDecimal": "452000.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "Barcelona",
+    "codigooficina": "BCN-ES",
+    "codigopostal": "08019",
+    "idoficina": 1,
+    "lineadireccion1": "Avenida Diagonal, 38",
+    "lineadireccion2": "3A escalera Derecha",
+    "pais": "España",
+    "region": "Barcelona",
+    "telefono": "+34 93 3561182"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295144b"
+  },
+  "idempleado": 13,
+  "apellido1": "Palma",
+  "apellido2": "Aceituno",
+  "codigoEmpleado": 13,
+  "email": "dpalma@jardineria.es",
+  "extension": "2519",
+  "idempleadojefe": 11,
+  "idoficina": 1,
+  "nombre": "David",
+  "puesto": "Representante Ventas",
+  "oficina": {
+    "ciudad": "Barcelona",
+    "codigooficina": "BCN-ES",
+    "codigopostal": "08019",
+    "idoficina": 1,
+    "lineadireccion1": "Avenida Diagonal, 38",
+    "lineadireccion2": "3A escalera Derecha",
+    "pais": "España",
+    "region": "Barcelona",
+    "telefono": "+34 93 3561182"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295144c"
+  },
+  "idempleado": 14,
+  "apellido1": "Palma",
+  "apellido2": "Aceituno",
+  "codigoEmpleado": 14,
+  "email": "opalma@jardineria.es",
+  "extension": "2519",
+  "idempleadojefe": 11,
+  "idoficina": 1,
+  "nombre": "Oscar",
+  "puesto": "Representante Ventas",
+  "oficina": {
+    "ciudad": "Barcelona",
+    "codigooficina": "BCN-ES",
+    "codigopostal": "08019",
+    "idoficina": 1,
+    "lineadireccion1": "Avenida Diagonal, 38",
+    "lineadireccion2": "3A escalera Derecha",
+    "pais": "España",
+    "region": "Barcelona",
+    "telefono": "+34 93 3561182"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951452"
+  },
+  "idempleado": 15,
+  "apellido1": "Fignon",
+  "apellido2": "",
+  "codigoEmpleado": 15,
+  "email": "ffignon@gardening.com",
+  "extension": "9981",
+  "idempleadojefe": 3,
+  "idoficina": 5,
+  "nombre": "Francois",
+  "puesto": "Director Oficina",
+  "oficina": {
+    "ciudad": "Paris",
+    "codigooficina": "PAR-FR",
+    "codigopostal": "75017",
+    "idoficina": 5,
+    "lineadireccion1": "29 Rue Jouffroy d'abbans",
+    "lineadireccion2": "",
+    "pais": "Francia",
+    "region": "EMEA",
+    "telefono": "+33 14 723 4404"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951455"
+  },
+  "idempleado": 16,
+  "apellido1": "Narvaez",
+  "apellido2": "",
+  "codigoEmpleado": 16,
+  "email": "lnarvaez@gardening.com",
+  "extension": "9982",
+  "idempleadojefe": 15,
+  "idoficina": 5,
+  "nombre": "Lionel",
+  "puesto": "Representante Ventas",
+  "clientes": [
+    {
+      "idcliente": 31,
+      "codigocliente": 32,
+      "nombrecliente": "france telecom",
+      "nombrecontacto": "FraÃ§ois",
+      "apellidocontacto": "Toulou",
+      "telefono": "(33)5120578961",
+      "fax": "(33)5120578961",
+      "lineadireccion1": "6 place d Alleray 15Ã¨me",
+      "lineadireccion2": null,
+      "ciudad": "Paris",
+      "region": null,
+      "pais": "France",
+      "codigopostal": "75010",
+      "idcodigoempleadoventas": 16,
+      "limiteCredito": {
+        "$numberDecimal": "10000.00"
+      }
+    },
+    {
+      "idcliente": 32,
+      "codigocliente": 33,
+      "nombrecliente": "Musée du Louvre",
+      "nombrecontacto": "Pierre",
+      "apellidocontacto": "Delacroux",
+      "telefono": "(33)0140205050",
+      "fax": "(33)0140205442",
+      "lineadireccion1": "Quai du Louvre",
+      "lineadireccion2": null,
+      "ciudad": "Paris",
+      "region": null,
+      "pais": "France",
+      "codigopostal": "75058",
+      "idcodigoempleadoventas": 16,
+      "limiteCredito": {
+        "$numberDecimal": "30000.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "Paris",
+    "codigooficina": "PAR-FR",
+    "codigopostal": "75017",
+    "idoficina": 5,
+    "lineadireccion1": "29 Rue Jouffroy d'abbans",
+    "lineadireccion2": "",
+    "pais": "Francia",
+    "region": "EMEA",
+    "telefono": "+33 14 723 4404"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951459"
+  },
+  "idempleado": 17,
+  "apellido1": "Serra",
+  "apellido2": "",
+  "codigoEmpleado": 17,
+  "email": "lserra@gardening.com",
+  "extension": "9982",
+  "idempleadojefe": 15,
+  "idoficina": 5,
+  "nombre": "Laurent",
+  "puesto": "Representante Ventas",
+  "oficina": {
+    "ciudad": "Paris",
+    "codigooficina": "PAR-FR",
+    "codigopostal": "75017",
+    "idoficina": 5,
+    "lineadireccion1": "29 Rue Jouffroy d'abbans",
+    "lineadireccion2": "",
+    "pais": "Francia",
+    "region": "EMEA",
+    "telefono": "+33 14 723 4404"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295145c"
+  },
+  "idempleado": 18,
+  "apellido1": "Bolton",
+  "apellido2": "",
+  "codigoEmpleado": 18,
+  "email": "mbolton@gardening.com",
+  "extension": "7454",
+  "idempleadojefe": 3,
+  "idoficina": 6,
+  "nombre": "Michael",
+  "puesto": "Director Oficina",
+  "clientes": [
+    {
+      "idcliente": 34,
+      "codigocliente": 36,
+      "nombrecliente": "Flores S.L.",
+      "nombrecontacto": "Antonio",
+      "apellidocontacto": "Romero",
+      "telefono": "654352981",
+      "fax": "685249700",
+      "lineadireccion1": "Avenida España",
+      "lineadireccion2": null,
+      "ciudad": "Madrid",
+      "region": "Fuenlabrada",
+      "pais": "Spain",
+      "codigopostal": "29643",
+      "idcodigoempleadoventas": 18,
+      "limiteCredito": {
+        "$numberDecimal": "6000.00"
+      }
+    },
+    {
+      "idcliente": 35,
+      "codigocliente": 37,
+      "nombrecliente": "The Magic Garden",
+      "nombrecontacto": "Richard",
+      "apellidocontacto": "Mcain",
+      "telefono": "926523468",
+      "fax": "9364875882",
+      "lineadireccion1": "Lihgting Park",
+      "lineadireccion2": null,
+      "ciudad": "London",
+      "region": "London",
+      "pais": "United Kingdom",
+      "codigopostal": "65930",
+      "idcodigoempleadoventas": 18,
+      "limiteCredito": {
+        "$numberDecimal": "10000.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "San Francisco",
+    "codigooficina": "SFC-USA",
+    "codigopostal": "94080",
+    "idoficina": 6,
+    "lineadireccion1": "100 Market Street",
+    "lineadireccion2": "Suite 300",
+    "pais": "EEUU",
+    "region": "CA",
+    "telefono": "+1 650 219 4782"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295145d"
+  },
+  "idempleado": 19,
+  "apellido1": "Sanchez",
+  "apellido2": "Lopez",
+  "codigoEmpleado": 19,
+  "email": "wssanchez@gardening.com",
+  "extension": "7454",
+  "idempleadojefe": 18,
+  "idoficina": 6,
+  "nombre": "Walter Santiago",
+  "puesto": "Representante Ventas",
+  "clientes": [
+    {
+      "idcliente": 1,
+      "codigocliente": 1,
+      "nombrecliente": "GoldFish Garden",
+      "nombrecontacto": "Daniel G",
+      "apellidocontacto": "GoldFish",
+      "telefono": "5556901745",
+      "fax": "5556901746",
+      "lineadireccion1": "False Street 52 2 A",
+      "lineadireccion2": null,
+      "ciudad": "San Francisco",
+      "region": null,
+      "pais": "USA",
+      "codigopostal": "24006",
+      "idcodigoempleadoventas": 19,
+      "limiteCredito": {
+        "$numberDecimal": "3000.00"
+      }
+    },
+    {
+      "idcliente": 2,
+      "codigocliente": 3,
+      "nombrecliente": "Gardening Associates",
+      "nombrecontacto": "Anne",
+      "apellidocontacto": "Wright",
+      "telefono": "5557410345",
+      "fax": "5557410346",
+      "lineadireccion1": "Wall-e Avenue",
+      "lineadireccion2": null,
+      "ciudad": "Miami",
+      "region": "Miami",
+      "pais": "USA",
+      "codigopostal": "24010",
+      "idcodigoempleadoventas": 19,
+      "limiteCredito": {
+        "$numberDecimal": "6000.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "San Francisco",
+    "codigooficina": "SFC-USA",
+    "codigopostal": "94080",
+    "idoficina": 6,
+    "lineadireccion1": "100 Market Street",
+    "lineadireccion2": "Suite 300",
+    "pais": "EEUU",
+    "region": "CA",
+    "telefono": "+1 650 219 4782"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951460"
+  },
+  "idempleado": 20,
+  "apellido1": "Washington",
+  "apellido2": "",
+  "codigoEmpleado": 20,
+  "email": "hwashington@gardening.com",
+  "extension": "7565",
+  "idempleadojefe": 3,
+  "idoficina": 2,
+  "nombre": "Hilary",
+  "puesto": "Director Oficina",
+  "oficina": {
+    "ciudad": "Boston",
+    "codigooficina": "BOS-USA",
+    "codigopostal": "02108",
+    "idoficina": 2,
+    "lineadireccion1": "1550 Court Place",
+    "lineadireccion2": "Suite 102",
+    "pais": "EEUU",
+    "region": "MA",
+    "telefono": "+1 215 837 0825"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951462"
+  },
+  "idempleado": 21,
+  "apellido1": "Paxton",
+  "apellido2": "",
+  "codigoEmpleado": 21,
+  "email": "mpaxton@gardening.com",
+  "extension": "7565",
+  "idempleadojefe": 20,
+  "idoficina": 2,
+  "nombre": "Marcus",
+  "puesto": "Representante Ventas",
+  "oficina": {
+    "ciudad": "Boston",
+    "codigooficina": "BOS-USA",
+    "codigopostal": "02108",
+    "idoficina": 2,
+    "lineadireccion1": "1550 Court Place",
+    "lineadireccion2": "Suite 102",
+    "pais": "EEUU",
+    "region": "MA",
+    "telefono": "+1 215 837 0825"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951464"
+  },
+  "idempleado": 22,
+  "apellido1": "Paxton",
+  "apellido2": "",
+  "codigoEmpleado": 22,
+  "email": "lpaxton@gardening.com",
+  "extension": "7665",
+  "idempleadojefe": 20,
+  "idoficina": 2,
+  "nombre": "Lorena",
+  "puesto": "Representante Ventas",
+  "clientes": [
+    {
+      "idcliente": 3,
+      "codigocliente": 4,
+      "nombrecliente": "Gerudo Valley",
+      "nombrecontacto": "Link",
+      "apellidocontacto": "Flaute",
+      "telefono": "5552323129",
+      "fax": "5552323128",
+      "lineadireccion1": "Oaks Avenue nº22",
+      "lineadireccion2": null,
+      "ciudad": "New York",
+      "region": null,
+      "pais": "USA",
+      "codigopostal": "85495",
+      "idcodigoempleadoventas": 22,
+      "limiteCredito": {
+        "$numberDecimal": "12000.00"
+      }
+    },
+    {
+      "idcliente": 4,
+      "codigocliente": 5,
+      "nombrecliente": "Tendo Garden",
+      "nombrecontacto": "Akane",
+      "apellidocontacto": "Tendo",
+      "telefono": "55591233210",
+      "fax": "55591233211",
+      "lineadireccion1": "Null Street nº69",
+      "lineadireccion2": null,
+      "ciudad": "Miami",
+      "region": null,
+      "pais": "USA",
+      "codigopostal": "696969",
+      "idcodigoempleadoventas": 22,
+      "limiteCredito": {
+        "$numberDecimal": "600000.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "Boston",
+    "codigooficina": "BOS-USA",
+    "codigopostal": "02108",
+    "idoficina": 2,
+    "lineadireccion1": "1550 Court Place",
+    "lineadireccion2": "Suite 102",
+    "pais": "EEUU",
+    "region": "MA",
+    "telefono": "+1 215 837 0825"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951468"
+  },
+  "idempleado": 23,
+  "apellido1": "Nishikori",
+  "apellido2": "",
+  "codigoEmpleado": 23,
+  "email": "nnishikori@gardening.com",
+  "extension": "8734",
+  "idempleadojefe": 3,
+  "idoficina": 9,
+  "nombre": "Nei",
+  "puesto": "Director Oficina",
+  "oficina": {
+    "ciudad": "Tokyo",
+    "codigooficina": "TOK-JP",
+    "codigopostal": "102-8578",
+    "idoficina": 9,
+    "lineadireccion1": "4-1 Kioicho",
+    "lineadireccion2": "",
+    "pais": "Japón",
+    "region": "Chiyoda-Ku",
+    "telefono": "+81 33 224 5000"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951469"
+  },
+  "idempleado": 24,
+  "apellido1": "Riko",
+  "apellido2": "",
+  "codigoEmpleado": 24,
+  "email": "nriko@gardening.com",
+  "extension": "8734",
+  "idempleadojefe": 23,
+  "idoficina": 9,
+  "nombre": "Narumi",
+  "puesto": "Representante Ventas",
+  "oficina": {
+    "ciudad": "Tokyo",
+    "codigooficina": "TOK-JP",
+    "codigopostal": "102-8578",
+    "idoficina": 9,
+    "lineadireccion1": "4-1 Kioicho",
+    "lineadireccion2": "",
+    "pais": "Japón",
+    "region": "Chiyoda-Ku",
+    "telefono": "+81 33 224 5000"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295146b"
+  },
+  "idempleado": 25,
+  "apellido1": "Nomura",
+  "apellido2": "",
+  "codigoEmpleado": 25,
+  "email": "tnomura@gardening.com",
+  "extension": "8735",
+  "idempleadojefe": 23,
+  "idoficina": 9,
+  "nombre": "Takuma",
+  "puesto": "Representante Ventas",
+  "oficina": {
+    "ciudad": "Tokyo",
+    "codigooficina": "TOK-JP",
+    "codigopostal": "102-8578",
+    "idoficina": 9,
+    "lineadireccion1": "4-1 Kioicho",
+    "lineadireccion2": "",
+    "pais": "Japón",
+    "region": "Chiyoda-Ku",
+    "telefono": "+81 33 224 5000"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295146c"
+  },
+  "idempleado": 26,
+  "apellido1": "Johnson",
+  "apellido2": "",
+  "codigoEmpleado": 26,
+  "email": "ajohnson@gardening.com",
+  "extension": "3321",
+  "idempleadojefe": 3,
+  "idoficina": 3,
+  "nombre": "Amy",
+  "puesto": "Director Oficina",
+  "oficina": {
+    "ciudad": "Londres",
+    "codigooficina": "LON-UK",
+    "codigopostal": "EC2N 1HN",
+    "idoficina": 3,
+    "lineadireccion1": "52 Old Broad Street",
+    "lineadireccion2": "Ground Floor",
+    "pais": "Inglaterra",
+    "region": "EMEA",
+    "telefono": "+44 20 78772041"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295146d"
+  },
+  "idempleado": 27,
+  "apellido1": "Westfalls",
+  "apellido2": "",
+  "codigoEmpleado": 27,
+  "email": "lwestfalls@gardening.com",
+  "extension": "3322",
+  "idempleadojefe": 26,
+  "idoficina": 3,
+  "nombre": "Larry",
+  "puesto": "Representante Ventas",
+  "oficina": {
+    "ciudad": "Londres",
+    "codigooficina": "LON-UK",
+    "codigopostal": "EC2N 1HN",
+    "idoficina": 3,
+    "lineadireccion1": "52 Old Broad Street",
+    "lineadireccion2": "Ground Floor",
+    "pais": "Inglaterra",
+    "region": "EMEA",
+    "telefono": "+44 20 78772041"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951470"
+  },
+  "idempleado": 28,
+  "apellido1": "Walton",
+  "apellido2": "",
+  "codigoEmpleado": 28,
+  "email": "jwalton@gardening.com",
+  "extension": "3322",
+  "idempleadojefe": 26,
+  "idoficina": 3,
+  "nombre": "John",
+  "puesto": "Representante Ventas",
+  "oficina": {
+    "ciudad": "Londres",
+    "codigooficina": "LON-UK",
+    "codigopostal": "EC2N 1HN",
+    "idoficina": 3,
+    "lineadireccion1": "52 Old Broad Street",
+    "lineadireccion2": "Ground Floor",
+    "pais": "Inglaterra",
+    "region": "EMEA",
+    "telefono": "+44 20 78772041"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951473"
+  },
+  "idempleado": 29,
+  "apellido1": "Fallmer",
+  "apellido2": "",
+  "codigoEmpleado": 29,
+  "email": "kfalmer@gardening.com",
+  "extension": "3210",
+  "idempleadojefe": 3,
+  "idoficina": 7,
+  "nombre": "Kevin",
+  "puesto": "Director Oficina",
+  "oficina": {
+    "ciudad": "Sydney",
+    "codigooficina": "SYD-AU",
+    "codigopostal": "NSW 2010",
+    "idoficina": 7,
+    "lineadireccion1": "5-11 Wentworth Avenue",
+    "lineadireccion2": "Floor #2",
+    "pais": "Australia",
+    "region": "APAC",
+    "telefono": "+61 2 9264 2451"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951475"
+  },
+  "idempleado": 30,
+  "apellido1": "Bellinelli",
+  "apellido2": "",
+  "codigoEmpleado": 30,
+  "email": "jbellinelli@gardening.com",
+  "extension": "3211",
+  "idempleadojefe": 29,
+  "idoficina": 7,
+  "nombre": "Julian",
+  "puesto": "Representante Ventas",
+  "clientes": [
+    {
+      "idcliente": 14,
+      "codigocliente": 15,
+      "nombrecliente": "Jardin de Flores",
+      "nombrecontacto": "Javier",
+      "apellidocontacto": "Villar",
+      "telefono": "654865643",
+      "fax": "914538776",
+      "lineadireccion1": "C/ Oña 34",
+      "lineadireccion2": null,
+      "ciudad": "Madrid",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28950",
+      "idcodigoempleadoventas": 30,
+      "limiteCredito": {
+        "$numberDecimal": "40000.00"
+      }
+    },
+    {
+      "idcliente": 17,
+      "codigocliente": 18,
+      "nombrecliente": "Naturajardin",
+      "nombrecontacto": "Victoria",
+      "apellidocontacto": "Cruz",
+      "telefono": "612343529",
+      "fax": "916548735",
+      "lineadireccion1": "Plaza Magallón 15",
+      "lineadireccion2": null,
+      "ciudad": "Madrid",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28011",
+      "idcodigoempleadoventas": 30,
+      "limiteCredito": {
+        "$numberDecimal": "5050.00"
+      }
+    },
+    {
+      "idcliente": 23,
+      "codigocliente": 24,
+      "nombrecliente": "Vivero Humanes",
+      "nombrecontacto": "Federico",
+      "apellidocontacto": "Gomez",
+      "telefono": "654987690",
+      "fax": "916040875",
+      "lineadireccion1": "C/Miguel Echegaray 54",
+      "lineadireccion2": null,
+      "ciudad": "Humanes",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28970",
+      "idcodigoempleadoventas": 30,
+      "limiteCredito": {
+        "$numberDecimal": "7430.00"
+      }
+    },
+    {
+      "idcliente": 27,
+      "codigocliente": 28,
+      "nombrecliente": "Agrojardin",
+      "nombrecontacto": "Benito",
+      "apellidocontacto": "Lopez",
+      "telefono": "675432926",
+      "fax": "916549264",
+      "lineadireccion1": "C/Mar Caspio 43",
+      "lineadireccion2": null,
+      "ciudad": "Getafe",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28904",
+      "idcodigoempleadoventas": 30,
+      "limiteCredito": {
+        "$numberDecimal": "8040.00"
+      }
+    },
+    {
+      "idcliente": 30,
+      "codigocliente": 31,
+      "nombrecliente": "Campohermoso",
+      "nombrecontacto": "Luis",
+      "apellidocontacto": "Jimenez",
+      "telefono": "645925376",
+      "fax": "916159116",
+      "lineadireccion1": "C/Peru 78",
+      "lineadireccion2": null,
+      "ciudad": "Fuenlabrada",
+      "region": "Madrid",
+      "pais": "Spain",
+      "codigopostal": "28945",
+      "idcodigoempleadoventas": 30,
+      "limiteCredito": {
+        "$numberDecimal": "3250.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "Sydney",
+    "codigooficina": "SYD-AU",
+    "codigopostal": "NSW 2010",
+    "idoficina": 7,
+    "lineadireccion1": "5-11 Wentworth Avenue",
+    "lineadireccion2": "Floor #2",
+    "pais": "Australia",
+    "region": "APAC",
+    "telefono": "+61 2 9264 2451"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951476"
+  },
+  "idempleado": 31,
+  "apellido1": "Kishi",
+  "apellido2": "",
+  "codigoEmpleado": 31,
+  "email": "mkishi@gardening.com",
+  "extension": "3211",
+  "idempleadojefe": 29,
+  "idoficina": 7,
+  "nombre": "Mariko",
+  "puesto": "Representante Ventas",
+  "clientes": [
+    {
+      "idcliente": 33,
+      "codigocliente": 35,
+      "nombrecliente": "Tutifruti S.A",
+      "nombrecontacto": "Jacob",
+      "apellidocontacto": "Jones",
+      "telefono": "2 9261-2433",
+      "fax": "2 9283-1695",
+      "lineadireccion1": "level 24, St. Martins Tower.-31 Market St.",
+      "lineadireccion2": null,
+      "ciudad": "Sydney",
+      "region": "Nueva Gales del Sur",
+      "pais": "Australia",
+      "codigopostal": "2000",
+      "idcodigoempleadoventas": 31,
+      "limiteCredito": {
+        "$numberDecimal": "10000.00"
+      }
+    },
+    {
+      "idcliente": 36,
+      "codigocliente": 38,
+      "nombrecliente": "El Jardin Viviente S.L",
+      "nombrecontacto": "Justin",
+      "apellidocontacto": "Smith",
+      "telefono": "2 8005-7161",
+      "fax": "2 8005-7162",
+      "lineadireccion1": "176 Cumberland Street The rocks",
+      "lineadireccion2": null,
+      "ciudad": "Sydney",
+      "region": "Nueva Gales del Sur",
+      "pais": "Australia",
+      "codigopostal": "2003",
+      "idcodigoempleadoventas": 31,
+      "limiteCredito": {
+        "$numberDecimal": "8000.00"
+      }
+    }
+  ],
+  "oficina": {
+    "ciudad": "Sydney",
+    "codigooficina": "SYD-AU",
+    "codigopostal": "NSW 2010",
+    "idoficina": 7,
+    "lineadireccion1": "5-11 Wentworth Avenue",
+    "lineadireccion2": "Floor #2",
+    "pais": "Australia",
+    "region": "APAC",
+    "telefono": "+61 2 9264 2451"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951478"
+  },
+  "idempleado": 37,
+  "apellido1": "García",
+  "apellido2": null,
+  "codigoEmpleado": 300,
+  "email": "juan@example.com",
+  "extension": "1234",
+  "idempleadojefe": null,
+  "idoficina": 27,
+  "nombre": "Juan",
+  "puesto": null,
+  "oficina": {
+    "ciudad": "Madrid",
+    "codigooficina": "OF044",
+    "codigopostal": "28001",
+    "idoficina": 27,
+    "lineadireccion1": "Calle Principal",
+    "lineadireccion2": "Piso 1",
+    "pais": "España",
+    "region": "Madrid",
+    "telefono": "123456789"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295147a"
+  },
+  "idempleado": 38,
+  "apellido1": "García",
+  "apellido2": null,
+  "codigoEmpleado": 700,
+  "email": "juan@example.com",
+  "extension": "1234",
+  "idempleadojefe": null,
+  "idoficina": 28,
+  "nombre": "Juan",
+  "puesto": null,
+  "clientes": [
+    {
+      "idcliente": 48,
+      "codigocliente": 110,
+      "nombrecliente": "Empresa XYZ",
+      "nombrecontacto": null,
+      "apellidocontacto": null,
+      "telefono": "987654321",
+      "fax": "987654321",
+      "lineadireccion1": "Avenida Principal",
+      "lineadireccion2": null,
+      "ciudad": "Barcelona",
+      "region": null,
+      "pais": "España",
+      "codigopostal": null,
+      "idcodigoempleadoventas": 38,
+      "limiteCredito": null
+    }
+  ],
+  "oficina": {
+    "ciudad": "Madrid",
+    "codigooficina": "OF054",
+    "codigopostal": "28001",
+    "idoficina": 28,
+    "lineadireccion1": "Calle Principal",
+    "lineadireccion2": "Piso 1",
+    "pais": "España",
+    "region": "Madrid",
+    "telefono": "123456789"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295147d"
+  },
+  "idempleado": 39,
+  "apellido1": "García",
+  "apellido2": null,
+  "codigoEmpleado": 710,
+  "email": "juan@example.com",
+  "extension": "1234",
+  "idempleadojefe": null,
+  "idoficina": 29,
+  "nombre": "Juan",
+  "puesto": null,
+  "clientes": [
+    {
+      "idcliente": 49,
+      "codigocliente": 1100,
+      "nombrecliente": "Empresa XYZ",
+      "nombrecontacto": null,
+      "apellidocontacto": null,
+      "telefono": "987654321",
+      "fax": "987654321",
+      "lineadireccion1": "Avenida Principal",
+      "lineadireccion2": null,
+      "ciudad": "Barcelona",
+      "region": null,
+      "pais": "España",
+      "codigopostal": null,
+      "idcodigoempleadoventas": 39,
+      "limiteCredito": null
+    }
+  ],
+  "oficina": {
+    "ciudad": "Madrid",
+    "codigooficina": "OF055",
+    "codigopostal": "28001",
+    "idoficina": 29,
+    "lineadireccion1": "Calle Principal",
+    "lineadireccion2": "Piso 1",
+    "pais": "España",
+    "region": "Madrid",
+    "telefono": "123456789"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295147e"
+  },
+  "idempleado": 41,
+  "apellido1": "García",
+  "apellido2": null,
+  "codigoEmpleado": 72110,
+  "email": "juan@example.com",
+  "extension": "1234",
+  "idempleadojefe": null,
+  "idoficina": 31,
+  "nombre": "Juan",
+  "puesto": null,
+  "clientes": [
+    {
+      "idcliente": 51,
+      "codigocliente": 121100,
+      "nombrecliente": "Empresa XYZ",
+      "nombrecontacto": null,
+      "apellidocontacto": null,
+      "telefono": "987654321",
+      "fax": "987654321",
+      "lineadireccion1": "Avenida Principal",
+      "lineadireccion2": null,
+      "ciudad": "Barcelona",
+      "region": null,
+      "pais": "España",
+      "codigopostal": null,
+      "idcodigoempleadoventas": 41,
+      "limiteCredito": null
+    }
+  ],
+  "oficina": {
+    "ciudad": "Madrid",
+    "codigooficina": "OFe555",
+    "codigopostal": "28001",
+    "idoficina": 31,
+    "lineadireccion1": "Calle Principal",
+    "lineadireccion2": "Piso 1",
+    "pais": "España",
+    "region": "Madrid",
+    "telefono": "123456789"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b295147f"
+  },
+  "idempleado": 40,
+  "apellido1": "García",
+  "apellido2": "Murguia",
+  "codigoEmpleado": 71100,
+  "email": "juan@example.com",
+  "extension": "1234",
+  "idempleadojefe": null,
+  "idoficina": 30,
+  "nombre": "Juan",
+  "puesto": "Secretario",
+  "clientes": [
+    {
+      "idcliente": 50,
+      "codigocliente": 11100,
+      "nombrecliente": "Empresa XYZ",
+      "nombrecontacto": null,
+      "apellidocontacto": null,
+      "telefono": "987654321",
+      "fax": "987654321",
+      "lineadireccion1": "Avenida Principal",
+      "lineadireccion2": null,
+      "ciudad": "Barcelona",
+      "region": null,
+      "pais": "España",
+      "codigopostal": null,
+      "idcodigoempleadoventas": 40,
+      "limiteCredito": null
+    }
+  ],
+  "oficina": {
+    "ciudad": "Madrid",
+    "codigooficina": "OF555",
+    "codigopostal": "28001",
+    "idoficina": 30,
+    "lineadireccion1": "Calle Principal",
+    "lineadireccion2": "Piso 1",
+    "pais": "España",
+    "region": "Madrid",
+    "telefono": "123456789"
+  }
+},
+{
+  "_id": {
+    "$oid": "664cff6481896b92b2951482"
+  },
+  "idempleado": 49,
+  "apellido1": "Manzaneda",
+  "apellido2": "Manzaneda Veizaga",
+  "codigoEmpleado": 7777,
+  "email": "rudy.manzaneda@gmail.com",
+  "extension": "IOP",
+  "idempleadojefe": 5,
+  "idoficina": 5,
+  "nombre": "Rudy Luis",
+  "puesto": "Jefe3",
+  "oficina": {
+    "ciudad": "Paris",
+    "codigooficina": "PAR-FR",
+    "codigopostal": "75017",
+    "idoficina": 5,
+    "lineadireccion1": "29 Rue Jouffroy d'abbans",
+    "lineadireccion2": "",
+    "pais": "Francia",
+    "region": "EMEA",
+    "telefono": "+33 14 723 4404"
+  }
+}]

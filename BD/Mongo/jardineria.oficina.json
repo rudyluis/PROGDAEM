@@ -1,0 +1,266 @@
+[{
+  "_id": {
+    "$oid": "664cff6981896b92b2951de8"
+  },
+  "idoficina": 1,
+  "ciudad": "Barcelona",
+  "codigooficina": "BCN-ES",
+  "codigopostal": "08019",
+  "lineadireccion1": "Avenida Diagonal, 38",
+  "lineadireccion2": "3A escalera Derecha",
+  "pais": "España",
+  "region": "Barcelona",
+  "telefono": "+34 93 3561182"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951de9"
+  },
+  "idoficina": 2,
+  "ciudad": "Boston",
+  "codigooficina": "BOS-USA",
+  "codigopostal": "02108",
+  "lineadireccion1": "1550 Court Place",
+  "lineadireccion2": "Suite 102",
+  "pais": "EEUU",
+  "region": "MA",
+  "telefono": "+1 215 837 0825"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951deb"
+  },
+  "idoficina": 3,
+  "ciudad": "Londres",
+  "codigooficina": "LON-UK",
+  "codigopostal": "EC2N 1HN",
+  "lineadireccion1": "52 Old Broad Street",
+  "lineadireccion2": "Ground Floor",
+  "pais": "Inglaterra",
+  "region": "EMEA",
+  "telefono": "+44 20 78772041"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951ded"
+  },
+  "idoficina": 4,
+  "ciudad": "Madrid",
+  "codigooficina": "MAD-ES",
+  "codigopostal": "28032",
+  "lineadireccion1": "Bulevar Indalecio Prieto, 32",
+  "lineadireccion2": "",
+  "pais": "España",
+  "region": "Madrid",
+  "telefono": "+34 91 7514487"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951def"
+  },
+  "idoficina": 5,
+  "ciudad": "Paris",
+  "codigooficina": "PAR-FR",
+  "codigopostal": "75017",
+  "lineadireccion1": "29 Rue Jouffroy d'abbans",
+  "lineadireccion2": "",
+  "pais": "Francia",
+  "region": "EMEA",
+  "telefono": "+33 14 723 4404"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951df1"
+  },
+  "idoficina": 6,
+  "ciudad": "San Francisco",
+  "codigooficina": "SFC-USA",
+  "codigopostal": "94080",
+  "lineadireccion1": "100 Market Street",
+  "lineadireccion2": "Suite 300",
+  "pais": "EEUU",
+  "region": "CA",
+  "telefono": "+1 650 219 4782"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951df3"
+  },
+  "idoficina": 7,
+  "ciudad": "Sydney",
+  "codigooficina": "SYD-AU",
+  "codigopostal": "NSW 2010",
+  "lineadireccion1": "5-11 Wentworth Avenue",
+  "lineadireccion2": "Floor #2",
+  "pais": "Australia",
+  "region": "APAC",
+  "telefono": "+61 2 9264 2451"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951df5"
+  },
+  "idoficina": 8,
+  "ciudad": "Talavera de la Reina",
+  "codigooficina": "TAL-ES",
+  "codigopostal": "45632",
+  "lineadireccion1": "Francisco Aguirre, 32",
+  "lineadireccion2": "5º piso (exterior)",
+  "pais": "España",
+  "region": "Castilla-LaMancha",
+  "telefono": "+34 925 867231"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951df7"
+  },
+  "idoficina": 9,
+  "ciudad": "Tokyo",
+  "codigooficina": "TOK-JP",
+  "codigopostal": "102-8578",
+  "lineadireccion1": "4-1 Kioicho",
+  "lineadireccion2": "",
+  "pais": "Japón",
+  "region": "Chiyoda-Ku",
+  "telefono": "+81 33 224 5000"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951df9"
+  },
+  "idoficina": 21,
+  "ciudad": "Madrid",
+  "codigooficina": "OF001",
+  "codigopostal": "28001",
+  "lineadireccion1": "Calle Principal",
+  "lineadireccion2": "Piso 1",
+  "pais": "España",
+  "region": "Madrid",
+  "telefono": "123456789"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951dfb"
+  },
+  "idoficina": 23,
+  "ciudad": "Madrid",
+  "codigooficina": "OF002",
+  "codigopostal": "28001",
+  "lineadireccion1": "Calle Principal",
+  "lineadireccion2": "Piso 1",
+  "pais": "España",
+  "region": "Madrid",
+  "telefono": "123456789"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951dfd"
+  },
+  "idoficina": 25,
+  "ciudad": "Madrid",
+  "codigooficina": "OF003",
+  "codigopostal": "28001",
+  "lineadireccion1": "Calle Principal",
+  "lineadireccion2": "Piso 1",
+  "pais": "España",
+  "region": "Madrid",
+  "telefono": "123456789"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951dff"
+  },
+  "idoficina": 26,
+  "ciudad": "Madrid",
+  "codigooficina": "OF004",
+  "codigopostal": "28001",
+  "lineadireccion1": "Calle Principal",
+  "lineadireccion2": "Piso 1",
+  "pais": "España",
+  "region": "Madrid",
+  "telefono": "123456789"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951e01"
+  },
+  "idoficina": 27,
+  "ciudad": "Madrid",
+  "codigooficina": "OF044",
+  "codigopostal": "28001",
+  "lineadireccion1": "Calle Principal",
+  "lineadireccion2": "Piso 1",
+  "pais": "España",
+  "region": "Madrid",
+  "telefono": "123456789"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951e03"
+  },
+  "idoficina": 28,
+  "ciudad": "Madrid",
+  "codigooficina": "OF054",
+  "codigopostal": "28001",
+  "lineadireccion1": "Calle Principal",
+  "lineadireccion2": "Piso 1",
+  "pais": "España",
+  "region": "Madrid",
+  "telefono": "123456789"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951e06"
+  },
+  "idoficina": 29,
+  "ciudad": "Madrid",
+  "codigooficina": "OF055",
+  "codigopostal": "28001",
+  "lineadireccion1": "Calle Principal",
+  "lineadireccion2": "Piso 1",
+  "pais": "España",
+  "region": "Madrid",
+  "telefono": "123456789"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951e08"
+  },
+  "idoficina": 30,
+  "ciudad": "Madrid",
+  "codigooficina": "OF555",
+  "codigopostal": "28001",
+  "lineadireccion1": "Calle Principal",
+  "lineadireccion2": "Piso 1",
+  "pais": "España",
+  "region": "Madrid",
+  "telefono": "123456789"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951e09"
+  },
+  "idoficina": 31,
+  "ciudad": "Madrid",
+  "codigooficina": "OFe555",
+  "codigopostal": "28001",
+  "lineadireccion1": "Calle Principal",
+  "lineadireccion2": "Piso 1",
+  "pais": "España",
+  "region": "Madrid",
+  "telefono": "123456789"
+},
+{
+  "_id": {
+    "$oid": "664cff6981896b92b2951e0c"
+  },
+  "idoficina": 33,
+  "ciudad": "Barcelona",
+  "codigooficina": "OF00002",
+  "codigopostal": "08001",
+  "lineadireccion1": "Avenida Principal",
+  "lineadireccion2": "Piso 2",
+  "pais": "España",
+  "region": "Cataluña",
+  "telefono": "987654321"
+}]

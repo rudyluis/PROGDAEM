@@ -1,0 +1,1677 @@
+[{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9edb"
+  },
+  "idcliente": 1,
+  "apellidocontacto": "GoldFish",
+  "ciudad": "San Francisco",
+  "codigocliente": 1,
+  "codigopostal": "24006",
+  "estadoReg": 1,
+  "fax": "5556901746",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 19,
+  "limiteCredito": {
+    "$numberDecimal": "3000.00"
+  },
+  "lineadireccion1": "False Street 52 2 A",
+  "lineadireccion2": null,
+  "nombrecliente": "GoldFish Garden",
+  "nombrecontacto": "Daniel G",
+  "pais": "USA",
+  "region": null,
+  "telefono": "5556901745",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Sanchez",
+    "apellido2": "Lopez",
+    "codigoEmpleado": 19,
+    "email": "wssanchez@gardening.com",
+    "extension": "7454",
+    "idempleado": 19,
+    "idempleadojefe": 18,
+    "idoficina": 6,
+    "nombre": "Walter Santiago",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9edc"
+  },
+  "idcliente": 2,
+  "apellidocontacto": "Wright",
+  "ciudad": "Miami",
+  "codigocliente": 3,
+  "codigopostal": "24010",
+  "estadoReg": 1,
+  "fax": "5557410346",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 19,
+  "limiteCredito": {
+    "$numberDecimal": "6000.00"
+  },
+  "lineadireccion1": "Wall-e Avenue",
+  "lineadireccion2": null,
+  "nombrecliente": "Gardening Associates",
+  "nombrecontacto": "Anne",
+  "pais": "USA",
+  "region": "Miami",
+  "telefono": "5557410345",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Sanchez",
+    "apellido2": "Lopez",
+    "codigoEmpleado": 19,
+    "email": "wssanchez@gardening.com",
+    "extension": "7454",
+    "idempleado": 19,
+    "idempleadojefe": 18,
+    "idoficina": 6,
+    "nombre": "Walter Santiago",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9edd"
+  },
+  "idcliente": 3,
+  "apellidocontacto": "Flaute",
+  "ciudad": "New York",
+  "codigocliente": 4,
+  "codigopostal": "85495",
+  "estadoReg": 1,
+  "fax": "5552323128",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 22,
+  "limiteCredito": {
+    "$numberDecimal": "12000.00"
+  },
+  "lineadireccion1": "Oaks Avenue nº22",
+  "lineadireccion2": null,
+  "nombrecliente": "Gerudo Valley",
+  "nombrecontacto": "Link",
+  "pais": "USA",
+  "region": null,
+  "telefono": "5552323129",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Paxton",
+    "apellido2": "",
+    "codigoEmpleado": 22,
+    "email": "lpaxton@gardening.com",
+    "extension": "7665",
+    "idempleado": 22,
+    "idempleadojefe": 20,
+    "idoficina": 2,
+    "nombre": "Lorena",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ede"
+  },
+  "idcliente": 4,
+  "apellidocontacto": "Tendo",
+  "ciudad": "Miami",
+  "codigocliente": 5,
+  "codigopostal": "696969",
+  "estadoReg": 1,
+  "fax": "55591233211",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 22,
+  "limiteCredito": {
+    "$numberDecimal": "600000.00"
+  },
+  "lineadireccion1": "Null Street nº69",
+  "lineadireccion2": null,
+  "nombrecliente": "Tendo Garden",
+  "nombrecontacto": "Akane",
+  "pais": "USA",
+  "region": null,
+  "telefono": "55591233210",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Paxton",
+    "apellido2": "",
+    "codigoEmpleado": 22,
+    "email": "lpaxton@gardening.com",
+    "extension": "7665",
+    "idempleado": 22,
+    "idempleadojefe": 20,
+    "idoficina": 2,
+    "nombre": "Lorena",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9edf"
+  },
+  "idcliente": 6,
+  "apellidocontacto": "Bermejo",
+  "ciudad": "Madrid",
+  "codigocliente": 7,
+  "codigopostal": "28942",
+  "estadoReg": 1,
+  "fax": "916549872",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 11,
+  "limiteCredito": {
+    "$numberDecimal": "20000.00"
+  },
+  "lineadireccion1": "C/pintor segundo",
+  "lineadireccion2": "Getafe",
+  "nombrecliente": "Beragua",
+  "nombrecontacto": "Jose",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "654987321",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Magaña",
+    "apellido2": "Perez",
+    "codigoEmpleado": 11,
+    "email": "manu@jardineria.es",
+    "extension": "2518",
+    "idempleado": 11,
+    "idempleadojefe": 3,
+    "idoficina": 1,
+    "nombre": "Emmanuel",
+    "puesto": "Director Oficina"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ee0"
+  },
+  "idcliente": 7,
+  "apellidocontacto": "Lopez",
+  "ciudad": "Madrid",
+  "codigocliente": 8,
+  "codigopostal": "28930",
+  "estadoReg": 1,
+  "fax": "919535678",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 11,
+  "limiteCredito": {
+    "$numberDecimal": "40000.00"
+  },
+  "lineadireccion1": "C/sinesio delgado",
+  "lineadireccion2": "Madrid",
+  "nombrecliente": "Club Golf Puerta del hierro",
+  "nombrecontacto": "Paco",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "62456810",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Magaña",
+    "apellido2": "Perez",
+    "codigoEmpleado": 11,
+    "email": "manu@jardineria.es",
+    "extension": "2518",
+    "idempleado": 11,
+    "idempleadojefe": 3,
+    "idoficina": 1,
+    "nombre": "Emmanuel",
+    "puesto": "Director Oficina"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ee1"
+  },
+  "idcliente": 8,
+  "apellidocontacto": "Rengifo",
+  "ciudad": "Madrid",
+  "codigocliente": 9,
+  "codigopostal": "28947",
+  "estadoReg": 1,
+  "fax": "916428956",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 11,
+  "limiteCredito": {
+    "$numberDecimal": "32000.00"
+  },
+  "lineadireccion1": "C/majadahonda",
+  "lineadireccion2": "Boadilla",
+  "nombrecliente": "Naturagua",
+  "nombrecontacto": "Guillermo",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "689234750",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Magaña",
+    "apellido2": "Perez",
+    "codigoEmpleado": 11,
+    "email": "manu@jardineria.es",
+    "extension": "2518",
+    "idempleado": 11,
+    "idempleadojefe": 3,
+    "idoficina": 1,
+    "nombre": "Emmanuel",
+    "puesto": "Director Oficina"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ee2"
+  },
+  "idcliente": 9,
+  "apellidocontacto": "Serrano",
+  "ciudad": "Madrid",
+  "codigocliente": 10,
+  "codigopostal": "28946",
+  "estadoReg": 1,
+  "fax": "916421756",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 11,
+  "limiteCredito": {
+    "$numberDecimal": "50000.00"
+  },
+  "lineadireccion1": "C/azores",
+  "lineadireccion2": "Fuenlabrada",
+  "nombrecliente": "DaraDistribuciones",
+  "nombrecontacto": "David",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "675598001",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Magaña",
+    "apellido2": "Perez",
+    "codigoEmpleado": 11,
+    "email": "manu@jardineria.es",
+    "extension": "2518",
+    "idempleado": 11,
+    "idempleadojefe": 3,
+    "idoficina": 1,
+    "nombre": "Emmanuel",
+    "puesto": "Director Oficina"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ee3"
+  },
+  "idcliente": 10,
+  "apellidocontacto": "Tacaño",
+  "ciudad": "Madrid",
+  "codigocliente": 11,
+  "codigopostal": "28943",
+  "estadoReg": 1,
+  "fax": "916689215",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 11,
+  "limiteCredito": {
+    "$numberDecimal": "20000.00"
+  },
+  "lineadireccion1": "C/Lagañas",
+  "lineadireccion2": "Fuenlabrada",
+  "nombrecliente": "Madrileña de riegos",
+  "nombrecontacto": "Jose",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "655983045",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Magaña",
+    "apellido2": "Perez",
+    "codigoEmpleado": 11,
+    "email": "manu@jardineria.es",
+    "extension": "2518",
+    "idempleado": 11,
+    "idempleadojefe": 3,
+    "idoficina": 1,
+    "nombre": "Emmanuel",
+    "puesto": "Director Oficina"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ee4"
+  },
+  "idcliente": 11,
+  "apellidocontacto": "Lasas",
+  "ciudad": "Fuenlabrada",
+  "codigocliente": 12,
+  "codigopostal": "28945",
+  "estadoReg": 1,
+  "fax": "34914851312",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 8,
+  "limiteCredito": {
+    "$numberDecimal": "154310.00"
+  },
+  "lineadireccion1": "C/Leganes 15",
+  "lineadireccion2": null,
+  "nombrecliente": "Lasas S.A.",
+  "nombrecontacto": "Antonio",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "34916540145",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "López",
+    "apellido2": "Murcia",
+    "codigoEmpleado": 8,
+    "email": "mlopez@jardineria.es",
+    "extension": "2442",
+    "idempleado": 8,
+    "idempleadojefe": 7,
+    "idoficina": 4,
+    "nombre": "Mariano",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ee5"
+  },
+  "idcliente": 12,
+  "apellidocontacto": "Camunas",
+  "ciudad": "San Lorenzo del Escorial",
+  "codigocliente": 13,
+  "codigopostal": "28145",
+  "estadoReg": 1,
+  "fax": "34914871541",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 8,
+  "limiteCredito": {
+    "$numberDecimal": "16481.00"
+  },
+  "lineadireccion1": "C/Virgenes 45",
+  "lineadireccion2": "C/Princesas 2 1ºB",
+  "nombrecliente": "Camunas Jardines S.L.",
+  "nombrecontacto": "Pedro",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "34914873241",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "López",
+    "apellido2": "Murcia",
+    "codigoEmpleado": 8,
+    "email": "mlopez@jardineria.es",
+    "extension": "2442",
+    "idempleado": 8,
+    "idempleadojefe": 7,
+    "idoficina": 4,
+    "nombre": "Mariano",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ee6"
+  },
+  "idcliente": 13,
+  "apellidocontacto": "Rodriguez",
+  "ciudad": "Madrid",
+  "codigocliente": 14,
+  "codigopostal": "28003",
+  "estadoReg": 1,
+  "fax": "34912484764",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 8,
+  "limiteCredito": {
+    "$numberDecimal": "321000.00"
+  },
+  "lineadireccion1": "C/Nueva York 74",
+  "lineadireccion2": null,
+  "nombrecliente": "Dardena S.A.",
+  "nombrecontacto": "Juan",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "34912453217",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "López",
+    "apellido2": "Murcia",
+    "codigoEmpleado": 8,
+    "email": "mlopez@jardineria.es",
+    "extension": "2442",
+    "idempleado": 8,
+    "idempleadojefe": 7,
+    "idoficina": 4,
+    "nombre": "Mariano",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ee7"
+  },
+  "idcliente": 14,
+  "apellidocontacto": "Villar",
+  "ciudad": "Madrid",
+  "codigocliente": 15,
+  "codigopostal": "28950",
+  "estadoReg": 1,
+  "fax": "914538776",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 30,
+  "limiteCredito": {
+    "$numberDecimal": "40000.00"
+  },
+  "lineadireccion1": "C/ Oña 34",
+  "lineadireccion2": null,
+  "nombrecliente": "Jardin de Flores",
+  "nombrecontacto": "Javier",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "654865643",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Bellinelli",
+    "apellido2": "",
+    "codigoEmpleado": 30,
+    "email": "jbellinelli@gardening.com",
+    "extension": "3211",
+    "idempleado": 30,
+    "idempleadojefe": 29,
+    "idoficina": 7,
+    "nombre": "Julian",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ee8"
+  },
+  "idcliente": 15,
+  "apellidocontacto": "Rodriguez",
+  "ciudad": "Fuenlabrada",
+  "codigocliente": 16,
+  "codigopostal": "28945",
+  "estadoReg": 1,
+  "fax": "912458657",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 5,
+  "limiteCredito": {
+    "$numberDecimal": "1500.00"
+  },
+  "lineadireccion1": "C/Leganes24",
+  "lineadireccion2": null,
+  "nombrecliente": "Flores Marivi",
+  "nombrecontacto": "Maria",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "666555444",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Rosas",
+    "apellido2": "Marquez",
+    "codigoEmpleado": 5,
+    "email": "frosas@jardineria.es",
+    "extension": "2844",
+    "idempleado": 5,
+    "idempleadojefe": 3,
+    "idoficina": 8,
+    "nombre": "Felipe",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ee9"
+  },
+  "idcliente": 16,
+  "apellidocontacto": "Fernandez",
+  "ciudad": "Montornes del valles",
+  "codigocliente": 17,
+  "codigopostal": "24586",
+  "estadoReg": 1,
+  "fax": "978453216",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 5,
+  "limiteCredito": {
+    "$numberDecimal": "3500.00"
+  },
+  "lineadireccion1": "C/Luis Salquillo4",
+  "lineadireccion2": null,
+  "nombrecliente": "Flowers, S.A",
+  "nombrecontacto": "Beatriz",
+  "pais": "Spain",
+  "region": "Barcelona",
+  "telefono": "698754159",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Rosas",
+    "apellido2": "Marquez",
+    "codigoEmpleado": 5,
+    "email": "frosas@jardineria.es",
+    "extension": "2844",
+    "idempleado": 5,
+    "idempleadojefe": 3,
+    "idoficina": 8,
+    "nombre": "Felipe",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9eea"
+  },
+  "idcliente": 17,
+  "apellidocontacto": "Cruz",
+  "ciudad": "Madrid",
+  "codigocliente": 18,
+  "codigopostal": "28011",
+  "estadoReg": 1,
+  "fax": "916548735",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 30,
+  "limiteCredito": {
+    "$numberDecimal": "5050.00"
+  },
+  "lineadireccion1": "Plaza Magallón 15",
+  "lineadireccion2": null,
+  "nombrecliente": "Naturajardin",
+  "nombrecontacto": "Victoria",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "612343529",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Bellinelli",
+    "apellido2": "",
+    "codigoEmpleado": 30,
+    "email": "jbellinelli@gardening.com",
+    "extension": "3211",
+    "idempleado": 30,
+    "idempleadojefe": 29,
+    "idoficina": 7,
+    "nombre": "Julian",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9eeb"
+  },
+  "idcliente": 18,
+  "apellidocontacto": "Martinez",
+  "ciudad": "Santa cruz de Tenerife",
+  "codigocliente": 19,
+  "codigopostal": "38297",
+  "estadoReg": 1,
+  "fax": "912354475",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 12,
+  "limiteCredito": {
+    "$numberDecimal": "30000.00"
+  },
+  "lineadireccion1": "C/Estancado",
+  "lineadireccion2": null,
+  "nombrecliente": "Golf S.A.",
+  "nombrecontacto": "Luis",
+  "pais": "Spain",
+  "region": "Islas Canarias",
+  "telefono": "916458762",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Martinez",
+    "apellido2": "De la Osa",
+    "codigoEmpleado": 12,
+    "email": "jmmart@hotmail.es",
+    "extension": "2519",
+    "idempleado": 12,
+    "idempleadojefe": 11,
+    "idoficina": 1,
+    "nombre": "José Manuel",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9eec"
+  },
+  "idcliente": 19,
+  "apellidocontacto": "Suarez",
+  "ciudad": "Barcelona",
+  "codigocliente": 20,
+  "codigopostal": "12320",
+  "estadoReg": 1,
+  "fax": "964493063",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 12,
+  "limiteCredito": {
+    "$numberDecimal": "20000.00"
+  },
+  "lineadireccion1": "C/Letardo",
+  "lineadireccion2": null,
+  "nombrecliente": "Americh Golf Management SL",
+  "nombrecontacto": "Mario",
+  "pais": "Spain",
+  "region": "Cataluña",
+  "telefono": "964493072",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Martinez",
+    "apellido2": "De la Osa",
+    "codigoEmpleado": 12,
+    "email": "jmmart@hotmail.es",
+    "extension": "2519",
+    "idempleado": 12,
+    "idempleadojefe": 11,
+    "idoficina": 1,
+    "nombre": "José Manuel",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9eed"
+  },
+  "idcliente": 20,
+  "apellidocontacto": "Rodrigez",
+  "ciudad": "Canarias",
+  "codigocliente": 21,
+  "codigopostal": "35488",
+  "estadoReg": 1,
+  "fax": "914489898",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 12,
+  "limiteCredito": {
+    "$numberDecimal": "50000.00"
+  },
+  "lineadireccion1": "C/Roman 3",
+  "lineadireccion2": null,
+  "nombrecliente": "Aloha",
+  "nombrecontacto": "Cristian",
+  "pais": "Spain",
+  "region": "Canarias",
+  "telefono": "916485852",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Martinez",
+    "apellido2": "De la Osa",
+    "codigoEmpleado": 12,
+    "email": "jmmart@hotmail.es",
+    "extension": "2519",
+    "idempleado": 12,
+    "idempleadojefe": 11,
+    "idoficina": 1,
+    "nombre": "José Manuel",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9eee"
+  },
+  "idcliente": 21,
+  "apellidocontacto": "Camacho",
+  "ciudad": "Barcelona",
+  "codigocliente": 22,
+  "codigopostal": "12320",
+  "estadoReg": 1,
+  "fax": "916493211",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 12,
+  "limiteCredito": {
+    "$numberDecimal": "30000.00"
+  },
+  "lineadireccion1": "Avenida Tibidabo",
+  "lineadireccion2": null,
+  "nombrecliente": "El Prat",
+  "nombrecontacto": "Francisco",
+  "pais": "Spain",
+  "region": "Cataluña",
+  "telefono": "916882323",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Martinez",
+    "apellido2": "De la Osa",
+    "codigoEmpleado": 12,
+    "email": "jmmart@hotmail.es",
+    "extension": "2519",
+    "idempleado": 12,
+    "idempleadojefe": 11,
+    "idoficina": 1,
+    "nombre": "José Manuel",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ef1"
+  },
+  "idcliente": 22,
+  "apellidocontacto": "Santillana",
+  "ciudad": "Sotogrande",
+  "codigocliente": 23,
+  "codigopostal": "11310",
+  "estadoReg": 1,
+  "fax": "914825645",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 12,
+  "limiteCredito": {
+    "$numberDecimal": "60000.00"
+  },
+  "lineadireccion1": "C/Paseo del Parque",
+  "lineadireccion2": null,
+  "nombrecliente": "Sotogrande",
+  "nombrecontacto": "Maria",
+  "pais": "Spain",
+  "region": "Cadiz",
+  "telefono": "915576622",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Martinez",
+    "apellido2": "De la Osa",
+    "codigoEmpleado": 12,
+    "email": "jmmart@hotmail.es",
+    "extension": "2519",
+    "idempleado": 12,
+    "idempleadojefe": 11,
+    "idoficina": 1,
+    "nombre": "José Manuel",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ef4"
+  },
+  "idcliente": 23,
+  "apellidocontacto": "Gomez",
+  "ciudad": "Humanes",
+  "codigocliente": 24,
+  "codigopostal": "28970",
+  "estadoReg": 1,
+  "fax": "916040875",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 30,
+  "limiteCredito": {
+    "$numberDecimal": "7430.00"
+  },
+  "lineadireccion1": "C/Miguel Echegaray 54",
+  "lineadireccion2": null,
+  "nombrecliente": "Vivero Humanes",
+  "nombrecontacto": "Federico",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "654987690",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Bellinelli",
+    "apellido2": "",
+    "codigoEmpleado": 30,
+    "email": "jbellinelli@gardening.com",
+    "extension": "3211",
+    "idempleado": 30,
+    "idempleadojefe": 29,
+    "idoficina": 7,
+    "nombre": "Julian",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9ef7"
+  },
+  "idcliente": 24,
+  "apellidocontacto": "Muñoz Mena",
+  "ciudad": "Fuenlabrada",
+  "codigocliente": 25,
+  "codigopostal": "28574",
+  "estadoReg": 1,
+  "fax": "915483754",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 5,
+  "limiteCredito": {
+    "$numberDecimal": "4500.00"
+  },
+  "lineadireccion1": "C/Callo 52",
+  "lineadireccion2": null,
+  "nombrecliente": "Fuenla City",
+  "nombrecontacto": "Tony",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "675842139",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Rosas",
+    "apellido2": "Marquez",
+    "codigoEmpleado": 5,
+    "email": "frosas@jardineria.es",
+    "extension": "2844",
+    "idempleado": 5,
+    "idempleadojefe": 3,
+    "idoficina": 8,
+    "nombre": "Felipe",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9efa"
+  },
+  "idcliente": 25,
+  "apellidocontacto": "Sánchez",
+  "ciudad": "Madrid",
+  "codigocliente": 26,
+  "codigopostal": "29874",
+  "estadoReg": 1,
+  "fax": "914477777",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 9,
+  "limiteCredito": {
+    "$numberDecimal": "76000.00"
+  },
+  "lineadireccion1": "Polígono Industrial Maspalomas, Nº52",
+  "lineadireccion2": "Móstoles",
+  "nombrecliente": "Jardines y Mansiones Cactus SL",
+  "nombrecontacto": "Eva María",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "916877445",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Campoamor",
+    "apellido2": "Martín",
+    "codigoEmpleado": 9,
+    "email": "lcampoamor@jardineria.es",
+    "extension": "2442",
+    "idempleado": 9,
+    "idempleadojefe": 7,
+    "idoficina": 4,
+    "nombre": "Lucio",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9efd"
+  },
+  "idcliente": 26,
+  "apellidocontacto": "San Martín",
+  "ciudad": "Madrid",
+  "codigocliente": 27,
+  "codigopostal": "37845",
+  "estadoReg": 1,
+  "fax": "917897474",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 9,
+  "limiteCredito": {
+    "$numberDecimal": "100500.00"
+  },
+  "lineadireccion1": "C/Francisco Arce, Nº44",
+  "lineadireccion2": "Bustarviejo",
+  "nombrecliente": "Jardinerías Matías SL",
+  "nombrecontacto": "Matías",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "916544147",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Campoamor",
+    "apellido2": "Martín",
+    "codigoEmpleado": 9,
+    "email": "lcampoamor@jardineria.es",
+    "extension": "2442",
+    "idempleado": 9,
+    "idempleadojefe": 7,
+    "idoficina": 4,
+    "nombre": "Lucio",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9eff"
+  },
+  "idcliente": 27,
+  "apellidocontacto": "Lopez",
+  "ciudad": "Getafe",
+  "codigocliente": 28,
+  "codigopostal": "28904",
+  "estadoReg": 1,
+  "fax": "916549264",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 30,
+  "limiteCredito": {
+    "$numberDecimal": "8040.00"
+  },
+  "lineadireccion1": "C/Mar Caspio 43",
+  "lineadireccion2": null,
+  "nombrecliente": "Agrojardin",
+  "nombrecontacto": "Benito",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "675432926",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Bellinelli",
+    "apellido2": "",
+    "codigoEmpleado": 30,
+    "email": "jbellinelli@gardening.com",
+    "extension": "3211",
+    "idempleado": 30,
+    "idempleadojefe": 29,
+    "idoficina": 7,
+    "nombre": "Julian",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f05"
+  },
+  "idcliente": 28,
+  "apellidocontacto": "Sanchez",
+  "ciudad": "Humanes",
+  "codigocliente": 29,
+  "codigopostal": "28574",
+  "estadoReg": 1,
+  "fax": "974315924",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 5,
+  "limiteCredito": {
+    "$numberDecimal": "5500.00"
+  },
+  "lineadireccion1": "C/Ibiza 32",
+  "lineadireccion2": null,
+  "nombrecliente": "Top Campo",
+  "nombrecontacto": "Joseluis",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "685746512",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Rosas",
+    "apellido2": "Marquez",
+    "codigoEmpleado": 5,
+    "email": "frosas@jardineria.es",
+    "extension": "2844",
+    "idempleado": 5,
+    "idempleadojefe": 3,
+    "idoficina": 8,
+    "nombre": "Felipe",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f09"
+  },
+  "idcliente": 29,
+  "apellidocontacto": "Marquez",
+  "ciudad": "Fuenlabrada",
+  "codigocliente": 30,
+  "codigopostal": "27584",
+  "estadoReg": 1,
+  "fax": "912475843",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 5,
+  "limiteCredito": {
+    "$numberDecimal": "7500.00"
+  },
+  "lineadireccion1": "C/Lima 1",
+  "lineadireccion2": null,
+  "nombrecliente": "Jardineria Sara",
+  "nombrecontacto": "Sara",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "675124537",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Rosas",
+    "apellido2": "Marquez",
+    "codigoEmpleado": 5,
+    "email": "frosas@jardineria.es",
+    "extension": "2844",
+    "idempleado": 5,
+    "idempleadojefe": 3,
+    "idoficina": 8,
+    "nombre": "Felipe",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f0c"
+  },
+  "idcliente": 30,
+  "apellidocontacto": "Jimenez",
+  "ciudad": "Fuenlabrada",
+  "codigocliente": 31,
+  "codigopostal": "28945",
+  "estadoReg": 1,
+  "fax": "916159116",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 30,
+  "limiteCredito": {
+    "$numberDecimal": "3250.00"
+  },
+  "lineadireccion1": "C/Peru 78",
+  "lineadireccion2": null,
+  "nombrecliente": "Campohermoso",
+  "nombrecontacto": "Luis",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "645925376",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Bellinelli",
+    "apellido2": "",
+    "codigoEmpleado": 30,
+    "email": "jbellinelli@gardening.com",
+    "extension": "3211",
+    "idempleado": 30,
+    "idempleadojefe": 29,
+    "idoficina": 7,
+    "nombre": "Julian",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f10"
+  },
+  "idcliente": 31,
+  "apellidocontacto": "Toulou",
+  "ciudad": "Paris",
+  "codigocliente": 32,
+  "codigopostal": "75010",
+  "estadoReg": 1,
+  "fax": "(33)5120578961",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 16,
+  "limiteCredito": {
+    "$numberDecimal": "10000.00"
+  },
+  "lineadireccion1": "6 place d Alleray 15Ã¨me",
+  "lineadireccion2": null,
+  "nombrecliente": "france telecom",
+  "nombrecontacto": "FraÃ§ois",
+  "pais": "France",
+  "region": null,
+  "telefono": "(33)5120578961",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Narvaez",
+    "apellido2": "",
+    "codigoEmpleado": 16,
+    "email": "lnarvaez@gardening.com",
+    "extension": "9982",
+    "idempleado": 16,
+    "idempleadojefe": 15,
+    "idoficina": 5,
+    "nombre": "Lionel",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f19"
+  },
+  "idcliente": 32,
+  "apellidocontacto": "Delacroux",
+  "ciudad": "Paris",
+  "codigocliente": 33,
+  "codigopostal": "75058",
+  "estadoReg": 1,
+  "fax": "(33)0140205442",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 16,
+  "limiteCredito": {
+    "$numberDecimal": "30000.00"
+  },
+  "lineadireccion1": "Quai du Louvre",
+  "lineadireccion2": null,
+  "nombrecliente": "Musée du Louvre",
+  "nombrecontacto": "Pierre",
+  "pais": "France",
+  "region": null,
+  "telefono": "(33)0140205050",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Narvaez",
+    "apellido2": "",
+    "codigoEmpleado": 16,
+    "email": "lnarvaez@gardening.com",
+    "extension": "9982",
+    "idempleado": 16,
+    "idempleadojefe": 15,
+    "idoficina": 5,
+    "nombre": "Lionel",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f1c"
+  },
+  "idcliente": 33,
+  "apellidocontacto": "Jones",
+  "ciudad": "Sydney",
+  "codigocliente": 35,
+  "codigopostal": "2000",
+  "estadoReg": 1,
+  "fax": "2 9283-1695",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 31,
+  "limiteCredito": {
+    "$numberDecimal": "10000.00"
+  },
+  "lineadireccion1": "level 24, St. Martins Tower.-31 Market St.",
+  "lineadireccion2": null,
+  "nombrecliente": "Tutifruti S.A",
+  "nombrecontacto": "Jacob",
+  "pais": "Australia",
+  "region": "Nueva Gales del Sur",
+  "telefono": "2 9261-2433",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Kishi",
+    "apellido2": "",
+    "codigoEmpleado": 31,
+    "email": "mkishi@gardening.com",
+    "extension": "3211",
+    "idempleado": 31,
+    "idempleadojefe": 29,
+    "idoficina": 7,
+    "nombre": "Mariko",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f25"
+  },
+  "idcliente": 34,
+  "apellidocontacto": "Romero",
+  "ciudad": "Madrid",
+  "codigocliente": 36,
+  "codigopostal": "29643",
+  "estadoReg": 1,
+  "fax": "685249700",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 18,
+  "limiteCredito": {
+    "$numberDecimal": "6000.00"
+  },
+  "lineadireccion1": "Avenida España",
+  "lineadireccion2": null,
+  "nombrecliente": "Flores S.L.",
+  "nombrecontacto": "Antonio",
+  "pais": "Spain",
+  "region": "Fuenlabrada",
+  "telefono": "654352981",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Bolton",
+    "apellido2": "",
+    "codigoEmpleado": 18,
+    "email": "mbolton@gardening.com",
+    "extension": "7454",
+    "idempleado": 18,
+    "idempleadojefe": 3,
+    "idoficina": 6,
+    "nombre": "Michael",
+    "puesto": "Director Oficina"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f28"
+  },
+  "idcliente": 35,
+  "apellidocontacto": "Mcain",
+  "ciudad": "London",
+  "codigocliente": 37,
+  "codigopostal": "65930",
+  "estadoReg": 1,
+  "fax": "9364875882",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 18,
+  "limiteCredito": {
+    "$numberDecimal": "10000.00"
+  },
+  "lineadireccion1": "Lihgting Park",
+  "lineadireccion2": null,
+  "nombrecliente": "The Magic Garden",
+  "nombrecontacto": "Richard",
+  "pais": "United Kingdom",
+  "region": "London",
+  "telefono": "926523468",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Bolton",
+    "apellido2": "",
+    "codigoEmpleado": 18,
+    "email": "mbolton@gardening.com",
+    "extension": "7454",
+    "idempleado": 18,
+    "idempleadojefe": 3,
+    "idoficina": 6,
+    "nombre": "Michael",
+    "puesto": "Director Oficina"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f2c"
+  },
+  "idcliente": 36,
+  "apellidocontacto": "Smith",
+  "ciudad": "Sydney",
+  "codigocliente": 38,
+  "codigopostal": "2003",
+  "estadoReg": 1,
+  "fax": "2 8005-7162",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 31,
+  "limiteCredito": {
+    "$numberDecimal": "8000.00"
+  },
+  "lineadireccion1": "176 Cumberland Street The rocks",
+  "lineadireccion2": null,
+  "nombrecliente": "El Jardin Viviente S.L",
+  "nombrecontacto": "Justin",
+  "pais": "Australia",
+  "region": "Nueva Gales del Sur",
+  "telefono": "2 8005-7161",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Kishi",
+    "apellido2": "",
+    "codigoEmpleado": 31,
+    "email": "mkishi@gardening.com",
+    "extension": "3211",
+    "idempleado": 31,
+    "idempleadojefe": 29,
+    "idoficina": 7,
+    "nombre": "Mariko",
+    "puesto": "Representante Ventas"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f30"
+  },
+  "idcliente": 53,
+  "apellidocontacto": "Pinocho",
+  "ciudad": "Cochabamba",
+  "codigocliente": 999,
+  "codigopostal": "591",
+  "estadoReg": 1,
+  "fax": "00",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 2,
+  "limiteCredito": {
+    "$numberDecimal": "4000.00"
+  },
+  "lineadireccion1": "direccion1",
+  "lineadireccion2": null,
+  "nombrecliente": "Pepe Luis",
+  "nombrecontacto": "Grillo Zapatero",
+  "pais": "Bolivia",
+  "region": "Cercado",
+  "telefono": "123456",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "López",
+    "apellido2": "Martinez",
+    "codigoEmpleado": 2,
+    "email": "rlopez@jardineria.es",
+    "extension": "2899",
+    "idempleado": 2,
+    "idempleadojefe": 1,
+    "idoficina": 8,
+    "nombre": "Ruben",
+    "puesto": "Subdirector Marketing"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f36"
+  },
+  "idcliente": 54,
+  "apellidocontacto": "",
+  "ciudad": "",
+  "codigocliente": 23,
+  "codigopostal": "33",
+  "estadoReg": 1,
+  "fax": "",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 1,
+  "limiteCredito": {
+    "$numberDecimal": "10000.00"
+  },
+  "lineadireccion1": "",
+  "lineadireccion2": "",
+  "nombrecliente": "Fabio",
+  "nombrecontacto": "Mavric",
+  "pais": "",
+  "region": "",
+  "telefono": "",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "Magaña",
+    "apellido2": "Perez",
+    "codigoEmpleado": 1,
+    "email": "marcos@jardineria.es",
+    "extension": "3897",
+    "idempleado": 1,
+    "idempleadojefe": null,
+    "idoficina": 8,
+    "nombre": "Marcos",
+    "puesto": "Director General"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f39"
+  },
+  "idcliente": 55,
+  "apellidocontacto": "Morita",
+  "ciudad": "Cochabamba",
+  "codigocliente": 99,
+  "codigopostal": "591",
+  "estadoReg": 2,
+  "fax": "00",
+  "fechaModif": {
+    "$date": "2024-03-25T07:48:09.096Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:47:10.686Z"
+  },
+  "idcodigoempleadoventas": 2,
+  "limiteCredito": {
+    "$numberDecimal": "2000.00"
+  },
+  "lineadireccion1": "Av.Ecologica",
+  "lineadireccion2": null,
+  "nombrecliente": "Andres",
+  "nombrecontacto": "Cortez",
+  "pais": "Bolivia",
+  "region": "Tiquipaya",
+  "telefono": "76430703",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "López",
+    "apellido2": "Martinez",
+    "codigoEmpleado": 2,
+    "email": "rlopez@jardineria.es",
+    "extension": "2899",
+    "idempleado": 2,
+    "idempleadojefe": 1,
+    "idoficina": 8,
+    "nombre": "Ruben",
+    "puesto": "Subdirector Marketing"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515d81896b92b2bb9f3d"
+  },
+  "idcliente": 5,
+  "apellidocontacto": "Lasas",
+  "ciudad": "Fuenlabrada",
+  "codigocliente": 6,
+  "codigopostal": "28945",
+  "estadoReg": 1,
+  "fax": "34914851312",
+  "fechaModif": {
+    "$date": "2024-03-25T07:28:26.283Z"
+  },
+  "fechaReg": {
+    "$date": "2024-03-25T07:25:13.135Z"
+  },
+  "idcodigoempleadoventas": 8,
+  "limiteCredito": {
+    "$numberDecimal": "7000.00"
+  },
+  "lineadireccion1": "C/Leganes 15",
+  "lineadireccion2": null,
+  "nombrecliente": "Lasas S.A.",
+  "nombrecontacto": "Antonio",
+  "pais": "Spain",
+  "region": "Madrid",
+  "telefono": "34916540145",
+  "usuarioModif": "postgres",
+  "usuarioReg": "postgres",
+  "empleado": {
+    "apellido1": "López",
+    "apellido2": "Murcia",
+    "codigoEmpleado": 8,
+    "email": "mlopez@jardineria.es",
+    "extension": "2442",
+    "idempleado": 8,
+    "idempleadojefe": 7,
+    "idoficina": 4,
+    "nombre": "Mariano",
+    "puesto": "Representante Ventas"
+  }
+}]

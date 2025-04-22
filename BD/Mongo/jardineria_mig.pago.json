@@ -1,0 +1,1118 @@
+[{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e86"
+  },
+  "idpago": 1,
+  "fechapago": {
+    "$date": "2008-11-10T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 1,
+  "nrotransaccion": "ak-std-000001",
+  "total": {
+    "$numberDecimal": "2000.00"
+  },
+  "cliente": {
+    "apellidocontacto": "GoldFish",
+    "ciudad": "San Francisco",
+    "codigocliente": 1,
+    "codigopostal": "24006",
+    "estadoReg": 1,
+    "fax": "5556901746",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 1,
+    "idcodigoempleadoventas": 19,
+    "limiteCredito": {
+      "$numberDecimal": "3000.00"
+    },
+    "lineadireccion1": "False Street 52 2 A",
+    "lineadireccion2": null,
+    "nombrecliente": "GoldFish Garden",
+    "nombrecontacto": "Daniel G",
+    "pais": "USA",
+    "region": null,
+    "telefono": "5556901745",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e87"
+  },
+  "idpago": 2,
+  "fechapago": {
+    "$date": "2008-12-10T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 1,
+  "nrotransaccion": "ak-std-000002",
+  "total": {
+    "$numberDecimal": "2000.00"
+  },
+  "cliente": {
+    "apellidocontacto": "GoldFish",
+    "ciudad": "San Francisco",
+    "codigocliente": 1,
+    "codigopostal": "24006",
+    "estadoReg": 1,
+    "fax": "5556901746",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 1,
+    "idcodigoempleadoventas": 19,
+    "limiteCredito": {
+      "$numberDecimal": "3000.00"
+    },
+    "lineadireccion1": "False Street 52 2 A",
+    "lineadireccion2": null,
+    "nombrecliente": "GoldFish Garden",
+    "nombrecontacto": "Daniel G",
+    "pais": "USA",
+    "region": null,
+    "telefono": "5556901745",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e88"
+  },
+  "idpago": 3,
+  "fechapago": {
+    "$date": "2009-01-16T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 3,
+  "nrotransaccion": "ak-std-000003",
+  "total": {
+    "$numberDecimal": "5000.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Flaute",
+    "ciudad": "New York",
+    "codigocliente": 4,
+    "codigopostal": "85495",
+    "estadoReg": 1,
+    "fax": "5552323128",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 3,
+    "idcodigoempleadoventas": 22,
+    "limiteCredito": {
+      "$numberDecimal": "12000.00"
+    },
+    "lineadireccion1": "Oaks Avenue nº22",
+    "lineadireccion2": null,
+    "nombrecliente": "Gerudo Valley",
+    "nombrecontacto": "Link",
+    "pais": "USA",
+    "region": null,
+    "telefono": "5552323129",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e8b"
+  },
+  "idpago": 4,
+  "fechapago": {
+    "$date": "2009-02-16T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 3,
+  "nrotransaccion": "ak-std-000004",
+  "total": {
+    "$numberDecimal": "5000.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Flaute",
+    "ciudad": "New York",
+    "codigocliente": 4,
+    "codigopostal": "85495",
+    "estadoReg": 1,
+    "fax": "5552323128",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 3,
+    "idcodigoempleadoventas": 22,
+    "limiteCredito": {
+      "$numberDecimal": "12000.00"
+    },
+    "lineadireccion1": "Oaks Avenue nº22",
+    "lineadireccion2": null,
+    "nombrecliente": "Gerudo Valley",
+    "nombrecontacto": "Link",
+    "pais": "USA",
+    "region": null,
+    "telefono": "5552323129",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e8c"
+  },
+  "idpago": 5,
+  "fechapago": {
+    "$date": "2009-02-19T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 3,
+  "nrotransaccion": "ak-std-000005",
+  "total": {
+    "$numberDecimal": "926.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Flaute",
+    "ciudad": "New York",
+    "codigocliente": 4,
+    "codigopostal": "85495",
+    "estadoReg": 1,
+    "fax": "5552323128",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 3,
+    "idcodigoempleadoventas": 22,
+    "limiteCredito": {
+      "$numberDecimal": "12000.00"
+    },
+    "lineadireccion1": "Oaks Avenue nº22",
+    "lineadireccion2": null,
+    "nombrecliente": "Gerudo Valley",
+    "nombrecontacto": "Link",
+    "pais": "USA",
+    "region": null,
+    "telefono": "5552323129",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e8d"
+  },
+  "idpago": 6,
+  "fechapago": {
+    "$date": "2007-01-08T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 4,
+  "nrotransaccion": "ak-std-000006",
+  "total": {
+    "$numberDecimal": "20000.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Tendo",
+    "ciudad": "Miami",
+    "codigocliente": 5,
+    "codigopostal": "696969",
+    "estadoReg": 1,
+    "fax": "55591233211",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 4,
+    "idcodigoempleadoventas": 22,
+    "limiteCredito": {
+      "$numberDecimal": "600000.00"
+    },
+    "lineadireccion1": "Null Street nº69",
+    "lineadireccion2": null,
+    "nombrecliente": "Tendo Garden",
+    "nombrecontacto": "Akane",
+    "pais": "USA",
+    "region": null,
+    "telefono": "55591233210",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e8e"
+  },
+  "idpago": 7,
+  "fechapago": {
+    "$date": "2007-01-08T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 4,
+  "nrotransaccion": "ak-std-000007",
+  "total": {
+    "$numberDecimal": "20000.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Tendo",
+    "ciudad": "Miami",
+    "codigocliente": 5,
+    "codigopostal": "696969",
+    "estadoReg": 1,
+    "fax": "55591233211",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 4,
+    "idcodigoempleadoventas": 22,
+    "limiteCredito": {
+      "$numberDecimal": "600000.00"
+    },
+    "lineadireccion1": "Null Street nº69",
+    "lineadireccion2": null,
+    "nombrecliente": "Tendo Garden",
+    "nombrecontacto": "Akane",
+    "pais": "USA",
+    "region": null,
+    "telefono": "55591233210",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e8f"
+  },
+  "idpago": 8,
+  "fechapago": {
+    "$date": "2007-01-08T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 4,
+  "nrotransaccion": "ak-std-000008",
+  "total": {
+    "$numberDecimal": "20000.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Tendo",
+    "ciudad": "Miami",
+    "codigocliente": 5,
+    "codigopostal": "696969",
+    "estadoReg": 1,
+    "fax": "55591233211",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 4,
+    "idcodigoempleadoventas": 22,
+    "limiteCredito": {
+      "$numberDecimal": "600000.00"
+    },
+    "lineadireccion1": "Null Street nº69",
+    "lineadireccion2": null,
+    "nombrecliente": "Tendo Garden",
+    "nombrecontacto": "Akane",
+    "pais": "USA",
+    "region": null,
+    "telefono": "55591233210",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e90"
+  },
+  "idpago": 9,
+  "fechapago": {
+    "$date": "2007-01-08T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 4,
+  "nrotransaccion": "ak-std-000009",
+  "total": {
+    "$numberDecimal": "20000.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Tendo",
+    "ciudad": "Miami",
+    "codigocliente": 5,
+    "codigopostal": "696969",
+    "estadoReg": 1,
+    "fax": "55591233211",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 4,
+    "idcodigoempleadoventas": 22,
+    "limiteCredito": {
+      "$numberDecimal": "600000.00"
+    },
+    "lineadireccion1": "Null Street nº69",
+    "lineadireccion2": null,
+    "nombrecliente": "Tendo Garden",
+    "nombrecontacto": "Akane",
+    "pais": "USA",
+    "region": null,
+    "telefono": "55591233210",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e93"
+  },
+  "idpago": 10,
+  "fechapago": {
+    "$date": "2007-01-08T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 4,
+  "nrotransaccion": "ak-std-000010",
+  "total": {
+    "$numberDecimal": "1849.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Tendo",
+    "ciudad": "Miami",
+    "codigocliente": 5,
+    "codigopostal": "696969",
+    "estadoReg": 1,
+    "fax": "55591233211",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 4,
+    "idcodigoempleadoventas": 22,
+    "limiteCredito": {
+      "$numberDecimal": "600000.00"
+    },
+    "lineadireccion1": "Null Street nº69",
+    "lineadireccion2": null,
+    "nombrecliente": "Tendo Garden",
+    "nombrecontacto": "Akane",
+    "pais": "USA",
+    "region": null,
+    "telefono": "55591233210",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e95"
+  },
+  "idpago": 11,
+  "fechapago": {
+    "$date": "2006-01-18T00:00:00.000Z"
+  },
+  "formapago": "Transferencia",
+  "idcliente": 5,
+  "nrotransaccion": "ak-std-000011",
+  "total": {
+    "$numberDecimal": "23794.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Lasas",
+    "ciudad": "Fuenlabrada",
+    "codigocliente": 6,
+    "codigopostal": "28945",
+    "estadoReg": 1,
+    "fax": "34914851312",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 5,
+    "idcodigoempleadoventas": 8,
+    "limiteCredito": {
+      "$numberDecimal": "7000.00"
+    },
+    "lineadireccion1": "C/Leganes 15",
+    "lineadireccion2": null,
+    "nombrecliente": "Lasas S.A.",
+    "nombrecontacto": "Antonio",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "34916540145",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e98"
+  },
+  "idpago": 12,
+  "fechapago": {
+    "$date": "2009-01-13T00:00:00.000Z"
+  },
+  "formapago": "Cheque",
+  "idcliente": 7,
+  "nrotransaccion": "ak-std-000012",
+  "total": {
+    "$numberDecimal": "2390.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Lopez",
+    "ciudad": "Madrid",
+    "codigocliente": 8,
+    "codigopostal": "28930",
+    "estadoReg": 1,
+    "fax": "919535678",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 7,
+    "idcodigoempleadoventas": 11,
+    "limiteCredito": {
+      "$numberDecimal": "40000.00"
+    },
+    "lineadireccion1": "C/sinesio delgado",
+    "lineadireccion2": "Madrid",
+    "nombrecliente": "Club Golf Puerta del hierro",
+    "nombrecontacto": "Paco",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "62456810",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e99"
+  },
+  "idpago": 13,
+  "fechapago": {
+    "$date": "2009-01-06T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 9,
+  "nrotransaccion": "ak-std-000013",
+  "total": {
+    "$numberDecimal": "929.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Serrano",
+    "ciudad": "Madrid",
+    "codigocliente": 10,
+    "codigopostal": "28946",
+    "estadoReg": 1,
+    "fax": "916421756",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 9,
+    "idcodigoempleadoventas": 11,
+    "limiteCredito": {
+      "$numberDecimal": "50000.00"
+    },
+    "lineadireccion1": "C/azores",
+    "lineadireccion2": "Fuenlabrada",
+    "nombrecliente": "DaraDistribuciones",
+    "nombrecontacto": "David",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "675598001",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9e9b"
+  },
+  "idpago": 14,
+  "fechapago": {
+    "$date": "2008-08-04T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 13,
+  "nrotransaccion": "ak-std-000014",
+  "total": {
+    "$numberDecimal": "2246.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Rodriguez",
+    "ciudad": "Madrid",
+    "codigocliente": 14,
+    "codigopostal": "28003",
+    "estadoReg": 1,
+    "fax": "34912484764",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 13,
+    "idcodigoempleadoventas": 8,
+    "limiteCredito": {
+      "$numberDecimal": "321000.00"
+    },
+    "lineadireccion1": "C/Nueva York 74",
+    "lineadireccion2": null,
+    "nombrecliente": "Dardena S.A.",
+    "nombrecontacto": "Juan",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "34912453217",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9ea0"
+  },
+  "idpago": 15,
+  "fechapago": {
+    "$date": "2008-07-15T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 14,
+  "nrotransaccion": "ak-std-000015",
+  "total": {
+    "$numberDecimal": "4160.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Villar",
+    "ciudad": "Madrid",
+    "codigocliente": 15,
+    "codigopostal": "28950",
+    "estadoReg": 1,
+    "fax": "914538776",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 14,
+    "idcodigoempleadoventas": 30,
+    "limiteCredito": {
+      "$numberDecimal": "40000.00"
+    },
+    "lineadireccion1": "C/ Oña 34",
+    "lineadireccion2": null,
+    "nombrecliente": "Jardin de Flores",
+    "nombrecontacto": "Javier",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "654865643",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9ea3"
+  },
+  "idpago": 16,
+  "fechapago": {
+    "$date": "2009-01-15T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 15,
+  "nrotransaccion": "ak-std-000016",
+  "total": {
+    "$numberDecimal": "2081.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Rodriguez",
+    "ciudad": "Fuenlabrada",
+    "codigocliente": 16,
+    "codigopostal": "28945",
+    "estadoReg": 1,
+    "fax": "912458657",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 15,
+    "idcodigoempleadoventas": 5,
+    "limiteCredito": {
+      "$numberDecimal": "1500.00"
+    },
+    "lineadireccion1": "C/Leganes24",
+    "lineadireccion2": null,
+    "nombrecliente": "Flores Marivi",
+    "nombrecontacto": "Maria",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "666555444",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9ea4"
+  },
+  "idpago": 17,
+  "fechapago": {
+    "$date": "2009-02-15T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 15,
+  "nrotransaccion": "ak-std-000035",
+  "total": {
+    "$numberDecimal": "10000.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Rodriguez",
+    "ciudad": "Fuenlabrada",
+    "codigocliente": 16,
+    "codigopostal": "28945",
+    "estadoReg": 1,
+    "fax": "912458657",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 15,
+    "idcodigoempleadoventas": 5,
+    "limiteCredito": {
+      "$numberDecimal": "1500.00"
+    },
+    "lineadireccion1": "C/Leganes24",
+    "lineadireccion2": null,
+    "nombrecliente": "Flores Marivi",
+    "nombrecontacto": "Maria",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "666555444",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9ea7"
+  },
+  "idpago": 18,
+  "fechapago": {
+    "$date": "2009-02-16T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 16,
+  "nrotransaccion": "ak-std-000017",
+  "total": {
+    "$numberDecimal": "4399.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Fernandez",
+    "ciudad": "Montornes del valles",
+    "codigocliente": 17,
+    "codigopostal": "24586",
+    "estadoReg": 1,
+    "fax": "978453216",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 16,
+    "idcodigoempleadoventas": 5,
+    "limiteCredito": {
+      "$numberDecimal": "3500.00"
+    },
+    "lineadireccion1": "C/Luis Salquillo4",
+    "lineadireccion2": null,
+    "nombrecliente": "Flowers, S.A",
+    "nombrecontacto": "Beatriz",
+    "pais": "Spain",
+    "region": "Barcelona",
+    "telefono": "698754159",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9ea8"
+  },
+  "idpago": 19,
+  "fechapago": {
+    "$date": "2009-03-06T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 19,
+  "nrotransaccion": "ak-std-000018",
+  "total": {
+    "$numberDecimal": "232.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Suarez",
+    "ciudad": "Barcelona",
+    "codigocliente": 20,
+    "codigopostal": "12320",
+    "estadoReg": 1,
+    "fax": "964493063",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 19,
+    "idcodigoempleadoventas": 12,
+    "limiteCredito": {
+      "$numberDecimal": "20000.00"
+    },
+    "lineadireccion1": "C/Letardo",
+    "lineadireccion2": null,
+    "nombrecliente": "Americh Golf Management SL",
+    "nombrecontacto": "Mario",
+    "pais": "Spain",
+    "region": "Cataluña",
+    "telefono": "964493072",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9eaa"
+  },
+  "idpago": 20,
+  "fechapago": {
+    "$date": "2009-03-26T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 23,
+  "nrotransaccion": "ak-std-000019",
+  "total": {
+    "$numberDecimal": "272.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Gomez",
+    "ciudad": "Humanes",
+    "codigocliente": 24,
+    "codigopostal": "28970",
+    "estadoReg": 1,
+    "fax": "916040875",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 23,
+    "idcodigoempleadoventas": 30,
+    "limiteCredito": {
+      "$numberDecimal": "7430.00"
+    },
+    "lineadireccion1": "C/Miguel Echegaray 54",
+    "lineadireccion2": null,
+    "nombrecliente": "Vivero Humanes",
+    "nombrecontacto": "Federico",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "654987690",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9eab"
+  },
+  "idpago": 21,
+  "fechapago": {
+    "$date": "2008-03-18T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 26,
+  "nrotransaccion": "ak-std-000020",
+  "total": {
+    "$numberDecimal": "18846.00"
+  },
+  "cliente": {
+    "apellidocontacto": "San Martín",
+    "ciudad": "Madrid",
+    "codigocliente": 27,
+    "codigopostal": "37845",
+    "estadoReg": 1,
+    "fax": "917897474",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 26,
+    "idcodigoempleadoventas": 9,
+    "limiteCredito": {
+      "$numberDecimal": "100500.00"
+    },
+    "lineadireccion1": "C/Francisco Arce, Nº44",
+    "lineadireccion2": "Bustarviejo",
+    "nombrecliente": "Jardinerías Matías SL",
+    "nombrecontacto": "Matías",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "916544147",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9ead"
+  },
+  "idpago": 22,
+  "fechapago": {
+    "$date": "2009-02-08T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 27,
+  "nrotransaccion": "ak-std-000021",
+  "total": {
+    "$numberDecimal": "10972.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Lopez",
+    "ciudad": "Getafe",
+    "codigocliente": 28,
+    "codigopostal": "28904",
+    "estadoReg": 1,
+    "fax": "916549264",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 27,
+    "idcodigoempleadoventas": 30,
+    "limiteCredito": {
+      "$numberDecimal": "8040.00"
+    },
+    "lineadireccion1": "C/Mar Caspio 43",
+    "lineadireccion2": null,
+    "nombrecliente": "Agrojardin",
+    "nombrecontacto": "Benito",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "675432926",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9eb0"
+  },
+  "idpago": 23,
+  "fechapago": {
+    "$date": "2009-01-13T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 28,
+  "nrotransaccion": "ak-std-000022",
+  "total": {
+    "$numberDecimal": "8489.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Sanchez",
+    "ciudad": "Humanes",
+    "codigocliente": 29,
+    "codigopostal": "28574",
+    "estadoReg": 1,
+    "fax": "974315924",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 28,
+    "idcodigoempleadoventas": 5,
+    "limiteCredito": {
+      "$numberDecimal": "5500.00"
+    },
+    "lineadireccion1": "C/Ibiza 32",
+    "lineadireccion2": null,
+    "nombrecliente": "Top Campo",
+    "nombrecontacto": "Joseluis",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "685746512",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9eb2"
+  },
+  "idpago": 24,
+  "fechapago": {
+    "$date": "2009-01-16T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 30,
+  "nrotransaccion": "ak-std-000024",
+  "total": {
+    "$numberDecimal": "7863.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Jimenez",
+    "ciudad": "Fuenlabrada",
+    "codigocliente": 31,
+    "codigopostal": "28945",
+    "estadoReg": 1,
+    "fax": "916159116",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 30,
+    "idcodigoempleadoventas": 30,
+    "limiteCredito": {
+      "$numberDecimal": "3250.00"
+    },
+    "lineadireccion1": "C/Peru 78",
+    "lineadireccion2": null,
+    "nombrecliente": "Campohermoso",
+    "nombrecontacto": "Luis",
+    "pais": "Spain",
+    "region": "Madrid",
+    "telefono": "645925376",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9eb3"
+  },
+  "idpago": 25,
+  "fechapago": {
+    "$date": "2007-10-06T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 35,
+  "nrotransaccion": "ak-std-000025",
+  "total": {
+    "$numberDecimal": "3321.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Mcain",
+    "ciudad": "London",
+    "codigocliente": 37,
+    "codigopostal": "65930",
+    "estadoReg": 1,
+    "fax": "9364875882",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 35,
+    "idcodigoempleadoventas": 18,
+    "limiteCredito": {
+      "$numberDecimal": "10000.00"
+    },
+    "lineadireccion1": "Lihgting Park",
+    "lineadireccion2": null,
+    "nombrecliente": "The Magic Garden",
+    "nombrecontacto": "Richard",
+    "pais": "United Kingdom",
+    "region": "London",
+    "telefono": "926523468",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+},
+{
+  "_id": {
+    "$oid": "664d515c81896b92b2bb9eb4"
+  },
+  "idpago": 26,
+  "fechapago": {
+    "$date": "2006-05-26T00:00:00.000Z"
+  },
+  "formapago": "PayPal",
+  "idcliente": 36,
+  "nrotransaccion": "ak-std-000026",
+  "total": {
+    "$numberDecimal": "1171.00"
+  },
+  "cliente": {
+    "apellidocontacto": "Smith",
+    "ciudad": "Sydney",
+    "codigocliente": 38,
+    "codigopostal": "2003",
+    "estadoReg": 1,
+    "fax": "2 8005-7162",
+    "fechaModif": {
+      "$date": "2024-03-25T07:28:26.283Z"
+    },
+    "fechaReg": {
+      "$date": "2024-03-25T07:25:13.135Z"
+    },
+    "idcliente": 36,
+    "idcodigoempleadoventas": 31,
+    "limiteCredito": {
+      "$numberDecimal": "8000.00"
+    },
+    "lineadireccion1": "176 Cumberland Street The rocks",
+    "lineadireccion2": null,
+    "nombrecliente": "El Jardin Viviente S.L",
+    "nombrecontacto": "Justin",
+    "pais": "Australia",
+    "region": "Nueva Gales del Sur",
+    "telefono": "2 8005-7161",
+    "usuarioModif": "postgres",
+    "usuarioReg": "postgres"
+  }
+}]

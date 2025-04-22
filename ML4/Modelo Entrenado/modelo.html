@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Imágenes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+    <h1>Clasificación de Imágenes (Perro vs Gato)</h1>
+    <input type="file" id="upload-image" accept="image/*">
+    <canvas id="canvas"></canvas>
+    <p id="resultado"></p>
+
+    <script>
+        let modelo;
+
+        async function cargarModelo() {
+            modelo = await tf.loadLayersModel("/Modelo Entrenado/model.json");
+            console.log("Modelo cargado");
+        }
+
+
+
+
+        cargarModelo();
+
+        document.getElementById("upload-image").addEventListener("change", async function(event) {
+            const archivo = event.target.files[0];
+            if (!archivo) return;
+
+            const imagen = document.createElement("img");
+            imagen.src = URL.createObjectURL(archivo);
+            imagen.onload = async function() {
+                const canvas = document.getElementById("canvas");
+                const ctx = canvas.getContext("2d");
+                canvas.width = 100;
+                canvas.height = 100;
+                ctx.drawImage(imagen, 0, 0, 100, 100);
+
+                // Convertir la imagen en un tensor
+                let tensor = tf.browser.fromPixels(canvas)
+                    .resizeNearestNeighbor([100, 100])
+                    .mean(2)
+                    .expandDims(0)
+                    .expandDims(-1)
+                    .toFloat()
+                    .div(255.0);
+
+                // Realizar la predicción
+                const prediccion = modelo.predict(tensor);
+                const resultado = (await prediccion.data())[0];
+
+                document.getElementById("resultado").innerText =
+                    resultado > 0.5 ? "Es un perro 🐶" : "Es un gato 🐱";
+            };
+        });
+    </script>
+</body>
+</html>

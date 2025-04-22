@@ -1,0 +1,8 @@
+Producto,Precio,Ventas_Mensuales,Categoría,Inventario_Disponible
+TV,500.0,20.0,Electrónica,15.0
+Refrigerador,800.0,0.0,Electrónica,10.0
+Smartphone,100.0,50.0,Electrónica,0.0
+Auriculares,50.0,200.0,Electrónica,100.0
+Laptop,1200.0,0.0,Electrónica,5.0
+Galletas,2.0,500.0,Alimentos,300.0
+Cereal,100.0,0.0,Alimentos,150.0

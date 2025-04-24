@@ -36,3 +36,16 @@ mi_coche2 = Coche("Chevrolet", "Camaro")
 # Llamamos a los métodos del nuevo objeto
 mi_coche2.arrancar()  # Primera vez
 mi_coche2.frenar()    # Primera vez
+
+
+"""
+Los decoradores en programación orientada a objetos (POO) en Python sirven para modificar o extender el comportamiento de métodos o propiedades en clases sin modificar directamente su código. Se usan principalmente para:
+
+Encapsular lógica adicional sin alterar el código original del método o propiedad.
+
+Implementar patrones de diseño como el Singleton o el acceso controlado.
+
+Aplicar validaciones o restricciones de acceso a métodos de clases.
+
+Añadir funcionalidad como logging, caching o autenticación.
+"""

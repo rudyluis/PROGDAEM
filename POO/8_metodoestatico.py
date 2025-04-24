@@ -35,3 +35,34 @@ Puedes llamar a un método estático a través de la clase o de una instancia.
 Se usa cuando el comportamiento de la función es independiente del estado de los objetos de la clase.
 
 """
+"""
+@property
+Convierte un método en una propiedad de solo lectura.
+"""
+
+class Persona:
+    def __init__(self, nombre):
+        self._nombre = nombre
+
+    @property
+    def nombre(self):
+        return self._nombre
+
+p = Persona("Juan")
+print(p.nombre)  # 
+
+
+"""
+@classmethod
+Se usa para definir un método que opera sobre la clase en lugar de una instancia.
+
+"""
+class Circulo:
+    pi = 3.1416
+
+    @classmethod
+    def cambiar_pi(cls, nuevo_valor):
+        cls.pi = nuevo_valor
+
+Circulo.cambiar_pi(3.14)
+print(Circulo.pi)  # 3.14

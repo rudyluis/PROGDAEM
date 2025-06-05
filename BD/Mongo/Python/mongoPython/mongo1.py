@@ -1,10 +1,11 @@
 from pymongo import MongoClient
 
 # Conexión al servidor MongoDB (en este caso, el servidor local)
-client = MongoClient('localhost', 27017)
+##client = MongoClient('localhost', 27017)
+client = MongoClient("mongodb+srv://rmanzanedav0001:lGSisb4y4HEoLWTa@cluster0.2eo714p.mongodb.net/")
 #client = MongoClient('mongodb://localhost:27017/')
 # Acceder a una base de datos
-db = client['jardineria2']
+db = client['jardineria_clases01']
 
 # Acceder a una colección
 oficina = db['oficina']

@@ -12,6 +12,7 @@ df = pd.read_csv('country_comparison_large_dataset_m.csv')
 # Título
 st.title("	:money_with_wings: Análisis Exploratorio de Datos por País")
 
+
 # Sidebar para seleccionar país y variable
 st.sidebar.header(":capital_abcd: Filtros")
 # Seleccionar todos los países por defecto
@@ -22,6 +23,15 @@ selected_year = st.sidebar.selectbox("Selecciona un año", df['Year'].unique())
 selected_variable = st.sidebar.selectbox("Selecciona una variable para las gráficas", 
                                          df.columns[2:])
 
+##links de acceso a secciones
+st.sidebar.markdown("[Distribución del PIB](#distribucion-del-pib)")
+st.sidebar.markdown("[Análisis por Variable](#analisis-por-variable)")
+st.sidebar.markdown("[Datos Importantes](#datos-importantes)")
+st.sidebar.markdown("[Comparar Variables](#comparar-variables)")
+st.sidebar.markdown("[Mapa Jerárquico](#mapa-jerarquico)")
+
+
+## Primera sección: Distribución del PIB
 # Mostrar información del DataFrame
 df = df[(df['Country'].isin(selected_country)) & (df['Year']>=selected_year)]
 if st.checkbox("	🥇 Mostrar información del dataset"):
@@ -34,16 +44,30 @@ if st.checkbox("	🥇 Mostrar información del dataset"):
         st.dataframe(df)
 
 # Gráfico de distribución de GDP y PIB per Cápita en columnas
+st.markdown('<a name="distribucion-del-pib"></a>', unsafe_allow_html=True)
+st.markdown('---')
+st.title(":1234: Descripcion de la sección Distribución del PIB")
 col1, col2 = st.columns(2)
 
 with col1:
+    # Título y descripción del gráfico
+
     st.subheader(":1234: Distribución del PIB")
     st.write("Este gráfico muestra la distribución del Producto Interno Bruto (PIB) en trillones de USD entre los países.")
-    fig_gdp = px.histogram(df, x=selected_variable, nbins=30, 
-                           title='Distribución del PIB', 
-                           color_discrete_sequence=["blue","red"])
-  
+
+    # Gráfico tipo pie
+    fig_gdp = px.pie(
+        df,
+        names='Country' , # Esta variable debe contener los nombres de los países o categorías
+        values=selected_variable,             # Esta debe ser la columna con los valores del PIB
+        title='Distribución del {selected_variable}',
+        color='Country',
+        color_discrete_sequence=px.colors.qualitative.Dark24
+    )
+
+    # Mostrar el gráfico en Streamlit
     st.plotly_chart(fig_gdp)
+
 
 with col2:
     st.subheader("	:white_check_mark:  Distribución del PIB per Cápita")
@@ -65,7 +89,19 @@ with st.expander(" 💯 Ver histogramas de indicadores económicos"):
                                  color_discrete_sequence=["green"])
     st.plotly_chart(fig_hist)
 
+with st.expander(":anchor:  Gráfico de líneas de PIB a lo largo del tiempo"):
+    # Gráfico de líneas de PIB a lo largo del tiempo
+    st.subheader("Crecimiento del PIB a lo largo del tiempo")
+    fig_gdp_growth = px.line(df, x='Year', y='GDP (in Trillions USD)', 
+                            color='Country', 
+                            title='Crecimiento del PIB a lo largo del tiempo', 
+                            color_discrete_sequence=px.colors.qualitative.Plotly)
+    st.plotly_chart(fig_gdp_growth)
 
+st.markdown('<a name="analisis-por-variable"></a>', unsafe_allow_html=True)
+st.markdown('---')
+## Segunda sección
+st.title(":sparkles: Análisis por Variable")
 # Gráfico de dispersión de PIB per Cápita vs Esperanza de Vida
 st.subheader(f":sparkles: {selected_variable} vs Esperanza de Vida")
 fig_scatter_gdp_life_expectancy = px.scatter(df, x=selected_variable, 
@@ -75,13 +111,6 @@ fig_scatter_gdp_life_expectancy = px.scatter(df, x=selected_variable,
                                               color_discrete_sequence=px.colors.qualitative.Set2)
 st.plotly_chart(fig_scatter_gdp_life_expectancy)
 
-# Gráfico de líneas de PIB a lo largo del tiempo
-st.subheader("	:anchor: Crecimiento del PIB a lo largo del tiempo")
-fig_gdp_growth = px.line(df, x='Year', y='GDP (in Trillions USD)', 
-                          color='Country', 
-                          title='Crecimiento del PIB a lo largo del tiempo', 
-                          color_discrete_sequence=px.colors.qualitative.Plotly)
-st.plotly_chart(fig_gdp_growth)
 
 
 # Gráfico de violín por pais
@@ -93,8 +122,13 @@ fig_renewable_energy = px.violin(df, x='Country',
                                   color_discrete_sequence=px.colors.qualitative.Set1)
 st.plotly_chart(fig_renewable_energy)
 
+
+## Tercera sección
+st.markdown('<a name="datos-importantes"></a>', unsafe_allow_html=True)
+st.markdown('---')
 # Generar WordCloud de países basados en el número de aeropuertos
-st.subheader(f"🌧️ Nube de Palabras de Países según {selected_variable}")
+st.title(":1234: Datos Importantes")
+st.subheader(f"Nube de Palabras de Países según {selected_variable}")
 country_airports = dict(zip(df['Country'], df[selected_variable]))
 wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(country_airports)
 
@@ -104,7 +138,10 @@ plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis('off')
 st.pyplot(plt)
 #########
+
+
 # Gráfico de barras para la Penetración de Internet por País usando Streamlit
+
 st.subheader("💻 Penetración de Internet por País")
 # Agrupar los datos para obtener la media si es necesario
 internet_data = df.groupby('Country')['Internet Penetration (%)'].mean().reset_index()
@@ -126,8 +163,12 @@ if selected_country:
 else:
     st.write("Selecciona al menos un país para visualizar las emisiones de CO2.")
 
-# Gráfico de barras apiladas para Renewable Energy Share y Agricultural Land por País
 
+
+## Cuarta sección
+st.markdown('<a name="comparar-variables"></a>', unsafe_allow_html=True)
+st.markdown('---')
+st.title(":1234: Comparar Variables")
 st.subheader("🚈 Analisis de Variables con respecto al Pais")
 selected_variabley = st.selectbox("Seleccione una variable para realizar la comparación", 
                                          df.columns[2:])
@@ -154,6 +195,26 @@ fig = px.bar(
 st.plotly_chart(fig)
 
 
+st.markdown('<a name="mapa-jerarquico"></a>', unsafe_allow_html=True)
+st.markdown('---')
+## Maprs Jerárquicos
+st.subheader("🌲 Mapa Jerárquico (Treemap) por País")
+st.write(f"Este treemap muestra la proporción de {selected_variable} por país, representando el tamaño relativo de cada valor.")
 
+# Validar si la variable seleccionada es numérica
 
+fig_treemap = px.treemap(
+    df,
+    path=['Country'],  # Agrupamos por país
+    values=selected_variable,
+    color=selected_variable,
+    hover_data={'Country': True, selected_variable: True},
+    color_continuous_scale='Reds',
+    title=f'Treemap de {selected_variable} por País'
+)
+st.plotly_chart(fig_treemap)
+
+st.markdown("""
+	  Realizado por Rudy Manzaneda - 2025
+""")
 st.write('https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/')

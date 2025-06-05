@@ -2,10 +2,11 @@ from pymongo import MongoClient
 from datetime import datetime
 # Conexión al servidor MongoDB (en este caso, el servidor local)
 client = MongoClient('localhost', 27017)
+client = MongoClient("mongodb+srv://rmanzanedav0001:lGSisb4y4HEoLWTa@cluster0.2eo714p.mongodb.net/")
 ##client = MongoClient('mongodb+srv://rmanzaneda001:VaY0atGZkZ3TFnoY@cluster0.2eo714p.mongodb.net/')
 #client = MongoClient('mongodb://localhost:27017/')
 # Acceder a una base de datos
-db = client['jardineria2']
+db = client['jardineria_clases01']
 
 estado_pedido=db.pedido.distinct("estado")
 

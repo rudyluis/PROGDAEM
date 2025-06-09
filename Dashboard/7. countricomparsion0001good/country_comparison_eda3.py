@@ -101,6 +101,7 @@ with st.expander(":anchor:  Gráfico de líneas de PIB a lo largo del tiempo"):
 st.markdown('<a name="analisis-por-variable"></a>', unsafe_allow_html=True)
 st.markdown('---')
 ## Segunda sección
+## Desde aqui para el lunes
 st.title(":sparkles: Análisis por Variable")
 # Gráfico de dispersión de PIB per Cápita vs Esperanza de Vida
 st.subheader(f":sparkles: {selected_variable} vs Esperanza de Vida")

@@ -36,9 +36,8 @@ if st.sidebar.button('Saludar'):
 # Checkbox en la barra lateral
 acuerdo = st.sidebar.checkbox('Estoy de acuerdo')
 if acuerdo:
-    st.write('¡Genial!')
+    st.write('¡Muy bien!')
 
-# Radio Button en la barra lateral
 genero = st.sidebar.radio(
     "¿Cuál es tu género de película favorito?",
     ('Comedia', 'Drama', 'Documental'))
